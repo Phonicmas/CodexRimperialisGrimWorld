@@ -95,7 +95,7 @@
     </WorkGiverDef>
 
     <RecipeDef Name="BEWH_RepairRecipeBase" Abstract="True">
-        <workerClass>CodexRimperialis.RecipeWorker_RepairEquipment</workerClass>
+        <workerClass>Core40k.RecipeWorker_RepairEquipment</workerClass>
         <recipeUsers>
             <li>BEWH_RepairStation</li>
         </recipeUsers>
@@ -108,7 +108,7 @@
             <Crafting>4</Crafting>
         </skillRequirements>
         <modExtensions>
-            <li Class="CodexRimperialis.DefModExtension_RepairRecipe" />
+            <li Class="Core40k.DefModExtension_RepairRecipe" />
         </modExtensions>
     </RecipeDef>
 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <BEWH.CodexRimperialis.ModSettings.ModName>Codex Rimperialis - {0}</BEWH.CodexRimperialis.ModSettings.ModName>
-  <BEWH.CodexRimperialis.ModSettings.RepairCostFactor>Repair cost: {0} of crafting cost for a full repair</BEWH.CodexRimperialis.ModSettings.RepairCostFactor>
-  <BEWH.CodexRimperialis.ModSettings.RepairCostFactorTooltip>How much of an item's crafting materials the repair station uses to restore it from no hit points to full. Repairs cost proportionally less the less damaged the item is.\n\nAt 0%, repairs are free.\n\nDefault: 50%</BEWH.CodexRimperialis.ModSettings.RepairCostFactorTooltip>
-  <BEWH.CodexRimperialis.ModSettings.ResetToDefault>Reset</BEWH.CodexRimperialis.ModSettings.ResetToDefault>
-
-</LanguageData>

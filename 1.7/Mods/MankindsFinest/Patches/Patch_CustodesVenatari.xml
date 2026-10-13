@@ -23,7 +23,7 @@
         <xpath>/Defs/AbilityDef[defName="BEWH_VenatariJump"]</xpath>
         <value>
             <comps>
-                <li Class="CodexRimperialis.CompProperties_AbilityHideIfHasAbility">
+                <li Class="Core40k.CompProperties_AbilityHideIfHasAbility">
                     <abilities>
                         <li>BEWH_CustodesVenatariLeap</li>
                     </abilities>
