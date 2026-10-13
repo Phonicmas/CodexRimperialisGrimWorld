@@ -1,0 +1,13 @@
+{
+  "TextureModID": "phonicmas.codexrimperialis",
+  "ItemDefName": "BEWH_CustodianVexilla",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.66,
+  "Rotation": 45.0,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": 0.184,
+  "BladeEnd": 1.4859,
+  "MeleeWeaponType": 1
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defName>BEWH_KasrkinVoxNet</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Karskin-Voxcaster</label>
+        <description>This pawn is using a vox backpack, allowing them to communicate with nearby pawns and increase their combat effectiveness.</description>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>9.9</range>
+                <mote>BEWH_KasrkinVoxNetMote</mote>
+                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <canTargetSubhumans>false</canTargetSubhumans>
+                </targetingParameters>
+                <hediff>BEWH_KasrkinVoxLink</hediff>
+                <initialSeverity>1</initialSeverity>
+                <onlyPawnsInSameFaction>true</onlyPawnsInSameFaction>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>1</minSeverity>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef>
+        <defName>BEWH_KasrkinVoxLink</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Karskin-Voxcaster comms</label>
+        <description>This pawn is in range of a friendly pawn with a voxcaster. Their combat effectiveness is increased by their greater ability to communicate to one another.</description>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>false</showRemainingTime>
+                <disappearsAfterTicks>325</disappearsAfterTicks>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>1</minSeverity>
+                <statOffsets>
+                    <PainShockThreshold>0.15</PainShockThreshold>
+                    <AimingDelayFactor>-0.12</AimingDelayFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>BEWH_KasrkinVoxNetMote</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>LightingOverlay</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <mote>
+            <solidTime>9999999</solidTime>
+            <needsMaintenance>true</needsMaintenance>
+        </mote>
+        <graphicData>
+            <graphicClass>Graphic_Mote</graphicClass>
+            <texPath>Effects/AuraW</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(0.35,0.65,1,0.12)</color>
+            <drawSize>18</drawSize>
+        </graphicData>
+    </ThingDef>
+    <HediffDef>
+        <defName>BEWH_VoxCasterNet</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Voxcaster</label>
+        <description>This pawn is using a vox backpack, allowing them to communicate with nearby pawns and increase their combat effectiveness.</description>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>7.5</range>
+                <mote>BEWH_VoxCasterNetMote</mote>
+                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <canTargetSubhumans>false</canTargetSubhumans>
+                </targetingParameters>
+                <hediff>BEWH_VoxCasterLink</hediff>
+                <initialSeverity>1</initialSeverity>
+                <onlyPawnsInSameFaction>true</onlyPawnsInSameFaction>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>1</minSeverity>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef>
+        <defName>BEWH_VoxCasterLink</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Voxcaster comms</label>
+        <description>This pawn is in range of a friendly pawn with a voxcaster. Their combat effectiveness is increased by their greater ability to communicate to one another.</description>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>false</showRemainingTime>
+                <disappearsAfterTicks>325</disappearsAfterTicks>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>1</minSeverity>
+                <statOffsets>
+                    <PainShockThreshold>0.10</PainShockThreshold>
+                    <AimingDelayFactor>-0.08</AimingDelayFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>BEWH_VoxCasterNetMote</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>LightingOverlay</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <mote>
+            <solidTime>9999999</solidTime>
+            <needsMaintenance>true</needsMaintenance>
+        </mote>
+        <graphicData>
+            <graphicClass>Graphic_Mote</graphicClass>
+            <texPath>Effects/AuraW</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(0.35,0.65,1,0.12)</color>
+            <drawSize>15</drawSize>
+        </graphicData>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_AstartesCombatShield</defName>
+        <label>combat shield</label>
+        <description>A lighter cousin of the storm shield, strapped to the forearm so that the bearer keeps a hand free for a pistol or blade. While not as protective as a full storm shield, the power field sheathing its face turns aside blows and bolts that would otherwise find their mark. \n\nCombat shields are favoured by Assault Marines and Vanguard Veterans, who must cross open ground under fire before they can bring their chainswords to bear.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Shields/Astartes/CombatShieldA/CombatShieldA</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_PowerArmorMkVII</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>800</MaxHitPoints>
+            <Mass>3.5</Mass>
+            <Flammability>0</Flammability>
+            <WorkToMake>30000</WorkToMake>
+            <MarketValue>1600</MarketValue>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.05</MoveSpeed>
+            <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <costList>
+            <Plasteel>60</Plasteel>
+            <Uranium>10</Uranium>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <thingSetMakerTags Inherit="False"/>
+        <smeltable>false</smeltable>
+        <tradeability>Sellable</tradeability>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <bodyPartGroups>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>BEWH_Shield</li>
+            </layers>
+            <tags>
+                <li>BEWH_AstartesCombatShield</li>
+            </tags>
+            <renderNodeProperties>
+                <li Class="Core40k.PawnRenderNodePropertiesMultiColor">
+                    <nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+                    <workerClass>Core40k.PawnRenderNodeWorker_Shield</workerClass>
+                    <texPath>Things/Shields/Astartes/CombatShieldA/CombatShieldA</texPath>
+                    <parentTagDef>Body</parentTagDef>
+                    <drawData>
+                        <defaultData>
+                            <layer>75</layer>
+                        </defaultData>
+                        <dataNorth>
+                            <layer>-5</layer>
+                            <offset>(0.0, 0, 0.1)</offset>
+                        </dataNorth>
+                        <dataEast>
+                            <layer>75</layer>
+                            <offset>(0.25, 0, 0)</offset>
+                        </dataEast>
+                        <dataWest>
+                            <offset>(-0.25, 0, 0)</offset>
+                        </dataWest>
+                    </drawData>
+                </li>
+            </renderNodeProperties>
+        </apparel>
+        <comps>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>3</colorMaskAmount>
+                <defaultPrimaryColor>(250,176,67)</defaultPrimaryColor>
+                <defaultSecondaryColor>(250,176,67)</defaultSecondaryColor>
+                <defaultTertiaryColor>(180,65,74)</defaultTertiaryColor>
+            </li>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+            <li Class="Core40k.CompProperties_PhysicalShield">
+                <frontArcDegrees>100</frontArcDegrees>
+                <meleeBlockChance>0.4</meleeBlockChance>
+                <rangedBlockChance>0.3</rangedBlockChance>
+                <sideBlockFactor>0.35</sideBlockFactor>
+                <shieldArmorRating>0.55</shieldArmorRating>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_TextureFlags"/>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_AstartesStormShield</defName>
+        <label>storm shield</label>
+        <description>A heavy ballistic shield carried by Terminators and Vanguard Veterans of the Adeptus Astartes. Beyond the ceramite and adamantium of its body, an integrated energy field generator crackles across its face, deflecting incoming blows and shots with violent force. \n\nThe Adeptus Custodes have also been known to bear storm shields, and smaller versions are carried by the Daemonhunters of the Ordo Malleus.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Shields/Astartes/StormShieldA/StormShieldA</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_PowerArmorMkVII</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>1400</MaxHitPoints>
+            <Mass>6</Mass>
+            <Flammability>0</Flammability>
+            <WorkToMake>50000</WorkToMake>
+            <MarketValue>3200</MarketValue>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.15</MoveSpeed>
+            <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <costList>
+            <Plasteel>120</Plasteel>
+            <Uranium>30</Uranium>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <thingSetMakerTags Inherit="False"/>
+        <smeltable>false</smeltable>
+        <tradeability>Sellable</tradeability>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <bodyPartGroups>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>BEWH_Shield</li>
+            </layers>
+            <tags>
+                <li>BEWH_AstartesStormShield</li>
+            </tags>
+            <renderNodeProperties>
+                <li Class="Core40k.PawnRenderNodePropertiesMultiColor">
+                    <nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+                    <workerClass>Core40k.PawnRenderNodeWorker_Shield</workerClass>
+                    <texPath>Things/Shields/Astartes/StormShieldA/StormShieldA</texPath>
+                    <parentTagDef>Body</parentTagDef>
+                    <drawData>
+                        <defaultData>
+                            <layer>75</layer>
+                        </defaultData>
+                        <dataNorth>
+                            <layer>-5</layer>
+                            <offset>(0.0, 0, 0.1)</offset>
+                        </dataNorth>
+                        <dataEast>
+                            <layer>75</layer>
+                            <offset>(0.25, 0, 0)</offset>
+                        </dataEast>
+                        <dataWest>
+                            <offset>(-0.25, 0, 0)</offset>
+                        </dataWest>
+                    </drawData>
+                </li>
+            </renderNodeProperties>
+        </apparel>
+        <comps>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>3</colorMaskAmount>
+                <defaultPrimaryColor>(250,176,67)</defaultPrimaryColor>
+                <defaultSecondaryColor>(250,176,67)</defaultSecondaryColor>
+                <defaultTertiaryColor>(180,65,74)</defaultTertiaryColor>
+            </li>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+            <li Class="Core40k.CompProperties_PhysicalShield">
+                <frontArcDegrees>120</frontArcDegrees>
+                <meleeBlockChance>0.6</meleeBlockChance>
+                <rangedBlockChance>0.45</rangedBlockChance>
+                <sideBlockFactor>0.4</sideBlockFactor>
+                <shieldArmorRating>0.75</shieldArmorRating>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_TextureFlags"/>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_AstartesPrimarisShield</defName>
+        <label>primaris shield</label>
+        <description>A relic shield borne by Primaris Captains. Stronger still than a storm shield, it carries the bones of Imperial martyrs within its reliquary frame, a symbol of their sacrifice. \n\nThe practice was begun by the Imperial Regent, Roboute Guilliman, who wished for his newly-forged Primaris Marines to share a bond with the long and storied history of the Imperium.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Shields/Astartes/PrimarisShield/PrimarisShield</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>13</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_PowerArmorMkX</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>1600</MaxHitPoints>
+            <Mass>6</Mass>
+            <Flammability>0</Flammability>
+            <WorkToMake>60000</WorkToMake>
+            <MarketValue>4000</MarketValue>
+            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <costList>
+            <Plasteel>140</Plasteel>
+            <Uranium>30</Uranium>
+            <Gold>10</Gold>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <thingSetMakerTags Inherit="False"/>
+        <smeltable>false</smeltable>
+        <tradeability>Sellable</tradeability>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <bodyPartGroups>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>BEWH_Shield</li>
+            </layers>
+            <tags>
+                <li>BEWH_AstartesPrimarisShield</li>
+            </tags>
+            <renderNodeProperties>
+                <li Class="Core40k.PawnRenderNodePropertiesMultiColor">
+                    <nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+                    <workerClass>Core40k.PawnRenderNodeWorker_Shield</workerClass>
+                    <texPath>Things/Shields/Astartes/PrimarisShield/PrimarisShield</texPath>
+                    <parentTagDef>Body</parentTagDef>
+                    <drawData>
+                        <defaultData>
+                            <layer>75</layer>
+                        </defaultData>
+                        <dataNorth>
+                            <layer>-5</layer>
+                            <offset>(0.0, 0, 0.1)</offset>
+                        </dataNorth>
+                        <dataEast>
+                            <layer>75</layer>
+                            <offset>(0.25, 0, 0)</offset>
+                        </dataEast>
+                        <dataWest>
+                            <offset>(-0.25, 0, 0)</offset>
+                        </dataWest>
+                    </drawData>
+                </li>
+            </renderNodeProperties>
+        </apparel>
+        <comps>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>3</colorMaskAmount>
+                <defaultPrimaryColor>(229,219,196)</defaultPrimaryColor>
+                <defaultSecondaryColor>(229,219,196)</defaultSecondaryColor>
+                <defaultTertiaryColor>(199,160,82)</defaultTertiaryColor>
+            </li>
+            <li Class="Core40k.CompProperties_PhysicalShield">
+                <frontArcDegrees>130</frontArcDegrees>
+                <meleeBlockChance>0.55</meleeBlockChance>
+                <rangedBlockChance>0.5</rangedBlockChance>
+                <sideBlockFactor>0.45</sideBlockFactor>
+                <shieldArmorRating>0.8</shieldArmorRating>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_TextureFlags"/>
+        </modExtensions>
+    </ThingDef>
+</Defs>

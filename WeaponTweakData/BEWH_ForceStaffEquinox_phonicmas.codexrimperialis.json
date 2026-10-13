@@ -1,0 +1,12 @@
+{
+  "TextureModID": "phonicmas.codexrimperialis",
+  "ItemDefName": "BEWH_ForceStaffEquinox",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.05,
+  "OffY": -0.001,
+  "Rotation": 45.0,
+  "BladeStart": 0.18,
+  "BladeEnd": 0.5638,
+  "MeleeWeaponType": 1
+}

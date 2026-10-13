@@ -1,0 +1,13 @@
+{
+  "TextureModID": "phonicmas.codexrimperialis",
+  "ItemDefName": "BEWH_CustodianVaultsword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.6,
+  "Rotation": 45.0,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": 0.298,
+  "BladeEnd": 1.7159,
+  "MeleeWeaponType": 6
+}

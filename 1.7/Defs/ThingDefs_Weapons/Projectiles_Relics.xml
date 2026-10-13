@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="MoteBase">
+        <defName>BEWH_InspiringPresenceMote</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>LightingOverlay</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <mote>
+            <solidTime>9999999</solidTime>
+            <needsMaintenance>true</needsMaintenance>
+        </mote>
+        <graphicData>
+            <graphicClass>Graphic_Mote</graphicClass>
+            <texPath>Effects/AuraW</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(0.65, 0.35, 0.85, 0.15)</color>
+            <drawSize>12</drawSize>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>BEWH_EmperorHolyLightMote</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>LightingOverlay</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <mote>
+            <solidTime>9999999</solidTime>
+            <needsMaintenance>true</needsMaintenance>
+        </mote>
+        <graphicData>
+            <graphicClass>Graphic_Mote</graphicClass>
+            <texPath>Effects/Aura</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(1,0.72,0.18,0.20)</color>
+            <drawSize>10</drawSize>
+        </graphicData>
+    </ThingDef>
+    <VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+        <defName>BEWH_PsychicFlame</defName>
+        <label>flamer shot</label>
+        <thingClass>VEF.Weapons.FlamethrowProjectile</thingClass>
+        <graphicData>
+            <texPath>Things/Projectiles/Relics/Psy_Flame_Flame</texPath>
+            <texPathFadeOut>Things/Projectiles/Relics/Psy_Flame_End</texPathFadeOut>
+            <shaderType>MoteGlow</shaderType>
+        </graphicData>
+        <projectile>
+            <damageDef>Flame</damageDef>
+            <speed>50</speed>
+            <damageAmountBase>15</damageAmountBase>
+            <armorPenetrationBase>1.0</armorPenetrationBase>
+        </projectile>
+        <drawOffscreen>true</drawOffscreen>
+        <lifeTimeDuration>50</lifeTimeDuration>
+        <widthScaleFactor>0.85</widthScaleFactor>
+        <heightScaleFactor>1</heightScaleFactor>
+        <startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+        <totalSizeScale>1.15</totalSizeScale>
+        <tickFrameRate>2</tickFrameRate>
+        <finalTickFrameRate>5</finalTickFrameRate>
+        <tickDamageRate>20</tickDamageRate>
+        <dealsDamageOnce>true</dealsDamageOnce>
+        <minDistanceToAffect>2</minDistanceToAffect>
+    </VEF.Weapons.ExpandableProjectileDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>BEWH_ApollonianSpearBolt</defName>
+        <label>Guardian Spear bolt</label>
+        <graphicData>
+            <texPath>Things/Projectiles/Bolter_Projectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.8</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>RangedStab</damageDef>
+            <damageAmountBase>28</damageAmountBase>
+            <stoppingPower>0.8</stoppingPower>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

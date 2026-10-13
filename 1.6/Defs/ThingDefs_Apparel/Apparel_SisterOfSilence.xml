@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>BEWH_SisterOfSilenceArmor</defName>
+        <label>Sister of Silence armor</label>
+        <description>A suit of Power Armor built for the Sisters of Silence, the left hand of the Talons of the Emperor. While it is of smaller stature than the Custodian equivalent, it is just as finely-crafted, and similarly protective. 
+
+The Sister of Silence are an ancient order of Blanks - a form of mutant that is utterly abhorrent to the Warp and to psykery. As such, the Sisterhood makes for excellent hunters of daemons and witches, as well as managing the psyker harvest of the Black Ships.</description>
+        <techLevel>Spacer</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/SisterOfSilence/Body/SisterOfSilence/SisterOfSilence</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_SilentSisterhood</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>4500</MaxHitPoints>
+            <Mass>11</Mass>
+            <Flammability>0</Flammability>
+            <EquipDelay>15</EquipDelay>
+            <DeteriorationRate>0.5</DeteriorationRate>
+            <Beauty>5</Beauty>
+            <WorkToMake>70000</WorkToMake>
+            <MarketValue>7000</MarketValue>
+            <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.62</ArmorRating_Blunt>
+            <ArmorRating_Heat>1.0</ArmorRating_Heat>
+            <Insulation_Cold>34</Insulation_Cold>
+            <Insulation_Heat>12</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <PsychicSensitivity>-0.8</PsychicSensitivity>
+            <MoveSpeed>-0.5</MoveSpeed>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.4</SlaveSuppressionOffset>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">10</TerrorSource>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.35</VacuumResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+            <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>5</ComponentSpacer>
+            <Plasteel>160</Plasteel>
+            <Uranium>30</Uranium>
+            <Gold>20</Gold>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/SisterOfSilence/Body/SisterOfSilence/SisterOfSilence</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Hands</li>
+                <li>Feet</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+                <li>Middle</li>
+            </layers>
+            <drawData>
+                <dataNorth>
+                    <layer>74</layer>
+                </dataNorth>
+                <dataWest>
+                    <layer>30</layer>
+                </dataWest>
+                <dataEast>
+                    <layer>30</layer>
+                </dataEast>
+                <scale>1.1</scale>
+                <childScale>1.1</childScale>
+            </drawData>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_SisterOfSilence</li>
+                <li>EVA</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>HiTechArmor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>3</colorMaskAmount>
+                <defaultPrimaryColor>(250,176,67)</defaultPrimaryColor>
+                <defaultSecondaryColor>(250,176,67)</defaultSecondaryColor>
+                <defaultTertiaryColor>(180,65,74)</defaultTertiaryColor>
+            </li>
+            <li Class="Core40k.CompProperties_Decorative">
+                <decorations>
+                    <li>BEWH_SisterOfSilenceShoulder</li>
+                </decorations>
+            </li>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+            <li MayRequire="kentington.saveourship2">
+                <compClass>SaveOurShip2.CompEVA</compClass>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_ForcesBodyType">
+                <forcedBodyType>Male</forcedBodyType>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>BEWH_SisterOfSilenceHelmet</defName>
+        <label>Sister of Silence helmet</label>
+        <description>The mask of a Silent Sister. Traditionally, the mouth of a Sister is always covered, representing their vow of silence. 
+
+Sisters of Silence primarily communicate in their own sign language, known as "Thoughtmark". Very few outside of the Sisters of Silence and the Adeptus Custodes can understand it - Sisters of a particularly sarcastic bent amuse themselves by signing to Space Marines and Imperial Guardsmen whom they know full well do not understand them.</description>
+        <techLevel>Spacer</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/SisterOfSilence/Helmet/SisterOfSilenceA/SisterOfSilenceA</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_SilentSisterhood</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>3500</MaxHitPoints>
+            <Mass>2</Mass>
+            <Flammability>0</Flammability>
+            <EquipDelay>4</EquipDelay>
+            <DeteriorationRate>0.5</DeteriorationRate>
+            <WorkToMake>30000</WorkToMake>
+            <MarketValue>3000</MarketValue>
+            <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+            <ArmorRating_Heat>1.0</ArmorRating_Heat>
+            <Insulation_Cold>8</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+            <PsychicSensitivity>-0.2</PsychicSensitivity>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.6</VacuumResistance>
+            <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Plasteel>55</Plasteel>
+            <Gold>8</Gold>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/SisterOfSilence/Helmet/SisterOfSilenceA/SisterOfSilenceA</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <drawData>
+                <scale>0.9</scale>
+                <dataSouth>
+                    <offset>(0,0,0.17)</offset>
+                </dataSouth>
+                <dataNorth>
+                    <offset>(0,0,0.17)</offset>
+                </dataNorth>
+                <dataEast>
+                    <offset>(0,0,0.17)</offset>
+                </dataEast>
+                <dataWest>
+                    <offset>(0,0,0.17)</offset>
+                </dataWest>
+            </drawData>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_SisterOfSilence</li>
+                <li>EVA</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>HiTechArmor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>3</colorMaskAmount>
+                <defaultPrimaryColor>(250,176,67)</defaultPrimaryColor>
+                <defaultSecondaryColor>(250,176,67)</defaultSecondaryColor>
+                <defaultTertiaryColor>(180,65,74)</defaultTertiaryColor>
+            </li>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+            <li MayRequire="kentington.saveourship2">
+                <compClass>SaveOurShip2.CompEVA</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

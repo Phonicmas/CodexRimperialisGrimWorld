@@ -1,0 +1,13 @@
+{
+  "TextureModID": "phonicmas.codexrimperialis",
+  "ItemDefName": "BEWH_CustodianMisericordia",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.6,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "HandsMode": 1,
+  "BladeStart": 0.356,
+  "BladeEnd": 1.3988,
+  "MeleeWeaponType": 48
+}

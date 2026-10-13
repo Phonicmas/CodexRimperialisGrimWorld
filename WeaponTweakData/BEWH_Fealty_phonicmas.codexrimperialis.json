@@ -1,0 +1,14 @@
+{
+  "TextureModID": "phonicmas.codexrimperialis",
+  "ItemDefName": "BEWH_Fealty",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.525,
+  "OffY": 0.0315,
+  "Rotation": 45.0,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "BladeStart": 0.222,
+  "BladeEnd": 1.4572,
+  "MeleeWeaponType": 6
+}

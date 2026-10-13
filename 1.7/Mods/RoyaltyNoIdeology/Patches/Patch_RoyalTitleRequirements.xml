@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/RoyalTitleDef[@ParentName="BaseEmpireTitle"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/RoyalTitleDef[@ParentName="BaseEmpireTitle"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"]/things</xpath>
+            <value>
+                <li>BEWH_ImperialNobleDoubleBed</li>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

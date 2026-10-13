@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defName>BEWH_InspiringPresence</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>inspiring presence</label>
+        <description>Your mythic aura makes the colonists around you fight better. For the glory of the Emperor!</description>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>5</range>
+                <mote>BEWH_InspiringPresenceMote</mote>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <canTargetSubhumans>false</canTargetSubhumans>
+                </targetingParameters>
+                <hediff>BEWH_InspiredByPresence</hediff>
+                <initialSeverity>1</initialSeverity>
+                <onlyPawnsInSameFaction>true</onlyPawnsInSameFaction>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>1</minSeverity>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef>
+        <defName>BEWH_InspiredByPresence</defName>
+        <label>inspiring effect</label>
+        <description>The presence of a powerful being makes you fight better. But you get tired much faster.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(85, 196, 109)</defaultLabelColor>
+        <initialSeverity>1</initialSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <MoveSpeed>1.14</MoveSpeed>
+                    <ShootingAccuracyPawn>1.3</ShootingAccuracyPawn>
+                    <RestFallRateFactor>1.2</RestFallRateFactor>
+                    <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef>
+        <defName>BEWH_WisdomOfMalcador</defName>
+        <label>Wisdom of Malcador</label>
+        <description>Armed with the wits of Malcador the Sigillite, this pawn can negotiate a more desirable deal in trade.</description>
+        <isBad>false</isBad>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>0.001</initialSeverity>
+        <stages>
+            <li>
+                <statFactors>
+                    <NegotiationAbility>1.5</NegotiationAbility>
+                    <TradePriceImprovement>1.5</TradePriceImprovement>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>BEWH_WillOfTheSigillite</abilityDef>
+            </li>
+        </comps>
+    </HediffDef>
+    <HediffDef>
+        <defName>BEWH_ImposedWill</defName>
+        <label>Imposed Will</label>
+        <description>This pawn's mind is being crushed by the will of the Sigillite.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>0.001</initialSeverity>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.5</postFactor>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>2500</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+    </HediffDef>
+    <HediffDef>
+        <defName>BEWH_EmperorHolyLight</defName>
+        <label>Holy Light</label>
+        <description>This pawn has been crowned Emperor. Their sheer radiance inspires others to fight with all their might.</description>
+        <isBad>false</isBad>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>0.001</initialSeverity>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties">
+                <texPath>Effects/GW_HRM_Emperor_LaurelsAura</texPath>
+                <parentTagDef>ApparelHead</parentTagDef>
+                <drawSize>1.2</drawSize>
+                <useGraphic>true</useGraphic>
+                <shaderTypeDef>MoteGlow</shaderTypeDef>
+                <baseLayer>100</baseLayer>
+                <pawnType>Any</pawnType>
+                <drawData>
+                    <defaultData>
+                        <layer>20</layer>
+                        <offset>(0, 0, 0)</offset>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                    <dataNorth>
+                        <layer>75</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+        <comps>
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>5</range>
+                <mote>BEWH_EmperorHolyLightMote</mote>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <canTargetSubhumans>false</canTargetSubhumans>
+                </targetingParameters>
+                <hediff>BEWH_InspiredByHolyLight</hediff>
+                <initialSeverity>1</initialSeverity>
+                <onlyPawnsInSameFaction>true</onlyPawnsInSameFaction>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <minSeverity>1</minSeverity>
+                <statOffsets>
+                    <InjuryHealingFactor>2.0</InjuryHealingFactor>
+                    <PsychicSensitivity>1</PsychicSensitivity>
+                    <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef>
+        <defName>BEWH_InspiredByHolyLight</defName>
+        <label>inspired by holy light</label>
+        <description>This pawn is inspired by holy light, driving them to greater feats in battle.</description>
+        <isBad>false</isBad>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <MoveSpeed>1.14</MoveSpeed>
+                </statFactors>
+                <statOffsets>
+                    <MeleeHitChance>1</MeleeHitChance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

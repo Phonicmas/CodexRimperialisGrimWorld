@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BEWH_ImperialCandle" or defName="BEWH_ImperialCandleBunch" or defName="BEWH_ImperialCandelabra" or defName="BEWH_ImperialSkullCandle" or defName="BEWH_ImperialCandleStand" or defName="BEWH_ImperialHearth" or defName="BEWH_ImperialRugSquare" or defName="BEWH_ImperialRugLarge" or defName="BEWH_ImperialRugRunner" or defName="BEWH_ImperialRugGrand"]</xpath>
+        <value>
+            <dominantStyleCategory>BEWH_Imperialis</dominantStyleCategory>
+            <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BEWH_ImperialNobleBed" or defName="BEWH_ImperialRoyalHearth" or defName="BEWH_ImperialRoyalRugSquare" or defName="BEWH_ImperialRoyalRugLarge" or defName="BEWH_ImperialRoyalRugRunner" or defName="BEWH_ImperialRoyalRugGrand"]</xpath>
+        <value>
+            <dominantStyleCategory>BEWH_ImperialNobility</dominantStyleCategory>
+            <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+        </value>
+    </Operation>
+
+</Patch>

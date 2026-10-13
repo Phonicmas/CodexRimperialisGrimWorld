@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BEWH_ImperialDoorBase">
+        <defName>BEWH_ImperialisDoor</defName>
+        <label>imperialis door</label>
+        <description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+        <graphicData>
+            <texPath>Things/Structures/Doors/ImperiumDoor/GW_Door_Imperialis_Mover</texPath>
+        </graphicData>
+        <uiIconPath>Things/Structures/Doors/ImperiumDoor/GW_Door_Imperialis_UI</uiIconPath>
+        <researchPrerequisites Inherit="False">
+            <li>BEWH_ImperialMasonry</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <ThingDef ParentName="BEWH_ImperialAutodoorBase">
+        <defName>BEWH_ImperialisAutodoor</defName>
+        <label>imperialis autodoor</label>
+        <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+        <graphicData>
+            <texPath>Things/Structures/Doors/ImperiumDoor/GW_Door_Imperialis_Mover</texPath>
+        </graphicData>
+        <uiIconPath>Things/Structures/Doors/ImperiumDoor/GW_Door_Imperialis_UI</uiIconPath>
+    </ThingDef>
+    <ThingDef ParentName="BEWH_ImperialDoorBase">
+        <defName>BEWH_MechanicusDoor</defName>
+        <label>mechanicus door</label>
+        <description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+        <graphicData>
+            <texPath>Things/Structures/Doors/MechanicusDoor/GW_Door_Mechanicus_Mover</texPath>
+        </graphicData>
+        <uiIconPath>Things/Structures/Doors/MechanicusDoor/GW_Door_Mechanicus_UI</uiIconPath>
+        <researchPrerequisites Inherit="False">
+            <li>BEWH_ImperialMasonry</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <ThingDef ParentName="BEWH_ImperialAutodoorBase">
+        <defName>BEWH_MechanicusAutodoor</defName>
+        <label>mechanicus autodoor</label>
+        <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+        <graphicData>
+            <texPath>Things/Structures/Doors/MechanicusDoor/GW_Door_Mechanicus_Mover</texPath>
+        </graphicData>
+        <uiIconPath>Things/Structures/Doors/MechanicusDoor/GW_Door_Mechanicus_UI</uiIconPath>
+    </ThingDef>
+</Defs>

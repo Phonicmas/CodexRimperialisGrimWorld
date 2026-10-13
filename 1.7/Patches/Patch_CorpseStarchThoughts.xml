@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PreceptDef[defName="Cannibalism_Classic"]/comps</xpath>
+        <value>
+            <li Class="PreceptComp_SelfTookMemoryThought">
+                <eventDef>BEWH_AteCorpseStarch</eventDef>
+                <thought>BEWH_AteCorpseStarch</thought>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraitDef[defName="Cannibal"]/degreeDatas/li/disallowedThoughtsFromIngestion</xpath>
+        <value>
+            <li>
+                <thing>BEWH_CorpseStarch</thing>
+                <thoughts>
+                    <li>BEWH_AteCorpseStarch</li>
+                    <li>BEWH_AteCorpseStarch_Abhorrent</li>
+                    <li>BEWH_AteCorpseStarch_Horrible</li>
+                    <li>BEWH_AteCorpseStarch_Disapproved</li>
+                </thoughts>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

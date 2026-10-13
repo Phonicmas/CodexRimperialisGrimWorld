@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_PraesidiumShield</defName>
+        <label>Praesidium shield</label>
+        <description>An ancient design of ballistic shield used by the Adeptus Custodes. Consisting of thick ceramite plated with auramite and backed by energy field generators, this shield can turn anyone into a solid bulwark against enemy attacks. \n\nThe design dates back to the Unification Wars, as does the Custodians themselves. They were the first gene-crafted warriors ever created by the God-Emperor of Mankind, followed soon by the Thunder Warriors, with whom He unified Terra.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Shields/Custodes/Praesidium/Praesidium</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_AuramiteForging</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>1500</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+            <WorkToMake>50000</WorkToMake>
+            <MarketValue>3500</MarketValue>
+            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <costList>
+            <Plasteel>120</Plasteel>
+            <Uranium>30</Uranium>
+            <Gold>15</Gold>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <thingSetMakerTags Inherit="False"/>
+        <smeltable>false</smeltable>
+        <tradeability>Sellable</tradeability>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <bodyPartGroups>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>BEWH_Shield</li>
+            </layers>
+            <tags>
+                <li>BEWH_CustodianArmor</li>
+            </tags>
+            <renderNodeProperties>
+                <li Class="Core40k.PawnRenderNodePropertiesMultiColor">
+                    <nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+                    <workerClass>Core40k.PawnRenderNodeWorker_Shield</workerClass>
+                    <texPath>Things/Shields/Custodes/Praesidium/Praesidium</texPath>
+                    <parentTagDef>Body</parentTagDef>
+                    <drawData>
+                        <defaultData>
+                            <layer>75</layer>
+                        </defaultData>
+                        <dataNorth>
+                            <layer>-5</layer>
+                            <offset>(0.0, 0, 0.1)</offset>
+                        </dataNorth>
+                        <dataSouth>
+                            <offset>(0.0, 0, -0.15)</offset>
+                        </dataSouth>
+                        <dataWest>
+                            <offset>(-0.25, 0, -0.15)</offset>
+                        </dataWest>
+                        <dataEast>
+                            <layer>75</layer>
+                            <offset>(0.25, 0, -0.15)</offset>
+                        </dataEast>
+                    </drawData>
+                </li>
+            </renderNodeProperties>
+        </apparel>
+        <comps>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>3</colorMaskAmount>
+                <defaultPrimaryColor>(199,160,82)</defaultPrimaryColor>
+                <defaultSecondaryColor>(149,38,34)</defaultSecondaryColor>
+                <defaultTertiaryColor>(199,160,82)</defaultTertiaryColor>
+            </li>
+            <li Class="Core40k.CompProperties_PhysicalShield">
+                <frontArcDegrees>120</frontArcDegrees>
+                <meleeBlockChance>0.6</meleeBlockChance>
+                <rangedBlockChance>0.45</rangedBlockChance>
+                <sideBlockFactor>0.4</sideBlockFactor>
+                <shieldArmorRating>0.7</shieldArmorRating>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_TextureFlags"/>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_ShieldCaptainShield</defName>
+        <label>Shield Captain shield</label>
+        <description>An ancient design of ballistic shield used by the Adeptus Custodes. Consisting of thick ceramite plated with auramite and backed by energy field generators, this shield can turn anyone into a solid bulwark against enemy attacks. \n\nThe design dates back to the Unification Wars, as does the Custodians themselves. They were the first gene-crafted warriors ever created by the God-Emperor of Mankind, followed soon by the Thunder Warriors, with whom He unified Terra.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Shields/Custodes/ShieldCaptain/ShieldCaptain</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_AuramiteForging</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>1500</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+            <WorkToMake>50000</WorkToMake>
+            <MarketValue>3800</MarketValue>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+            <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <costList>
+            <Plasteel>120</Plasteel>
+            <Uranium>30</Uranium>
+            <Gold>20</Gold>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <thingSetMakerTags Inherit="False"/>
+        <smeltable>false</smeltable>
+        <tradeability>Sellable</tradeability>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <bodyPartGroups>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>BEWH_Shield</li>
+            </layers>
+            <tags>
+                <li>BEWH_CustodianArmor</li>
+            </tags>
+            <renderNodeProperties>
+                <li Class="Core40k.PawnRenderNodePropertiesMultiColor">
+                    <nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+                    <workerClass>Core40k.PawnRenderNodeWorker_Shield</workerClass>
+                    <texPath>Things/Shields/Custodes/ShieldCaptain/ShieldCaptain</texPath>
+                    <parentTagDef>Body</parentTagDef>
+                    <drawData>
+                        <defaultData>
+                            <layer>75</layer>
+                        </defaultData>
+                        <dataNorth>
+                            <layer>-5</layer>
+                            <offset>(0.0, 0, 0.1)</offset>
+                        </dataNorth>
+                        <dataSouth>
+                            <offset>(0.0, 0, -0.15)</offset>
+                        </dataSouth>
+                        <dataWest>
+                            <offset>(-0.25, 0, -0.15)</offset>
+                        </dataWest>
+                        <dataEast>
+                            <layer>75</layer>
+                            <offset>(0.25, 0, -0.15)</offset>
+                        </dataEast>
+                    </drawData>
+                </li>
+            </renderNodeProperties>
+        </apparel>
+        <comps>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>3</colorMaskAmount>
+                <defaultPrimaryColor>(199,160,82)</defaultPrimaryColor>
+                <defaultSecondaryColor>(149,38,34)</defaultSecondaryColor>
+                <defaultTertiaryColor>(199,160,82)</defaultTertiaryColor>
+            </li>
+            <li Class="Core40k.CompProperties_PhysicalShield">
+                <frontArcDegrees>120</frontArcDegrees>
+                <meleeBlockChance>0.52</meleeBlockChance>
+                <rangedBlockChance>0.45</rangedBlockChance>
+                <sideBlockFactor>0.56</sideBlockFactor>
+                <shieldArmorRating>0.75</shieldArmorRating>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_TextureFlags"/>
+        </modExtensions>
+    </ThingDef>
+</Defs>

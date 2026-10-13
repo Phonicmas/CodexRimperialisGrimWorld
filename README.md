@@ -1,7 +1,7 @@
-Codex Rimperialis: GrimWorld 40,000 content brought into the RimDark 40k ecosystem. Furniture, walls and doors, the Custodian Set, the relics of Vulcan's Forge, and the regiments of the Astra Militarum - now including the Death Korps of Krieg - all built on the RimDark 40k Framework customization system.
+Codex Rimperialis: GrimWorld 40,000 content brought into the RimDark 40k ecosystem. Furniture, walls and doors, the Custodian Set, the relics of the Emperor and Co., and the regiments of the Astra Militarum, all built on the RimDark 40k Framework customization system.
 
 Credits and License
-This mod contains textures, sounds and content adapted from the following GrimWorld 40,000 mods, used under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license (CC BY-NC-SA 4.0). The original content has been modified: rebalanced and reworked to use the RimDark 40k Framework.
+This mod contains textures, sounds and content adapted from the following GrimWorld 40,000 mods, used under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license (CC BY-NC-SA 4.0). The original content has been modified: rebalanced and reworked to use the RimDark 40k Framework, and some things are not included at all.
 
 - GrimWorld 40,000 - Core Imperialis, by Clashgore, Odzmang, BlackMarket420, Tittymcswaggy, Alite, Abomination, Epsilon, Maxim, Shun The Witch, Samael, Con and atxmatt2510
   https://steamcommunity.com/sharedfiles/filedetails/?id=3018671708
@@ -24,3 +24,5 @@ This mod contains textures, sounds and content adapted from the following GrimWo
 
 License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 This mod is likewise released under CC BY-NC-SA 4.0. It is not affiliated with or endorsed by the GrimWorld 40,000 team.
+
+Mod preview is created by Generative AI.

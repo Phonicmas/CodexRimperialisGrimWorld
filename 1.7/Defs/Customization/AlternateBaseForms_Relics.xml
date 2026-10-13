@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_EmperorArmorPainted</defName>
+        <label>One True Armor (pre-painted)</label>
+        <description>A truly majestic suit of auramite Power Armor, patterned after the legendary suit worn by the God-Emperor of Mankind. Its protection is unrivalled, and it greatly amplifies the psychic potential of its wearer. \n\nThe Emperor has guided mankind from time immemorial, adopting various guises throughout history. It was only during the Age of Strife that He emerged in His full majesty, founded the Imperium of Mankind, and sallied forth across the galaxy to build His empire.</description>
+        <iconPath>Things/Armor/Relics/Body/Emperor/EmperorPainted/EmperorPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Body/Emperor/EmperorPainted/EmperorPainted</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_EmperorArmor</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_EmperorHelmetPainted</defName>
+        <label>Emperor's laurels (pre-painted)</label>
+        <description>A magnificent golden wreath like that worn by the Emperor of Mankind. Surely it is no ordinary wreath, for it is radiant with glory. \n\nCrippled by His final duel with Horus, the Emperor was ferried to the Imperial Palace and placed upon the Golden Throne. There he has sat for ten thousand years, shining a great Warp beacon - the Astronomican - so that ships travelling through the Warp may find their path through the Immaterium. \n\nThousands of psykers are sacrificed to Him every day, their strength consumed to prolong the dying Emperor's life.</description>
+        <iconPath>Things/Armor/Relics/Helmet/EmperorPainted/EmperorPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Helmet/EmperorPainted/EmperorPainted</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_EmperorHelmet</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_ValdorArmorPainted</defName>
+        <label>Corinthine warplate (pre-painted)</label>
+        <description>The Power Armor of Constantin Valdor, the first Captain-General of the Legio Custodes. This armor is the stuff of legend, turning the user into a stalwart, auramite juggernaut. \n\nValdor was the first Custodian successfully produced by the Emperor's gene-craft, and has always been held as the greatest of them all. At the dawn of the Horus Heresy, he had earned nearly two thousand names, and a full transcription of them was enough to fill an entire book.</description>
+        <iconPath>Things/Armor/Relics/Body/Valdor/ValdorPainted/ValdorPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Body/Valdor/ValdorPainted/ValdorPainted</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_ValdorArmor</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_ValdorHelmetPainted</defName>
+        <label>Corinthine helmet (pre-painted)</label>
+        <description>A masterfully-crafted helmet, built to match the Corinthine Warplate. \n\nSome time after the end of the Horus Heresy, Constantin Valdor slipped away from the Imperial Palace and disappeared into the night, never to be seen again. His last known words were "Only in Death".</description>
+        <iconPath>Things/Armor/Relics/Helmet/ValdorPainted/ValdorPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Helmet/ValdorPainted/ValdorPainted</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_ValdorHelmet</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_GuillimanArmorPainted</defName>
+        <label>Armor of Fate (pre-painted)</label>
+        <description>A carefully-crafted replica of the Armor of Fate, the Power Armor worn by the Imperial Regent Roboute Guilliman. It would be safe to consider this design to be the pinnacle of Power Armor technology - an opponent would need a large volume of anti-armor fire to even faze the wearer. \n\nThe original Armor of Fate was even further enhanced by the power of Ynnead, the nascent Eldar god of the dead. Combined with the advanced life-preserving technology built into the armor by the Adeptus Mechanicus, the Armor of Fate healed the grievously-wounded Primarch and restored him to full strength.</description>
+        <iconPath>Things/Armor/Relics/Body/Guilliman/GuillimanPainted/GuillimanPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Body/Guilliman/GuillimanPainted/GuillimanPainted</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_GuillimanArmor</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_GuillimanHelmetPainted</defName>
+        <label>Helm of Fate (pre-painted)</label>
+        <description>A helmet built for the Armor of Fate. While not commonly worn, as the Lord Commander of the Imperium generally wished to show his face to spur on his armies, it is just as protective as the armor itself is.</description>
+        <iconPath>Things/Armor/Relics/Helmet/GuillimanPainted/GuillimanPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Helmet/GuillimanPainted/GuillimanPainted</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_GuillimanHelmet</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_LionArmorPainted</defName>
+        <label>Lion's armor (pre-painted)</label>
+        <description>A replica of the mysterious armor worn by Lion El’Jonson upon his return in the 41st Millennium. It is able to turn away both blade and bullet, and its prodigious size inspires great fear in the enemys hearts. \n\nLion El’Jonson, also known simply as The Lion, is the Primarch of the Dark Angels, a chapter of Space Marines. The Dark Angels were originally a Space Marine Legion, founded on Terra during the Unification Wars - indeed, they were the 1st Legion.</description>
+        <iconPath>Things/Armor/Relics/Body/Lion/LionPainted/LionPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Body/Lion/LionPainted/LionPainted</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_LionArmor</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_LionHelmetPainted</defName>
+        <label>Lion's helmet (pre-painted)</label>
+        <description>A magnificent, winged helmet worn with the Lion’s armor. The great wings only add to the Primarch’s towering stature, inspiring awe and terror in enemy ranks.\n\nAfter a Horus Heresy-era civil war within the Dark Angels and the defeat of Luther, the Arch-Betrayer, the Lion was rendered comatose and Caliban destroyed. It was only ten thousand years later that the Lion awoke to a much-decayed Imperium, and set out trying to save it.</description>
+        <iconPath>Things/Armor/Relics/Helmet/LionPainted/LionPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Helmet/LionPainted/LionPainted</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_LionHelmet</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_LionHood</defName>
+        <label>Imperial Warden hood</label>
+        <description>A simple hood worn in place of the winged helmet, in the manner of the Lion during his wanderings through the realm of Mirror-Caliban.</description>
+        <iconPath>Things/Armor/Relics/Helmet/LionHood/LionHood</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Helmet/LionHood/LionHood</drawnTextureIconPath>
+        <sortOrder>2</sortOrder>
+        <colorAmount>3</colorAmount>
+        <appliesTo>
+            <li>BEWH_LionHelmet</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_LionHooded</defName>
+        <label>Imperial Warden hooded helmet</label>
+        <description>A modified helmet worn with a hood. A sort of compromise, this helmet strikes a balance between protection and the wearer’s wishes for a hood.</description>
+        <iconPath>Things/Armor/Relics/Helmet/LionHooded/LionHooded</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Helmet/LionHooded/LionHooded</drawnTextureIconPath>
+        <sortOrder>3</sortOrder>
+        <colorAmount>3</colorAmount>
+        <appliesTo>
+            <li>BEWH_LionHelmet</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_LionHoodPainted</defName>
+        <label>Lion's hood (pre-painted)</label>
+        <description>A simple hood worn in place of the winged helmet, in the manner of the Lion during his wanderings through the realm of Mirror-Caliban.</description>
+        <iconPath>Things/Armor/Relics/Helmet/LionHoodPainted/LionHoodPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Helmet/LionHoodPainted/LionHoodPainted</drawnTextureIconPath>
+        <sortOrder>4</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_LionHelmet</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_LionHoodedPainted</defName>
+        <label>Lion's hooded helmet (pre-painted)</label>
+        <description>A modified helmet worn with a hood. A sort of compromise, this helmet strikes a balance between protection and the wearer’s wishes for a hood.</description>
+        <iconPath>Things/Armor/Relics/Helmet/LionHoodedPainted/LionHoodedPainted</iconPath>
+        <drawnTextureIconPath>Things/Armor/Relics/Helmet/LionHoodedPainted/LionHoodedPainted</drawnTextureIconPath>
+        <sortOrder>5</sortOrder>
+        <colorAmount>1</colorAmount>
+        <newPrimaryColor>(255,255,255)</newPrimaryColor>
+        <newSecondaryColor>(255,255,255)</newSecondaryColor>
+        <newTertiaryColor>(255,255,255)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_LionHelmet</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_EmperorsShield</defName>
+        <label>Emperor's Shield</label>
+        <description>A master-crafted copy of the personal shield of the Emperor. Just as the true Lion came across the Emperor's Shield in Mirror-Caliban and used it to great effect in battle, so may its bearer use it to turn aside the enemy's attacks.</description>
+        <iconPath>Things/Shields/Relics/EmperorsShield/EmperorsShield</iconPath>
+        <drawnTextureIconPath>Things/Shields/Relics/EmperorsShield/EmperorsShield</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>3</colorAmount>
+        <newPrimaryColor>(199,160,82)</newPrimaryColor>
+        <newSecondaryColor>(149,38,34)</newSecondaryColor>
+        <newTertiaryColor>(85,194,206)</newTertiaryColor>
+        <appliesTo>
+            <li>BEWH_ImperialWardenShield</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+</Defs>

@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <techLevel>Spacer</techLevel>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <graphicData>
+            <shaderType>Cutout</shaderType>
+            <texPath>Things/Weapons/Custodes/Misericordia</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.0</drawSize>
+        </graphicData>
+        <defName>BEWH_CustodianMisericordia</defName>
+        <label>Misericordia</label>
+        <description>Also known as the “blade of mercy”, the Misericordia is a long dagger/short sword carried by the Adeptus Custodes. A piece of archeotechnology from the Age of Strife, it uses no disruptive power field, but instead the blade itself is imbued with “micromolecular dissonator spirits”, allowing it to punch through thick armor. \n\nDuring the Age of Strife, it was infamous as a symbol of the tyranny of the techno-barbarian warlords. When Terra was unified by the Emperor, the Misericordia became a symbol of the Emperors judgement instead - which, depending on your viewpoint, may be the same thing.</description>
+        <uiIconScale>0.5</uiIconScale>
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <Mass>1</Mass>
+            <MarketValue>2200</MarketValue>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeHitChance>1</MeleeHitChance>
+        </equippedStatOffsets>
+        <equippedAngleOffset>-30</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>1.6</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>1.2</cooldownTime>
+                <armorPenetration>0.9</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.3</cooldownTime>
+                <armorPenetration>0.9</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <costList>
+            <Plasteel>60</Plasteel>
+            <Gold>10</Gold>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <techLevel>Spacer</techLevel>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <graphicData>
+            <shaderType>Cutout</shaderType>
+            <texPath>Things/Weapons/Custodes/SentinelBlade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.8</drawSize>
+        </graphicData>
+        <defName>BEWH_CustodianSentinelBlade</defName>
+        <label>Sentinel blade</label>
+        <description>A special type of power sword, used only by the Adeptus Custodes. Not only is the broadsword's blade strong enough to cut through a Terminators armor. \n\nDespite their size, Sentinel Blades are wielded one-handed, an ability granted by the exceptional strength of Custodians. They are often wielded with Storm Shields, providing a good balance of offence and defence.</description>
+        <uiIconScale>0.5</uiIconScale>
+        <statBases>
+            <WorkToMake>48000</WorkToMake>
+            <Mass>2.5</Mass>
+            <MarketValue>4200</MarketValue>
+        </statBases>
+        <equippedAngleOffset>-40</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.6</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>26</power>
+                <cooldownTime>1.9</cooldownTime>
+                <armorPenetration>1.2</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>2.1</cooldownTime>
+                <armorPenetration>1.3</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <costList>
+            <Plasteel>90</Plasteel>
+            <Gold>20</Gold>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <techLevel>Spacer</techLevel>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <graphicData>
+            <shaderType>Cutout</shaderType>
+            <texPath>Things/Weapons/Custodes/Vexilla</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.0</drawSize>
+        </graphicData>
+        <defName>BEWH_CustodianVexilla</defName>
+        <label>Magisterium Vexilla</label>
+        <description>A battle-standard held by the Adeptus Custodes, properly called a “Magisterium Vexilla”. As well as serving as a solid melee weapon to crush an enemy’s skull, it also seems to inspire nearby allies to fight harder than normal, increasing their speed and accuracy. Whether that effect is through pure inspiration and belief or the presence of mysterious technology is unknown. \n\nSome secrets are kept even from the Adeptus Mechanicus. Some of those were kept in the Tower Aquilane, the headquarters of the Adeptus Custodes.</description>
+        <uiIconScale>0.5</uiIconScale>
+        <statBases>
+            <WorkToMake>50000</WorkToMake>
+            <Mass>6</Mass>
+            <MarketValue>4500</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2.2</cooldownTime>
+                <armorPenetration>0.6</armorPenetration>
+            </li>
+        </tools>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.36)</drawOffset>
+                        <angleOffset>-123</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>-112</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.40, 0, 0.47)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>112</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <costList>
+            <Plasteel>80</Plasteel>
+            <Gold>40</Gold>
+            <Cloth>40</Cloth>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="CompProperties_EquippableAbility">
+                <abilityDef>BEWH_RaiseTheVexilla</abilityDef>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <techLevel>Spacer</techLevel>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <graphicData>
+            <shaderType>Cutout</shaderType>
+            <texPath>Things/Weapons/Custodes/Vaultsword</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.0</drawSize>
+        </graphicData>
+        <defName>BEWH_CustodianVaultsword</defName>
+        <label>Vaultsword</label>
+        <description>A special type of ancient powersword wielded only by Blade Champions of the Adeptus Custodes. Wielded in the Hurricanis style, the Vaultsword can output an incredible storm of deadly, armor-penetrating strikes. \n\nVaultswords are a piece of “archeotech”, not to be confused with the archotechs of the rimworlds. “Archeotech” is an Imperial term linked to “archeology”; it means once-lost technology that was recovered from ancient times, such as the Dark Age of Technology.</description>
+        <uiIconScale>0.5</uiIconScale>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+            <Mass>4</Mass>
+            <MarketValue>5000</MarketValue>
+        </statBases>
+        <equippedAngleOffset>-30</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.6</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>1.3</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>34</power>
+                <cooldownTime>2.3</cooldownTime>
+                <armorPenetration>1.4</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <costList>
+            <Plasteel>100</Plasteel>
+            <Gold>25</Gold>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <graphicData>
+            <texPath>Things/Weapons/Custodes/AdrathicDestructor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1.8</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <defName>BEWH_AdrathicDestructor</defName>
+        <label>Adrathic destructor</label>
+        <description>A twin-linked, pistol-sized adrathic weapon used by Aquilon Terminators of the Adeptus Custodes. Few targets can withstand even a single shot from an adrathic weapon, as their molecular bonds are instantly broken. \n\nStrictly speaking, the Adrasite Spear also uses an Adrathic Destructor as a secondary weapon. However, the spear version is only single-barrelled.</description>
+        <uiIconScale>0.5</uiIconScale>
+        <tradeability>Buyable</tradeability>
+        <statBases>
+            <WorkToMake>60000</WorkToMake>
+            <MarketValue>5200</MarketValue>
+            <Mass>4.5</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.45</AccuracyMedium>
+            <AccuracyLong>0.35</AccuracyLong>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_AdrathicDestructorBeam</defaultProjectile>
+                <warmupTime>1.5</warmupTime>
+                <range>27</range>
+                <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                <burstShotCount>2</burstShotCount>
+                <soundCast>BEWH_CustodianPulseGunSound</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>20</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <costList>
+            <Plasteel>120</Plasteel>
+            <Uranium>30</Uranium>
+            <Gold>20</Gold>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <graphicData>
+            <texPath>Things/Weapons/Custodes/AdrathicBoltCaliver</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1.6</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <defName>BEWH_BoltCaliver</defName>
+        <label>Bolt caliver</label>
+        <description>An ancient boltgun of the Adeptus Custodes, firing a deadly burst of high-explosive bolts rivalling the power of a heavy bolter.\n\nOnly the finest weapons are provided to the Golden Legion, for it is they who face some of the deadliest threats on a daily basis.</description>
+        <uiIconScale>0.5</uiIconScale>
+        <statBases>
+            <WorkToMake>50000</WorkToMake>
+            <Mass>5</Mass>
+            <MarketValue>4200</MarketValue>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_BoltCaliverBolt</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>35.9</range>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>BEWH_CustodianBoltGunSound</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>11</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <costList>
+            <Plasteel>110</Plasteel>
+            <Steel>40</Steel>
+            <Gold>15</Gold>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <graphicData>
+            <texPath>Things/Weapons/Custodes/Firepike</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1.7</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <defName>BEWH_IncendiumFirepike</defName>
+        <label>Incendium firepike</label>
+        <description>An incredibly powerful flamer that can unleash a surprisingly long-ranged wave of promethium. That which is not totally consumed by the fire is thrown into panic and disarray. \n\nRarely seen among even the Adeptus Custodes, Incendium Firepikes saw action in the Webway, the Eldar Warp travel network that was once joined by a portal of the Emperor’s own making. A secret of the utmost importance, the “Emperor’s Great Work” was subverted during the Horus Heresy, and the then-Legio Custodes fought a grueling battle against the daemonic hordes before the portal was finally closed. \n\nIt only remains closed through the Emperor’s power.</description>
+        <uiIconScale>0.5</uiIconScale>
+        <statBases>
+            <WorkToMake>45000</WorkToMake>
+            <MarketValue>3600</MarketValue>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.30</AccuracyMedium>
+            <AccuracyLong>0.10</AccuracyLong>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_FirepikeFlame</defaultProjectile>
+                <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+                <warmupTime>1.0</warmupTime>
+                <range>15.9</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>BEWH_CustodianPulseGunSound</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+        </tools>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <costList>
+            <Plasteel>90</Plasteel>
+            <Chemfuel>40</Chemfuel>
+            <Gold>15</Gold>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <graphicData>
+            <texPath>Things/Weapons/Custodes/KineticDestructor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1.8</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <defName>BEWH_KineticDestroyer</defName>
+        <label>Kinetic destroyer</label>
+        <description>An archeotech pistol used only by the Venatari jump-infantry of the Adeptus Custodes. Hailing from the Dark Age of Technology, the sheer power of each Kinetic Destroyer is akin to that of a plasma weapon, without the risks of overheating and other drawbacks.\n\nAlso known as Emperor's hunting eagles, the Venatari swoop from the sky and rain death upon their hapless foes.</description>
+        <uiIconScale>0.5</uiIconScale>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+            <MarketValue>4600</MarketValue>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.45</AccuracyMedium>
+            <AccuracyLong>0.35</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_KineticDestroyerShot</defaultProjectile>
+                <warmupTime>2.0</warmupTime>
+                <range>31.9</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>BEWH_CustodianBoltGunSound</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <costList>
+            <Plasteel>120</Plasteel>
+            <Uranium>20</Uranium>
+            <Gold>15</Gold>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponClasses Inherit="False">
+            <li>Melee</li>
+            <li>Ranged</li>
+        </weaponClasses>
+        <relicChance>0</relicChance>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+            <MarketValue>6500</MarketValue>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_GuardianSpearBolt</defaultProjectile>
+                <range>25.9</range>
+                <soundCast>BEWH_CustodianBoltGunSound</soundCast>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <warmupTime>1.2</warmupTime>
+            </li>
+        </verbs>
+        <defName>BEWH_GuardianSpear</defName>
+        <label>Guardian Spear</label>
+        <description>The traditional armament of the Adeptus Custodes, the Guardian Spear is a “combi-weapon” - a combination of two weapons in one. The golden spear's head is coated in a disruptive power field, allowing it to pierce through heavy armor, while the integrated Bolt Caster lays down heavy fire on more distant enemies. \n\nMany combi-weapons exist in the Imperium of Man. For example, the basic “Combi-bolter”, often seen in the Great Crusade and Horus Heresy eras, was simply two bolters attached side-to-side. Unlike the later Storm Bolters, they were only attached together later, not in the first place.</description>
+        <graphicData>
+            <shaderType>Cutout</shaderType>
+            <texPath>Things/Weapons/Custodes/SpearBolter</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.0</drawSize>
+        </graphicData>
+        <uiIconScale>0.4</uiIconScale>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.36)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>-122</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.40, 0, 0.47)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>122</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+            <li Class="Core40k.DefModExtension_HybridWeapon" />
+        </modExtensions>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>1.2</armorPenetration>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>1.1</armorPenetration>
+            </li>
+        </tools>
+        <costList>
+            <Plasteel>140</Plasteel>
+            <Uranium>20</Uranium>
+            <Gold>30</Gold>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponClasses Inherit="False">
+            <li>Melee</li>
+            <li>Ranged</li>
+        </weaponClasses>
+        <relicChance>0</relicChance>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+            <Mass>4</Mass>
+            <MarketValue>6500</MarketValue>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_AdrathicSpearBeam</defaultProjectile>
+                <range>16.9</range>
+                <forcedMissRadius>0.1</forcedMissRadius>
+                <soundCast>BEWH_CustodianPulseGunSound</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <warmupTime>1.8</warmupTime>
+            </li>
+        </verbs>
+        <defName>BEWH_AdrathicSpear</defName>
+        <label>Adrathic Spear</label>
+        <description>A variant on the traditional Guardian Spear, the Adrasite Spear combines the same power spear with an adrathic weapon - a gun that fires a disintegrating beam to destroy targets at the molecular level. \n\nAdrathic weapons are a relic of the Dark Age of Technology. When the Emperor unified Terra, long before the Imperium came to be, He had all Adrathic Weapons given to Him on pain of death. Such is their power that only the Adeptus Custodes have wielded them since, and neither the ancient Mechanicum or the Adeptus Mechanicus were granted access to their secrets.</description>
+        <graphicData>
+            <shaderType>Cutout</shaderType>
+            <texPath>Things/Weapons/Custodes/SpearAdrathic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.0</drawSize>
+        </graphicData>
+        <uiIconScale>0.4</uiIconScale>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.36)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>-122</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.40, 0, 0.47)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>122</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+            <li Class="Core40k.DefModExtension_HybridWeapon" />
+        </modExtensions>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>1.2</armorPenetration>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>1.1</armorPenetration>
+            </li>
+        </tools>
+        <costList>
+            <Plasteel>140</Plasteel>
+            <Uranium>20</Uranium>
+            <Gold>30</Gold>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponClasses Inherit="False">
+            <li>Melee</li>
+            <li>Ranged</li>
+        </weaponClasses>
+        <relicChance>0</relicChance>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.3</AccuracyMedium>
+            <AccuracyLong>0.1</AccuracyLong>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+            <MarketValue>6500</MarketValue>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_PyrithiteSpearBeam</defaultProjectile>
+                <warmupTime>1.8</warmupTime>
+                <range>16.9</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>BEWH_MeltaGunSound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <defName>BEWH_PyrithiteSpear</defName>
+        <label>Pyrithite Spear</label>
+        <description>A combi-weapon, consisting of a disruptive power field around the spear’s head and an integrated melta beam, which fires a blast of energy from a nuclear fusion reaction. The end result is a weapon well-suited to close combat, making a mockery of any armor the enemy possesses. \n\nA wise Space Marine once likened the Adeptus Custodes to lone wolves, compared to the Adeptus Astartes being a pack of war dogs. While the combat prowess of a Custodian far exceeds any single Space Marine, their only flaw is fighting as individuals rather than as a unit - in other words, a lack of real teamwork.</description>
+        <graphicData>
+            <shaderType>Cutout</shaderType>
+            <texPath>Things/Weapons/Custodes/SpearMelta</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.0</drawSize>
+        </graphicData>
+        <uiIconScale>0.4</uiIconScale>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.36)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>-122</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.40, 0, 0.47)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>122</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+            <li Class="Core40k.DefModExtension_HybridWeapon" />
+        </modExtensions>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>1.2</armorPenetration>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>1.1</armorPenetration>
+            </li>
+        </tools>
+        <costList>
+            <Plasteel>140</Plasteel>
+            <Uranium>20</Uranium>
+            <Gold>30</Gold>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponClasses Inherit="False">
+            <li>Melee</li>
+            <li>Ranged</li>
+        </weaponClasses>
+        <relicChance>0</relicChance>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+            <MarketValue>6500</MarketValue>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_CastellanAxeBolt</defaultProjectile>
+                <range>25.9</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <soundCast>BEWH_CustodianBoltGunSound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+                <warmupTime>1.3</warmupTime>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>36</power>
+                <cooldownTime>2.5</cooldownTime>
+                <armorPenetration>1.3</armorPenetration>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>32</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>1.2</armorPenetration>
+            </li>
+        </tools>
+        <defName>BEWH_CastellanAxe</defName>
+        <label>Castellan Axe</label>
+        <description>A large, two-handed axe used by the Adeptus Custodes. As well as cleaving through the enemy with the power field-enhanced blade, the Bolt Caster integrated into the weapon also makes short work of enemies out of reach.\n\nIt is heresy for the Adeptus Administratum to record the Custodians ever losing a battle. Officially, any warzone that the Custodians are deployed in is deemed an Imperial victory, even before they have arrived.</description>
+        <graphicData>
+            <shaderType>Cutout</shaderType>
+            <texPath>Things/Weapons/Custodes/CastellanAxe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.0</drawSize>
+        </graphicData>
+        <uiIconScale>0.4</uiIconScale>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.36)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>-122</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.40, 0, 0.47)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>122</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.36)</drawOffset>
+                        <angleOffset>-123</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>-112</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.40, 0, 0.47)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>112</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+            <li Class="Core40k.DefModExtension_HybridWeapon" />
+        </modExtensions>
+        <costList>
+            <Plasteel>140</Plasteel>
+            <Uranium>20</Uranium>
+            <Gold>30</Gold>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <weaponClasses Inherit="False">
+            <li>Melee</li>
+            <li>Ranged</li>
+        </weaponClasses>
+        <relicChance>0</relicChance>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+            <MarketValue>6500</MarketValue>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_CastellanAxeBolt</defaultProjectile>
+                <range>25.9</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <soundCast>BEWH_CustodianBoltGunSound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+                <warmupTime>1.3</warmupTime>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2.0</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>36</power>
+                <cooldownTime>2.5</cooldownTime>
+                <armorPenetration>1.3</armorPenetration>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>32</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>1.2</armorPenetration>
+            </li>
+        </tools>
+        <defName>BEWH_WatchersAxe</defName>
+        <label>Watcher's Axe</label>
+        <description>The Watcher's Axe is an ancient power axe, combined with a master-crafted boltgun named the “Eagle's Scream”. A unique version of the Castellan Axe, it crackles with golden lightning, and its swing is said to be so powerful that even a Chaos-empowered Dreadnought was once cleaved in twain with a single stroke. \n\nThe true Watcher’s Axe is wielded by Captain-General Trajann Valoris. This is a mere replica, but well-crafted enough that it holds great power of its own.</description>
+        <graphicData>
+            <shaderType>Cutout</shaderType>
+            <texPath>Things/Weapons/Custodes/WatchersAxe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.0</drawSize>
+        </graphicData>
+        <uiIconScale>0.4</uiIconScale>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>445</displayPriority>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_CustodianArms</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <weaponTags>
+            <li>BEWH_CustodianWeapon</li>
+        </weaponTags>
+        <stuffCategories IsNull="True" />
+        <thingSetMakerTags Inherit="False" />
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.36)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>-122</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.40, 0, 0.47)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>122</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.36)</drawOffset>
+                        <angleOffset>-123</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>-112</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.40, 0, 0.47)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>112</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+            <li Class="Core40k.DefModExtension_HybridWeapon" />
+        </modExtensions>
+        <costList>
+            <Plasteel>140</Plasteel>
+            <Uranium>20</Uranium>
+            <Gold>30</Gold>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+    </ThingDef>
+</Defs>

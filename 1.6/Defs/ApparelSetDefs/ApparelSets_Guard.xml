@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <Core40k.ApparelSetDef>
+        <defName>BEWH_ApparelSet_GuardFlamerKit</defName>
+        <label>promethium kit</label>
+        <description>A flamer fed directly from a promethium tank worn on the back.</description>
+        <pieces>
+            <li>BEWH_GuardFatigues</li>
+        </pieces>
+        <decorations>
+            <li>BEWH_GuardFlamerWebbing</li>
+        </decorations>
+        <weaponPieces>
+            <li>
+                <label>Cadian flamer</label>
+                <weapons>
+                    <li>BEWH_FlamerCadian</li>
+                </weapons>
+            </li>
+        </weaponPieces>
+        <tiers>
+            <li>
+                <requiredCount>3</requiredCount>
+                <label>promethium feed</label>
+                <requiresWeapon>true</requiresWeapon>
+                <statFactors>
+                    <RangedCooldownFactor>0.7</RangedCooldownFactor>
+                </statFactors>
+                <verbModifier>
+                    <additionalRange>2.2</additionalRange>
+                </verbModifier>
+            </li>
+        </tiers>
+    </Core40k.ApparelSetDef>
+
+    <Core40k.ApparelSetDef>
+        <defName>BEWH_ApparelSet_GuardHotShotKit</defName>
+        <label>hot-shot kit</label>
+        <description>A hellgun fed directly from a power pack worn on the back.</description>
+        <pieces>
+            <li>BEWH_GuardFatigues</li>
+        </pieces>
+        <decorations>
+            <li>BEWH_GuardPowerpackWebbing</li>
+        </decorations>
+        <weaponPieces>
+            <li>
+                <label>Cadian hellgun</label>
+                <weapons>
+                    <li>BEWH_HellgunCadian</li>
+                </weapons>
+            </li>
+        </weaponPieces>
+        <tiers>
+            <li>
+                <requiredCount>3</requiredCount>
+                <label>hot-shot power feed</label>
+                <requiresWeapon>true</requiresWeapon>
+                <verbModifier>
+                    <additionalBurstShotCount>2</additionalBurstShotCount>
+                </verbModifier>
+            </li>
+        </tiers>
+    </Core40k.ApparelSetDef>
+
+    <Core40k.ApparelSetDef>
+        <defName>BEWH_ApparelSet_KasrkinHotShotKit</defName>
+        <label>Kasrkin hot-shot kit</label>
+        <description>A hellgun fed directly from the Kasrkin's armoured power backpack.</description>
+        <pieces>
+            <li>BEWH_KasrkinUniform</li>
+        </pieces>
+        <decorations>
+            <li>BEWH_KasrkinPowerBackpack</li>
+        </decorations>
+        <weaponPieces>
+            <li>
+                <label>Cadian hellgun</label>
+                <weapons>
+                    <li>BEWH_HellgunCadian</li>
+                </weapons>
+            </li>
+        </weaponPieces>
+        <tiers>
+            <li>
+                <requiredCount>3</requiredCount>
+                <label>hot-shot power feed</label>
+                <requiresWeapon>true</requiresWeapon>
+                <verbModifier>
+                    <additionalBurstShotCount>2</additionalBurstShotCount>
+                </verbModifier>
+            </li>
+        </tiers>
+    </Core40k.ApparelSetDef>
+
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <DamageDef ParentName="Bullet">
+        <defName>BEWH_Lasbolt</defName>
+        <label>lasbolt</label>
+        <deathMessage>{0} has been shot to death by a lasbolt.</deathMessage>
+        <hediff>Burn</hediff>
+    </DamageDef>
+
+    <DamageDef>
+        <defName>BEWH_MilitarumPlasmaBurn</defName>
+        <label>plasma explosion</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} was incinerated by a mass of superheated plasma.</deathMessage>
+        <hediff>Burn</hediff>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <defaultDamage>26</defaultDamage>
+        <defaultStoppingPower>1.0</defaultStoppingPower>
+        <defaultArmorPenetration>0.42</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+        <plantDamageFactor>2</plantDamageFactor>
+        <explosionHeatEnergyPerCell>10</explosionHeatEnergyPerCell>
+        <explosionCellFleck>BlastDry</explosionCellFleck>
+        <armorCategory>Heat</armorCategory>
+        <minDamageToFragment>20</minDamageToFragment>
+        <makesAnimalsFlee>true</makesAnimalsFlee>
+        <explosionColorCenter>(0.4, 0.95, 1)</explosionColorCenter>
+        <explosionColorEdge>(0, 0.75, 1)</explosionColorEdge>
+        <soundExplosion>Explosion_Vaporize</soundExplosion>
+        <expolosionPropagationSpeed>0.25</expolosionPropagationSpeed>
+        <hasForcefulImpact>true</hasForcefulImpact>
+        <corpseDamageFactor>0.1</corpseDamageFactor>
+        <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+        <combatLogRules>Damage_Flame</combatLogRules>
+    </DamageDef>
+
+</Defs>

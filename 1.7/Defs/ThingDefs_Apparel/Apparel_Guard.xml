@@ -1,0 +1,2701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_CatachanFlak</defName>
+        <label>Catachan flak armor</label>
+        <description>A vest of Flak Armor, in Catachan fashion. The Jungle Fighters wear a lightweight version of Flak Armor, believing in speed and concealment over cumbersome protection. \n\nThe Catachan Jungle Fighters are notoriously free-spirited and insular, and only respect those who prove themselves worthy of it. This extends to officers and other leaders, with many Guardsmen choosing to follow the direction of veteran NCOs over inexperienced officers.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Decorations/Guard/Catachan/CatachanFlak/CatachanFlak</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_FlakPatterns</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>18</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <Cloth>40</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Decorations/Guard/Catachan/CatachanFlak/CatachanFlak</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Catachan</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_ElysianArmor</defName>
+        <label>Elysian flak armor</label>
+        <description>Flak armor designed for the Elysian Drop Troops. As well as protecting against lasbolts and solid projectiles just as well as standard armor, it can also protect better against blunt impacts, both from the ground and from enemy melee weapons. \n\nElysia is a Civilised World - pleasant in environmental conditions, but surrounded by wilderness space infested with Orks, pirates, and Ork pirates. As such, the Elysians are a strong people, producing excellent Guardsmen.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Elysian/Elysian</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <Insulation_Cold>8</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Steel>70</Steel>
+            <Cloth>20</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Elysian/Elysian</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Elysian</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_ElysianHeadgear</defName>
+        <label>Elysian helmet</label>
+        <description>An Elysian Drop Troops helmet. It holds up pretty well against a hard knock. \n\nNone have heard of an Elysian Guardsman who wasn’t a good shot. After all, they know that resupply can be days or weeks away, so to conserve their resources, all of their soldiers must be expert marksmen to be approved for combat duty.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Elysian/Default/Elysian</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.36</ArmorRating_Heat>
+        </statBases>
+        <costList>
+            <Steel>35</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Elysian/Default/Elysian</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Elysian</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_LuciferBlackArmor</defName>
+        <label>Lucifer Black armor</label>
+        <description>A suit of Flak Armor of the Lucifer Blacks, painted in intimidating, dark colors. \n\nAfter the Horus Heresy, the Lucifer Blacks have endured something of a mixed reputation over the millennia. Their numbers have suffered such indignities as being essentially rented out as mercenaries during the War of the Beast and even being dissolved entirely during The Beheading by the corrupt Grand Master of Assassins.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Lucifer/Default/LuciferBlack</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <Plasteel>20</Plasteel>
+            <Cloth>20</Cloth>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Lucifer/Default/LuciferBlack</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_LuciferBlack</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_LuciferBlackHeadgear</defName>
+        <label>Lucifer Black helmet</label>
+        <description>A black helmet, modelled after a human skull, worn by Guardsmen of the Lucifer Blacks. It is of sturdy build and can withstand considerable punishment. \n\nThe Lucifer Blacks date back even beyond the Great Crusade, being formed during the Unification Wars.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/LuciferBlack/Default/LuciferBlack</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+        </statBases>
+        <costList>
+            <Steel>35</Steel>
+            <Plasteel>10</Plasteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/LuciferBlack/Default/LuciferBlack</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_LuciferBlack</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_MordianUniform</defName>
+        <label>Mordian uniform</label>
+        <description>A dress uniform of the Mordian Iron Guard, with a golden eagle on the left breast (unfortunately, the Mordianites have been forced to get rid of their golden epaulets by their current circumstances). Unlike most regiments of the Astra Militarum, these uniforms are meant to be worn in battle as well. \n\nThe loss of the epaulets has been a significant blow to the morale of the Iron Guard. To an outsider, it would be a surprise for an aesthetic sacrifice to have such an effect on professional soldiers. However, to the Mordianites, the loss of a critical part of their uniform is a stain upon them - their regimental culture places great emphasis on the dignity of soldier and uniform alike.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Mordian/Mordian</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumFatigues</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.25</ArmorRating_Heat>
+            <Insulation_Cold>14</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.05</SocialImpact>
+        </equippedStatOffsets>
+        <costList>
+            <Cloth>70</Cloth>
+            <Steel>30</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Mordian/Mordian</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Mordian</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_MordianHeadgear</defName>
+        <label>Mordian hat</label>
+        <description>The standard peaked cap of the Mordian Iron Guard. This particular one bears an Imperialis on the front. \n\nIf one word is to describe the Mordian Iron Guard, it is “disciplined”. Whether on the parade ground or the battlefield, they serve with perfect precision. Many enemies have made the error of believing them to be merely ceremonial troops - a fatal error indeed.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Mordian/Mordian</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumFatigues</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.1</ArmorRating_Heat>
+        </statBases>
+        <costList>
+            <Cloth>25</Cloth>
+            <Steel>10</Steel>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Mordian/Mordian</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Mordian</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_SteelLegionUniform</defName>
+        <label>Steel Legion uniform</label>
+        <description>A uniform of the Armageddon Steel Legion, consisting of a greatcoat (traditionally in the color mustard yellow), boots, and gloves over fatigues. Very good at insulating the wearer against the cold, but it provides little protection against enemy attack. \n\nArmageddon is a battle-scarred world, with a history containing no less than three major wars and uncountable skirmishes against the Ork population and Chaos incursions. As such, the planet’s Guardsmen are weathered and experienced, able to put up a stiff resistance against any threat they face.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/SteelLegion/SteelLegion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_FlakPatterns</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <Insulation_Cold>18</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Cloth>60</Cloth>
+            <Steel>40</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/SteelLegion/SteelLegion</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_SteelLegion</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_SteelLegionHeadgear</defName>
+        <label>Steel Legion gas mask</label>
+        <description>A gas mask perfect for the Armageddon Steel Legion. Filters out exhaust fumes as well as toxic gas. \n\nThe ash wastes and hive cities of Armageddon are choked with industrial pollution, and the Steel Legion made the respirator a standard part of their uniform long ago.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/SteelLegion/SteelLegion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_FlakPatterns</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.25</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>30</Steel>
+            <Cloth>10</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/SteelLegion/SteelLegion</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+                <li>Eyes</li>
+                <li>Mouth</li>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+                <li>EyeCover</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_SteelLegion</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_TallarnGear</defName>
+        <label>Tallarn gear</label>
+        <description>A lightweight battle rig typically worn by soldiers of the Tallarn Desert Raiders. It combines a lightweight version of Flak Armor with a carrier rig for extra storage. \n\nThe soldiers of Tallarn are well-known in the Imperium for their hit-and-run tactics, delivering death by a thousand cuts. They particularly specialize in their use of Sentinel light combat walkers, using them to quickly strike and withdraw before the enemy could respond.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Tallarn/Tallarn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_FlakPatterns</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <Insulation_Cold>2</Insulation_Cold>
+            <Insulation_Heat>18</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Steel>55</Steel>
+            <Cloth>20</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Tallarn/Tallarn</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Tallarn</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_TallarnHeadgear</defName>
+        <label>Tallarn headwrap</label>
+        <description>A headwrap, or “shemagh”, worn by the Tallarn Desert Raiders. It provides no protection against enemy fire, but it is good to wear in hot weather, and the Desert Raiders prefer not to be shot in the first place. \n\nAfter the desolation of Tallarn, the planet could provide the Imperium nothing but manpower. The population lives both above and below ground, keeping in touch with the endless desert.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Tallarn/Tallarn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumFatigues</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <Insulation_Heat>8</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Cloth>30</Cloth>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Tallarn/Tallarn</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Tallarn</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative">
+                <decorativeType>Head</decorativeType>
+            </li>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>1</colorMaskAmount>
+                <defaultPrimaryColor>(196,170,128)</defaultPrimaryColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_TanithUniform</defName>
+        <label>Tanith uniform</label>
+        <description>Green fatigues combined with a carrier vest, typical fare of the Tanith First and Only. The Guardsmen of Tanith eschew armor for mobility and camouflage - their argument is that it is better to not be shot than to withstand it, and better not to be seen than to be shot at. \n\nThe Tanith First and Only is a well-accomplished regiment, with no less than three assassinations of Chaos Magisters under their collective belts.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Tanith/Tanith</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumFatigues</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.25</ArmorRating_Heat>
+            <Insulation_Cold>16</Insulation_Cold>
+            <Insulation_Heat>6</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Cloth>70</Cloth>
+            <Steel>20</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Tanith/Tanith</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Tanith</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_TanithHeadgear</defName>
+        <label>Tanith hood</label>
+        <description>A simple, green cloth hood of the Tanith First and Only. Vital for breaking up the silhouette of a marksman - to be detected at the wrong time is almost equal to death. \n\nTanith was a beautiful Forest World in the Sabbat Worlds, in the Segmentum Pacificus to the galactic west of Terra. \n\nEmphasis on “was”.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Tanith/Tanith</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumFatigues</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.1</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+        </statBases>
+        <costList>
+            <Cloth>25</Cloth>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Tanith/Tanith</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Tanith</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative">
+                <decorativeType>Head</decorativeType>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_TempestusScionArmor</defName>
+        <label>Tempestus Scion carapace</label>
+        <description>A full-body suit of Carapace Armor, a type of heavy armor that provides more protection than standard Flak Armor. Suits like this are typically worn only by elite soldiers, such as the Tempestus Scions. \n\nThe Tempestus Scions, or “Storm Troopers”, are the special forces of the Astra Militarum - the best army the Imperium can muster short of the Space Marines and Sisters of Battle. Typical missions involve deep striking and infiltration of enemy territory, surgically eliminating high-ranking officers and sabotaging equipment and infrastructure. \n\nEven the Chaos Space Marines are wary of them, as their Hellguns are powerful enough to pierce weaknesses in Power Armor.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/TempestusScion/TempestusScion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>30000</WorkToMake>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <Plasteel>40</Plasteel>
+            <Cloth>10</Cloth>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/TempestusScion/TempestusScion</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Hands</li>
+                <li>Feet</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_TempestusScion</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_TempestusScionHeadgear</defName>
+        <label>Tempestus Scion helmet</label>
+        <description>A Carapace Armor helmet worn by the Tempestus Scions. Just like the armor they wear, their helmets are more protective than their Guard equivalents. \n\nThe rivalry between the Tempestus Scions and the regular Astra Militarum is well-known, and continues even on this distant rimworld. The Guardsmen deride the Scions as “glory boys”, snapping up all of the best equipment and taking the glory for themselves as the regulars die in the mud. The Storm Troopers regard the regulars as lesser warriors - while most Guardsmen sign up at around 16 years of age, most of the Scions have trained from infancy under maximum pressure, and endure hardships to match.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/TempestusScion/Default/TempestusScion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+        </statBases>
+        <costList>
+            <Steel>30</Steel>
+            <Plasteel>15</Plasteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/TempestusScion/Default/TempestusScion</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_TempestusScion</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative">
+                <decorativeType>Head</decorativeType>
+            </li>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_ValhallanFlak</defName>
+        <label>Valhallan greatcoat and flak</label>
+        <description>A heavy greatcoat, worn by Imperial Guardsmen of Valhalla. The insulation it provides against the cold is truly remarkable, and allows the user to operate effectively even in the harshest winters. \n\nAs cold-environment specialists, the Valhallans are typically deployed to ice sheets and tundras of the rimworld. Compared to their home planet, the coldest regions of the rimworld are positively toasty.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Valhallan/Valhallan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_FlakPatterns</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <Insulation_Cold>45</Insulation_Cold>
+            <Insulation_Heat>-4</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Steel>55</Steel>
+            <Cloth>60</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Valhallan/Valhallan</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Valhallan</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_ValhallanHeadgear</defName>
+        <label>Valhallan ushanka</label>
+        <description>A furred hat with earflaps, best worn in cold weather. Valhallan Ice Warriors typically eschew metal helmets, which chill easily and can stick painfully to skin. \n\nSome Valhallan Guardsmen have made tentative, but friendly contact with tribes and outlanders living in the colder regions. Although the Guardsmen are intimidating with their uniforms and (relatively) high-tech weaponry, the overall feeling is that the ice and snow makes an equal of them all.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Valhallan/Default/Valhallan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumFatigues</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.1</ArmorRating_Heat>
+            <Insulation_Cold>15</Insulation_Cold>
+        </statBases>
+        <costList>
+            <Cloth>30</Cloth>
+            <Steel>5</Steel>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Valhallan/Default/Valhallan</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Valhallan</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_VostroyanUniform</defName>
+        <label>Vostroyan Firstborn uniform</label>
+        <description>An ornate uniform of the Vostroyan Firstborn. Like their weapons, Vostroyan uniforms are generally passed down from father to son - in essence, Vostroyan Guardsmen are almost entirely equipped with regimental relics. \n\nMuch trouble has been had with recruitment, as taking in outside blood is particularly anathema to the Firstborn.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Vostroyan/Vostroyan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_FlakPatterns</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <Insulation_Cold>24</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.05</SocialImpact>
+        </equippedStatOffsets>
+        <costList>
+            <Cloth>60</Cloth>
+            <Steel>50</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Vostroyan/Vostroyan</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Vostroyan</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_VostroyanHeadgear</defName>
+        <label>Vostroyan Firstborn headgear</label>
+        <description>A tall, bearskin (the style, not necessarily the actual material) hat worn by Guardsmen of the Vostroyan Firstborn. \n\nThe story goes that the planet of Vostroya failed to provide troops to the Imperium during the Horus Heresy, so the people of the planet have atoned ever since by sending their firstborn sons (and, recently, daughters) to the Imperial Guard without exception - hence the regiment’s name.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Vostroyan/Vostroyan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_FlakPatterns</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.62</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+        </statBases>
+        <costList>
+            <Steel>30</Steel>
+            <Cloth>15</Cloth>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Vostroyan/Vostroyan</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Vostroyan</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_GuardFatigues</defName>
+        <label>Imperial Guard fatigues</label>
+        <description>Simple fatigues worn by all members of the Cadian Guard. The simple, cheap materials provide modest insulation from the elements but offer little protection in the face of bullets, blades, or teeth.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Fatigues/Default/GuardFatigues</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumFatigues</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>5000</WorkToMake>
+            <ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.12</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Cloth>50</Cloth>
+        </costList>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Fatigues/Default/GuardFatigues</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_GuardFatigues</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>1</colorMaskAmount>
+                <defaultPrimaryColor>(96,108,72)</defaultPrimaryColor>
+                <baseTextureColourable>false</baseTextureColourable>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_CadianUniform</defName>
+        <label>Cadian flak armor</label>
+        <description>The iconic Cadian Flak Armor is a testament to both reliability and resilience. Crafted for the soldiers of Cadia, this battle-tested armor strikes a balance between durability and mobility. The distinctive design not only offers protection against small-arms fire, but also stands as a symbol of the regiment's unflinching resolve.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Cadian/Default/Cadian</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_FlakPatterns</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.78</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.42</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>55</Steel>
+            <Cloth>10</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Cadian/Default/Cadian</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Cadian</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_CadianHeadgear</defName>
+        <label>Cadian helmet</label>
+        <description>With its distinctive shape and signature Death's Head Aquila, the Cadian flak helmet has become an enduring symbol of service in Astra Militarum. These mass-produced helmets offer minor protection against impact and ballistics, but in a galaxy of psychic horror and brutal weaponry, a few layers of duraplast do little more than offer some fleeting sense of security.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Cadian/Default/Cadian</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_FlakPatterns</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+        </statBases>
+        <costList>
+            <Steel>30</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Cadian/Default/Cadian</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Cadian</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_KasrkinUniform</defName>
+        <label>Kasrkin carapace</label>
+        <description>Crafted from layers of Ceramite and Armaplas, Carapace armor is favored by officers and elite soldiers for its supreme protection and durability. This particular model is favored by the Kasrkin elites, prized for its ability to keep them fighting even in the face of withering gunfire.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Kasrkin/Kasrkin</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>30000</WorkToMake>
+            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <Insulation_Cold>8</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <Plasteel>40</Plasteel>
+            <Cloth>10</Cloth>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Kasrkin/Kasrkin</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Hands</li>
+                <li>Feet</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Kasrkin</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_KasrkinHeadgear</defName>
+        <label>Kasrkin helmet</label>
+        <description>Also made of Carapace armor, the Kasrkin helmet comes standard with a rebreather mask and an array of sensors, providing Cadia's elite warriors with every possible advantage.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Kasrkin/Kasrkin</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+        </statBases>
+        <costList>
+            <Steel>30</Steel>
+            <Plasteel>15</Plasteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Kasrkin/Kasrkin</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Kasrkin</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_CommissarUniform</defName>
+        <label>Commissar uniform</label>
+        <description>Trained in the offworld academy of the Schola Progenium, every Commisar is taught to command obedience by any means necessary. While some inspire awe through great deeds, most settle for commanding fear from the end of the bolter.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Commissar/Commissar</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_ImperialAdepta</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <Insulation_Cold>14</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <costList>
+            <Cloth>70</Cloth>
+            <Steel>20</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Commissar/Commissar</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Commissar</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_CommissarHeadgear</defName>
+        <label>Commissar cap</label>
+        <description>The black peaked cap of an Imperial Commissar. It is such a symbol of their status that Orks like to take them as battlefield trophies. \n\nIt is the Commissar's duty to keep the ranks free of heresy. Such insidious ideas as “democracy” and “freedom” must not take root in the Guard, lest disorder sweep through the ranks.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Commissar/Commissar</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_ImperialAdepta</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>0.5</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>2500</WorkToMake>
+            <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.05</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.05</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <costList>
+            <Cloth>25</Cloth>
+            <Steel>5</Steel>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Commissar/Commissar</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Commissar</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_PriestUniform</defName>
+        <label>Ministorum robes</label>
+        <description>The robes of a Ministorum Priest, intended to be worn in the field. Ornate, but more rugged than the lavish outfits of civilian Priests. \n\nFew know that the true roots of the Imperial Cult lies in the “Lectitio Divinitatus”, a book written by the traitor Primarch Lorgar of the Word Bearers. If such a fact was ever widely revealed, the Ecclesiarchy (and in turn the Imperium) would fall into chaos - quite literally.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/Priest/Priest</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_ImperialAdepta</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <Insulation_Cold>18</Insulation_Cold>
+            <Insulation_Heat>6</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <costList>
+            <Cloth>80</Cloth>
+            <Steel>15</Steel>
+        </costList>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/Priest/Priest</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Priest</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_PriestHeadgear</defName>
+        <label>priest hat</label>
+        <description>A hat, akin to that of a 2nd Millennium bishop, that shows the wearer is a Ministorum Priest - a religious leader attached to the Astra Militarum. \n\nThe various priests of the Adeptus Ministorum - more commonly known as the Ecclesiarchy - preach the Imperial Cult to the Guardsmen, worshiping the Emperor as a god. Their teachings strengthen resolve and ensure faith, keeping the Guard a motivated fighting force.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Priest/Default/Priest</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_ImperialAdepta</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.5</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>3000</WorkToMake>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.05</SocialImpact>
+            <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>30</costStuffCount>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Priest/Default/Priest</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Priest</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_SanctionedPsykerUniform</defName>
+        <label>Sanctioned Psyker uniform</label>
+        <description>The garb of a sanctioned psyker. Every day, psychically active children are whisked away on the ominous Black Ships where they undergo a hellish process designed to temper their powers. Those who emerge with their souls intact become Sanctioned Psykers, trained to wield their volatile powers in the name of the Imperium.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/SanctionedPsyker/SanctionedPsyker</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_ScholasticaPsykana</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <PsychicSensitivity>0.5</PsychicSensitivity>
+            <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">6</PsychicEntropyMax>
+            <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.1</PsychicEntropyRecoveryRate>
+        </equippedStatOffsets>
+        <costList>
+            <Cloth>40</Cloth>
+            <Steel>30</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/SanctionedPsyker/SanctionedPsyker</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_SanctionedPsyker</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_SanctionedPsykerHeadgear</defName>
+        <label>Sanctioned Psyker helmet</label>
+        <description>The standard Psykana hood is lined with psionically-reactive crystals designed to bleed off excessive warp energy while blocking out excess stimuli, granting the psyker a level of relative stability for their otherwise volatile powers. While this protects the psyker from threats to the soul, the delicate machinery does little to protect the flesh from errant bullets or sharpened blades.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/SanctionedPsyker/SanctionedPsyker</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_ScholasticaPsykana</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>6000</WorkToMake>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.34</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <PsychicSensitivity>0.1</PsychicSensitivity>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>30</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/SanctionedPsyker/SanctionedPsyker</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <drawData>
+                <dataNorth>
+                    <offset>(0,0,-0.1)</offset>
+                </dataNorth>
+                <dataSouth>
+                    <offset>(0,0,-0.1)</offset>
+                </dataSouth>
+                <dataEast>
+                    <offset>(0,0,-0.1)</offset>
+                </dataEast>
+                <dataWest>
+                    <offset>(0,0,-0.1)</offset>
+                </dataWest>
+            </drawData>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_SanctionedPsyker</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_KriegHeadgear</defName>
+        <label>Death Korps helmet</label>
+        <description>A helmet of the Death Korps of Krieg. It fits perfectly with their gas masks, providing a seal against enemy chemical and biological agents. \n\nThe Kriegsmen are always on the offensive - either grinding the enemy down in prolonged trench warfare, or storming enemy defenses with inhuman discipline.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/Krieg/Default/Krieg</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_DeathKorpsOfKrieg</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1.3</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1.5</EquipDelay>
+            <WorkToMake>7000</WorkToMake>
+            <ArmorRating_Sharp>0.62</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.28</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+            <Insulation_Cold>2</Insulation_Cold>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>35</Steel>
+            <Cloth>10</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/Krieg/Default/Krieg</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <immuneToToxGasExposure>true</immuneToToxGasExposure>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Krieg</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_KriegArmor</defName>
+        <label>Krieg armor</label>
+        <description>A vest of black flak armor worn by the Death Korps of Krieg. Heavier than the standard pattern, it lets a Kriegsman keep advancing through fire that would stop lesser regiments. \n\nThe Grenadiers are generally formed from the survivors of units that suffer massive battle casualties. While it is an honor to become one, the Grenadiers are sometimes said to be soldiers who have "lived too long" - they must now either earn a promotion to a commanding rank or die as martyrs in battle.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/KreigArmor/Default/KriegArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_DeathKorpsOfKrieg</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>4.5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>12000</WorkToMake>
+            <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.44</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.44</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.05</PainShockThreshold>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>50</Steel>
+            <Cloth>10</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/KreigArmor/Default/KriegArmor</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Krieg</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_KriegGear</defName>
+        <label>Krieg gear</label>
+        <description>The webbing of a Death Korps of Krieg Guardsman. It provides space to carry more equipment, such as lasgun power packs and grenades. \n\nA true Kriegsman bears his load without complaint. A grim and deadpan joke, perhaps, but never complaint. He is a soldier through and through, at home in a muddy trench.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/KreigWebbing/KriegWebbing</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_DeathKorpsOfKrieg</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>2</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>2</EquipDelay>
+            <WorkToMake>4000</WorkToMake>
+            <ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+        </statBases>
+        <equippedStatOffsets>
+            <CarryingCapacity>10</CarryingCapacity>
+            <PainShockThreshold>0.05</PainShockThreshold>
+        </equippedStatOffsets>
+        <costList>
+            <Cloth>30</Cloth>
+            <Steel>15</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/KreigWebbing/KriegWebbing</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_Krieg</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_KriegOfficerUniform</defName>
+        <label>Krieg officer uniform</label>
+        <description>The uniform of an officer of the Death Korps of Krieg. The blighted world of Krieg has no aristocracy, meaning officers are selected from the rank-and-file who have survived numerous campaigns. These battle-hardened veterans have been so thoroughly stripped of their humanity that they will often refer to themselves with numbers rather than names.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/KreigOfficer/Default/KriegOfficer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_DeathKorpsOfKrieg</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>3</EquipDelay>
+            <WorkToMake>14000</WorkToMake>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <Insulation_Cold>14</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <costList>
+            <Cloth>70</Cloth>
+            <Steel>20</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/KreigOfficer/Default/KriegOfficer</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_KriegOfficer</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_KriegOfficerHeadgear</defName>
+        <label>Krieg officer helmet</label>
+        <description>The helmet of a Death Korps officer, sealed with a gas mask. The aquila, made from polished bronze, sits proudly on the officer's head not as a symbol of prestige, but as a grim reminder that the God-Emperor is always looking down upon them.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Helmet/KriegOfficer/Default/KriegOfficer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_DeathKorpsOfKrieg</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1.4</Mass>
+            <Flammability>0.5</Flammability>
+            <EquipDelay>1.5</EquipDelay>
+            <WorkToMake>8000</WorkToMake>
+            <ArmorRating_Sharp>0.62</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.36</ArmorRating_Heat>
+            <Insulation_Cold>2</Insulation_Cold>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+            <SocialImpact>0.05</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>40</Steel>
+            <Cloth>10</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>Headgear</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Helmet/KriegOfficer/Default/KriegOfficer</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <immuneToToxGasExposure>true</immuneToToxGasExposure>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_KriegOfficer</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_AlternateTexture" />
+        </comps>
+    </ThingDef>
+
+</Defs>

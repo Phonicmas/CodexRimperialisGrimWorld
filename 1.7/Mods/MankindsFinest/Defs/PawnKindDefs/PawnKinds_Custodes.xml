@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef ParentName="BEWH_ImperiumSuperSoldierPawnBase" Name="BEWH_ImperiumCustodesPawnBase" Abstract="True">
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>17~19</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>17~19</range>
+            </li>
+        </skills>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_Custodes>1</BEWH_Custodes>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="BEWH_ImperiumCustodesPawnBase">
+        <defName>BEWH_CustodesSentinelPawn</defName>
+        <label>Custodian Sentinel</label>
+        <combatPower>780</combatPower>
+        <weaponTags Inherit="False">
+            <li>BEWH_CustodesBlade</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>BEWH_CustodianArmor</li>
+            <li>BEWH_CustodianHelmet</li>
+            <li>BEWH_PraesidiumShield</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="BEWH_ImperiumCustodesPawnBase">
+        <defName>BEWH_CustodesSagittarumPawn</defName>
+        <label>Sagittarum Custodian</label>
+        <combatPower>750</combatPower>
+        <weaponTags Inherit="False">
+            <li>BEWH_CustodesRanged</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>BEWH_CustodianArmor</li>
+            <li>BEWH_CustodianHelmet</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="BEWH_ImperiumCustodesPawnBase">
+        <defName>BEWH_CustodesShieldCaptainPawn</defName>
+        <label>Shield-Captain</label>
+        <combatPower>950</combatPower>
+        <weaponTags Inherit="False">
+            <li>BEWH_CustodesCommand</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>BEWH_CustodianArmor</li>
+            <li>BEWH_CustodianHelmet</li>
+            <li>BEWH_ShieldCaptainShield</li>
+        </apparelRequired>
+        <skills Inherit="False">
+            <li>
+                <skill>Shooting</skill>
+                <range>18~20</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>18~20</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="BEWH_ImperiumCustodesPawnBase">
+        <defName>BEWH_CustodesAllarusPawn</defName>
+        <label>Allarus Terminator</label>
+        <combatPower>1000</combatPower>
+        <weaponTags Inherit="False">
+            <li>BEWH_CustodesAxe</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>BEWH_AllarusArmor</li>
+            <li>BEWH_AllarusHelmet</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_SisterOfSilenceHelmetB</defName>
+        <label>Sister of Silence helmet (b)</label>
+        <description>The helmet of a Silent Sister. Traditionally, the mouth of a Sister is always covered, representing their vow of silence. \n\nSisters of Silence primarily communicate in their own sign language, known as "Thoughtmark". Very few outside of the Sisters of Silence and the Adeptus Custodes can understand it - Sisters of a particularly sarcastic bent amuse themselves by signing to Space Marines and Imperial Guardsmen whom they know full well do not understand them.</description>
+        <iconPath>Things/Armor/SisterOfSilence/Helmet/SisterOfSilenceB/SisterOfSilenceB</iconPath>
+        <drawnTextureIconPath>Things/Armor/SisterOfSilence/Helmet/SisterOfSilenceB/SisterOfSilenceB</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>3</colorAmount>
+        <appliesTo>
+            <li>BEWH_SisterOfSilenceHelmet</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+</Defs>

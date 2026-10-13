@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>BEWH_ImperialMasonry</defName>
+        <label>Imperial masonry</label>
+        <description>Learn the basic forms of Imperial stonework. Unlocks Imperial walls along with Imperialis and Mechanicus doors.</description>
+        <techLevel>Medieval</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>300</baseCost>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_ImperialFurnishings</defName>
+        <label>Imperial furnishings</label>
+        <description>Furnish a colony in the austere manner of an Imperial world. Unlocks common Imperial beds, prisoner beds, tables, chairs, candles and rugs.</description>
+        <techLevel>Medieval</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>500</baseCost>
+        <prerequisites>
+            <li>BEWH_ImperialMasonry</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_ImperialIconography</defName>
+        <label>Imperial iconography</label>
+        <description>Learn to sculpt the saints, soldiers and heroes of the Imperium. Unlocks statues of Sisters of Battle, Guardsmen, priests, officers, Celestians and Space Marines.</description>
+        <techLevel>Medieval</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>600</baseCost>
+        <prerequisites>
+            <li>BEWH_ImperialMasonry</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_GildedHalls</defName>
+        <label>Gilded halls</label>
+        <description>Decorate halls fit for the Imperial nobility. Unlocks noble beds, royal tables and chairs, hearths, royal rugs and the Imperial psythrone.</description>
+        <techLevel>Industrial</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>1200</baseCost>
+        <prerequisites>
+            <li>BEWH_ImperialFurnishings</li>
+            <li>ComplexFurniture</li>
+            <li>CarpetMaking</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_FortressArchitecture</defName>
+        <label>Fortress architecture</label>
+        <description>Learn to raise the fortified structures of the Imperium. Unlocks reinforced walls, blast doors, heavy gates, Imperialis and Mechanicus autodoors and wall lamps.</description>
+        <techLevel>Industrial</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>BEWH_ImperialMasonry</li>
+            <li>Autodoors</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_MilitarumArmoury</defName>
+        <label>Militarum armoury</label>
+        <description>Study the standard-issue patterns of the Astra Militarum. Unlocks the Militarum workbench along with lasguns, laspistols, autoguns, shotguns, combat knives and chainswords.</description>
+        <techLevel>Industrial</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>1200</baseCost>
+        <prerequisites>
+            <li>Gunsmithing</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_LasRefinement</defName>
+        <label>Las-weapon refinement</label>
+        <description>Refine the humble lasgun into marksman and hot-shot patterns. Unlocks the long-las and hellguns.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>BEWH_MilitarumArmoury</li>
+            <li>PrecisionRifling</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_MilitarumPlasma</defName>
+        <label>Militarum plasma</label>
+        <description>Learn to assemble the temperamental plasma weapons of the Astra Militarum. Unlocks plasma pistols and plasma guns.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>3500</baseCost>
+        <prerequisites>
+            <li>BEWH_LasRefinement</li>
+            <li>MultiAnalyzer</li>
+        </prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_PromethiumAndMelta</defName>
+        <label>Promethium and melta</label>
+        <description>Learn to build the Guard's close-range special weapons. Unlocks flamers and meltaguns.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>2500</baseCost>
+        <prerequisites>
+            <li>BEWH_MilitarumArmoury</li>
+            <li>Fabrication</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_MilitarumPowerWeapons</defName>
+        <label>Militarum power weapons</label>
+        <description>Learn to forge disruption-field weapons for the officers of the Astra Militarum. Unlocks power swords and power fists.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>3000</baseCost>
+        <prerequisites>
+            <li>BEWH_MilitarumArmoury</li>
+            <li>Fabrication</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_MilitarumTempestus</defName>
+        <label>Tempestus and drop troops</label>
+        <description>Equip the elite storm troopers and airborne regiments of the Imperium. Unlocks Tempestus Scion, Kasrkin, Lucifer Black and Elysian armor and helmets.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>3000</baseCost>
+        <prerequisites>
+            <li>BEWH_LasRefinement</li>
+            <li>BEWH_FlakPatterns</li>
+            <li>ReconArmor</li>
+        </prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_MilitarumFatigues</defName>
+        <label>Militarum fatigues</label>
+        <description>Learn to tailor the uniforms of the Astra Militarum. Unlocks Guard fatigues, Mordian and Tanith uniforms, Tallarn headwraps and Valhallan ushankas.</description>
+        <techLevel>Industrial</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>600</baseCost>
+        <prerequisites>
+            <li>ComplexClothing</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_FlakPatterns</defName>
+        <label>Regimental flak patterns</label>
+        <description>Study the flak armor patterns of the great regiments. Unlocks Cadian, Catachan, Valhallan, Steel Legion, Tallarn and Vostroyan armor.</description>
+        <techLevel>Industrial</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>BEWH_MilitarumFatigues</li>
+            <li>FlakArmor</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_DeathKorpsOfKrieg</defName>
+        <label>Death Korps of Krieg</label>
+        <description>Adopt the siege doctrine of the Death Korps of Krieg. Unlocks Krieg armor, gear and helmets, the Krieg officer uniform, entrenching tools and the Krieg grenade launcher.</description>
+        <techLevel>Industrial</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>1200</baseCost>
+        <prerequisites>
+            <li>BEWH_FlakPatterns</li>
+            <li>Mortars</li>
+        </prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_ImperialAdepta</defName>
+        <label>Imperial adepta</label>
+        <description>Learn to tailor the vestments of the Officio Prefectus and the Ecclesiarchy. Unlocks Commissar uniforms and caps, Ministorum robes and priest hats.</description>
+        <techLevel>Industrial</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>800</baseCost>
+        <prerequisites>
+            <li>BEWH_MilitarumFatigues</li>
+        </prerequisites>
+        <researchViewX>5</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_ScholasticaPsykana</defName>
+        <label>Scholastica Psykana</label>
+        <description>Equip the sanctioned psykers of the Scholastica Psykana. Unlocks the Sanctioned Psyker uniform and helmet and the Equinox force staff.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>BEWH_ImperialAdepta</li>
+        </prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_MechanicusApparatus</defName>
+        <label>Mechanicus apparatus</label>
+        <description>Learn the rites needed to build the sacred machines of the Adeptus Mechanicus. Unlocks cogitators and medicae beds.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>MultiAnalyzer</li>
+            <li>HospitalBed</li>
+        </prerequisites>
+        <researchViewX>8</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_RitesOfMaintenance</defName>
+        <label>Rites of maintenance</label>
+        <description>Learn the rituals of maintenance and repair that have served the Adeptus Mechanicus for millennia. Unlocks the repair station.</description>
+        <techLevel>Industrial</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>1000</baseCost>
+        <prerequisites>
+            <li>Machining</li>
+        </prerequisites>
+        <researchViewX>8</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_AuramiteForging</defName>
+        <label>Auramite forging</label>
+        <description>Learn to work auramite into the armor of the Adeptus Custodes. Unlocks Custodian and Allarus Terminator armor and helmets, and Praesidium and Shield Captain shields.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>BEWH_MechanicusApparatus</li>
+            <li>PoweredArmor</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_CustodesCreation</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>BEWH_Cogitator</li>
+        </requiredResearchFacilities>
+        <researchViewX>9</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_SilentSisterhood</defName>
+        <label>Silent Sisterhood</label>
+        <description>Equip the null-maidens of the Silent Sisterhood. Unlocks Sister of Silence armor and helmets, Executioner greatblades and Vratine bolters.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>4000</baseCost>
+        <prerequisites>
+            <li>BEWH_MechanicusApparatus</li>
+            <li>PoweredArmor</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>BEWH_Cogitator</li>
+        </requiredResearchFacilities>
+        <researchViewX>9</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_CustodianArms</defName>
+        <label>Custodian arms</label>
+        <description>Learn to forge the weapons of the Adeptus Custodes. Unlocks Guardian Spears, Castellan and Watcher's Axes, Pyrithite and Adrathic Spears, Sentinel blades, Misericordias, Vaultswords, Magisterium Vexillas, Adrathic destructors, Kinetic destroyers, Incendium firepikes and Bolt calivers.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>7500</baseCost>
+        <prerequisites>
+            <li>BEWH_AuramiteForging</li>
+            <li>ChargedShot</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_AstartesWeapons</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>BEWH_Cogitator</li>
+        </requiredResearchFacilities>
+        <researchViewX>10</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_ForgeOfVulcan</defName>
+        <label>Forge of Vulcan</label>
+        <description>Rediscover the techniques of the Primarch Vulcan, master of the forge. Unlocks Vulcan's Forge and statues of Roboute Guilliman, Lion El'Jonson and Constantin Valdor.</description>
+        <techLevel>Ultra</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>8000</baseCost>
+        <prerequisites>
+            <li>BEWH_AuramiteForging</li>
+            <li>AdvancedFabrication</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_PrimarchProject</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>BEWH_Cogitator</li>
+        </requiredResearchFacilities>
+        <researchViewX>10</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_RelicsOfTheGreatCrusade</defName>
+        <label>Relics of the Great Crusade</label>
+        <description>Recreate the panoplies of the Great Crusade's greatest champions. Unlocks the Corinthine warplate and Apollonian Spear, the Imperial Warden armor and Fealty, and the Armor and Helm of Fate.</description>
+        <techLevel>Ultra</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>14000</baseCost>
+        <prerequisites>
+            <li>BEWH_ForgeOfVulcan</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>BEWH_Cogitator</li>
+        </requiredResearchFacilities>
+        <researchViewX>11</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_RegaliaOfMalcador</defName>
+        <label>Regalia of the Sigillite</label>
+        <description>Recreate the regalia of Malcador the Sigillite. Unlocks the robes, hood and staff of Malcador.</description>
+        <techLevel>Archotech</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>12000</baseCost>
+        <prerequisites>
+            <li>BEWH_ForgeOfVulcan</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>BEWH_Cogitator</li>
+        </requiredResearchFacilities>
+        <researchViewX>11</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_RegaliaOfTheEmperor</defName>
+        <label>Regalia of the Master of Mankind</label>
+        <description>Recreate the panoply of the Emperor of Mankind himself. Unlocks the One True Armor, the Emperor's laurels, the Emperor's Lightning Claw, the Emperor's sword and the Imperial Warden shield.</description>
+        <techLevel>Archotech</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>18000</baseCost>
+        <prerequisites>
+            <li>BEWH_RelicsOfTheGreatCrusade</li>
+            <li>BEWH_RegaliaOfMalcador</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>BEWH_Cogitator</li>
+        </requiredResearchFacilities>
+        <researchViewX>12</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <Core40k.ExtraDecorationDef>
+        <defName>BEWH_SisterOfSilenceShoulder</defName>
+        <label>Sister of Silence pauldrons</label>
+        <description>Pauldrons of Auramite plate, worked in the manner of the Sister of Silence.</description>
+        <iconPath>Things/Armor/SisterOfSilence/Shoulder/SisterOfSilence/SisterOfSilence_icon</iconPath>
+        <drawnTextureIconPath>Things/Armor/SisterOfSilence/Shoulder/SisterOfSilence/SisterOfSilence</drawnTextureIconPath>
+        <sortOrder>5</sortOrder>
+        <appliesTo>
+            <li>BEWH_SisterOfSilenceArmor</li>
+        </appliesTo>
+        <appliesToBodyTypes>
+            <li>Male</li>
+        </appliesToBodyTypes>
+        <drawSize>(1.1,1.1)</drawSize>
+        <drawData>
+            <dataNorth>
+                <layer>75</layer>
+            </dataNorth>
+            <dataSouth>
+                <layer>-27</layer>
+            </dataSouth>
+            <dataEast>
+                <layer>75</layer>
+            </dataEast>
+            <dataWest>
+                <layer>75</layer>
+            </dataWest>
+        </drawData>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colourable>true</colourable>
+        <colorAmount>3</colorAmount>
+        <useParentColourAsDefault>true</useParentColourAsDefault>
+        <hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+        <decorationType>BEWH_DecoCategory_Shoulder</decorationType>
+    </Core40k.ExtraDecorationDef>
+
+</Defs>

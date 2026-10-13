@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>BEWH_Cogitator</defName>
+        <label>cogitator</label>
+        <description>A research-grade Imperial cogitator. Where lesser machines rely on crude logic engines, this one uses a living human brain, preserved in nutrient fluid and wired into its circuitry, as its processing core. The Imperium's prohibition on Abominable Intelligence makes such grim measures a necessity.\n\nIncreases research speed when placed near a hi-tech research bench, and is required for certain advanced research projects. Each research bench can only use one cogitator.</description>
+        <graphicData>
+            <texPath>Things/Buildings/Cogitator/BEWH_Cogitator</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.35,3.35)</drawSize>
+            <drawOffset>(0,0,0.15)</drawOffset>
+        </graphicData>
+        <uiIconScale>0.85</uiIconScale>
+        <size>(3,3)</size>
+        <rotatable>true</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>BEWH_RimDarkCategory</designationCategory>
+        <designationHotKey>Misc4</designationHotKey>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <researchPrerequisites Inherit="False">
+            <li>BEWH_MechanicusApparatus</li>
+        </researchPrerequisites>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>15000</WorkToBuild>
+            <Mass>80</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <Steel>150</Steel>
+            <Plasteel>120</Plasteel>
+            <Gold>60</Gold>
+            <ComponentIndustrial>12</ComponentIndustrial>
+            <Corpse_Human>1</Corpse_Human>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+            <leavingsBlacklist>
+                <li>Corpse_Human</li>
+            </leavingsBlacklist>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>500</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <ResearchSpeedFactor>0.15</ResearchSpeedFactor>
+                </statOffsets>
+                <maxSimultaneous>1</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    </ThingDef>
+
+</Defs>

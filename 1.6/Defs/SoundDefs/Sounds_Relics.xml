@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SoundDef>
+        <defName>BEWH_PsychicFlameSound</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>10</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipPath>Weapons/Flamer</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>50~50</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+    <SoundDef>
+        <defName>BEWH_Heavy_Bolt_Gun_Sound</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>10</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Weapons/Boltgun</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>40~40</volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>
