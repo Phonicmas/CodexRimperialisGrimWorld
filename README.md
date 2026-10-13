@@ -1,0 +1,26 @@
+Codex Rimperialis: GrimWorld 40,000 content brought into the RimDark 40k ecosystem. Furniture, walls and doors, the Custodian Set, the relics of Vulcan's Forge, and the regiments of the Astra Militarum - now including the Death Korps of Krieg - all built on the RimDark 40k Framework customization system.
+
+Credits and License
+This mod contains textures, sounds and content adapted from the following GrimWorld 40,000 mods, used under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license (CC BY-NC-SA 4.0). The original content has been modified: rebalanced and reworked to use the RimDark 40k Framework.
+
+- GrimWorld 40,000 - Core Imperialis, by Clashgore, Odzmang, BlackMarket420, Tittymcswaggy, Alite, Abomination, Epsilon, Maxim, Shun The Witch, Samael, Con and atxmatt2510
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3018671708
+- GrimWorld 40,000 - Aspectus Imperialis, by Clashgore, Sandwish, Alite, Gerrymon, Razzberry and Abomination
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3352097566
+- GrimWorld 40,000 - Talons of the Emperor, by Clashgore, Alite, Sandwish, Abomination, sk4p3g04t, Gerrymon and Razzberry
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3320940377
+- GrimWorld 40,000 - Masters of Mankind, by Clashgore, Sandwish, Abomination, Gerrymon and Razzberry
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3639007008
+- GrimWorld 40,000 - Scattered Sons, by Clashgore, Abomination, ThatHitmann, Tittymcswaggy, Samael and Con
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3390925031
+- GrimWorld 40,000 - Hammer of the Imperium, by Clashgore, Odzmang, BlackMarket420, Tittymcswaggy, Alite, Abomination, Epsilon, Maxim, Shun The Witch, Samael, Con and atxmatt2510
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3015391450
+- GrimWorld 40,000 - Regiments of Renown, by Clashgore, Alite, Eridanus, HappyPurging, Sandwish, Skalfred, BlackMarket420, Artemiish, Odzmang, Spencer7w, Abomination, Sparky, Tittymcswaggy, Con and Razzberry
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3550744255
+- GrimWorld 40,000 - Dead Men, by Clashgore, Eridanus, Jerry The Cultist, BlackMarket420, Abomination, Shun The Witch and Sophia Orr
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3550734583
+- Grimworld 40,000 - Angels of Death, by Clashgore, Odzmang, BlackMarket420, Tittymcswaggy, Alite, Abomination, Epsilon, Maxim, Samael, Con, Eridanus, HappyPurging, Skalfred and atxmatt2510
+  https://steamcommunity.com/sharedfiles/filedetails/?id=3119816857
+
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+This mod is likewise released under CC BY-NC-SA 4.0. It is not affiliated with or endorsed by the GrimWorld 40,000 team.
