@@ -738,7 +738,7 @@
         </stuffCategories>
         <recipeMaker>
             <researchPrerequisites Inherit="False">
-                <li>BEWH_ForgeOfVulcan</li>
+                <li>BEWH_ForgeOfVulkan</li>
             </researchPrerequisites>
         </recipeMaker>
         <costStuffCount>400</costStuffCount>
@@ -774,7 +774,7 @@
         </stuffCategories>
         <recipeMaker>
             <researchPrerequisites Inherit="False">
-                <li>BEWH_ForgeOfVulcan</li>
+                <li>BEWH_ForgeOfVulkan</li>
             </researchPrerequisites>
         </recipeMaker>
         <costStuffCount>400</costStuffCount>
@@ -810,7 +810,7 @@
         </stuffCategories>
         <recipeMaker>
             <researchPrerequisites Inherit="False">
-                <li>BEWH_ForgeOfVulcan</li>
+                <li>BEWH_ForgeOfVulkan</li>
             </researchPrerequisites>
         </recipeMaker>
         <costStuffCount>400</costStuffCount>

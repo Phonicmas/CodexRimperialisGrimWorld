@@ -322,9 +322,9 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>BEWH_ForgeOfVulcan</defName>
-        <label>Forge of Vulcan</label>
-        <description>Rediscover the techniques of the Primarch Vulcan, master of the forge. Unlocks Vulcan's Forge and statues of Roboute Guilliman, Lion El'Jonson and Constantin Valdor.</description>
+        <defName>BEWH_ForgeOfVulkan</defName>
+        <label>Forge of Vulkan</label>
+        <description>Rediscover the techniques of the Primarch Vulkan, master of the forge. Unlocks Vulkan's Forge and statues of Roboute Guilliman, Lion El'Jonson and Constantin Valdor.</description>
         <techLevel>Ultra</techLevel>
         <tab>BEWH_CodexRimperialisTab</tab>
         <baseCost>8000</baseCost>
@@ -349,7 +349,7 @@
         <tab>BEWH_CodexRimperialisTab</tab>
         <baseCost>14000</baseCost>
         <prerequisites>
-            <li>BEWH_ForgeOfVulcan</li>
+            <li>BEWH_ForgeOfVulkan</li>
         </prerequisites>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
@@ -367,7 +367,7 @@
         <tab>BEWH_CodexRimperialisTab</tab>
         <baseCost>12000</baseCost>
         <prerequisites>
-            <li>BEWH_ForgeOfVulcan</li>
+            <li>BEWH_ForgeOfVulkan</li>
         </prerequisites>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>

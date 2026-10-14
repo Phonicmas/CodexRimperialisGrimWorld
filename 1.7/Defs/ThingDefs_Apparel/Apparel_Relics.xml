@@ -19,7 +19,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RegaliaOfTheEmperor</li>
@@ -141,7 +141,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RegaliaOfTheEmperor</li>
@@ -246,7 +246,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
@@ -375,7 +375,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
@@ -480,7 +480,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
@@ -601,7 +601,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
@@ -695,7 +695,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
@@ -814,7 +814,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
@@ -920,7 +920,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RegaliaOfMalcador</li>
@@ -953,7 +953,7 @@
             <ComponentSpacer>6</ComponentSpacer>
         </costList>
         <thingCategories>
-            <li>Apparel</li>
+            <li>ApparelMisc</li>
         </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Body/Malcador/Malcador</wornGraphicPath>
@@ -1011,7 +1011,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RegaliaOfMalcador</li>
@@ -1041,7 +1041,7 @@
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
         <thingCategories>
-            <li>Apparel</li>
+            <li>Headgear</li>
         </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Helmet/Malcador/Malcador</wornGraphicPath>

@@ -84,7 +84,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <displayPriority>445</displayPriority>
             <researchPrerequisites Inherit="False">
@@ -167,7 +167,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <displayPriority>445</displayPriority>
             <researchPrerequisites Inherit="False">
@@ -268,7 +268,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <displayPriority>445</displayPriority>
             <researchPrerequisites Inherit="False">
@@ -369,7 +369,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <displayPriority>445</displayPriority>
             <researchPrerequisites Inherit="False">
@@ -496,7 +496,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <displayPriority>445</displayPriority>
             <researchPrerequisites Inherit="False">

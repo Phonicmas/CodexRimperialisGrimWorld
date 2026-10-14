@@ -1484,7 +1484,7 @@
             <Cloth>50</Cloth>
         </costList>
         <thingCategories>
-            <li>Apparel</li>
+            <li>ApparelMisc</li>
         </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Guard/Body/Fatigues/Default/GuardFatigues</wornGraphicPath>
@@ -2025,7 +2025,7 @@
             <Steel>15</Steel>
         </costList>
         <thingCategories>
-            <li>Apparel</li>
+            <li>ApparelMisc</li>
         </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Guard/Body/Priest/Priest</wornGraphicPath>
@@ -2277,16 +2277,16 @@
             </layers>
             <drawData>
                 <dataNorth>
-                    <offset>(0,0,-0.1)</offset>
+                    <offset>(-0.015,0,-0.1)</offset>
                 </dataNorth>
                 <dataSouth>
-                    <offset>(0,0,-0.1)</offset>
+                    <offset>(0.02,0,-0.1)</offset>
                 </dataSouth>
                 <dataEast>
-                    <offset>(0,0,-0.1)</offset>
+                    <offset>(-0.09,0,-0.13)</offset>
                 </dataEast>
                 <dataWest>
-                    <offset>(0,0,-0.1)</offset>
+                    <offset>(0.09,0,-0.13)</offset>
                 </dataWest>
             </drawData>
             <defaultOutfitTags>

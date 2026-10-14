@@ -16,7 +16,7 @@
                 <Crafting>18</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
-                <li>BEWH_VulcansForge</li>
+                <li>BEWH_VulkansForge</li>
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RegaliaOfTheEmperor</li>
@@ -70,7 +70,7 @@
                     <parentTagDef>Body</parentTagDef>
                     <drawData>
                         <defaultData>
-                            <layer>75</layer>
+                            <layer>90</layer>
                         </defaultData>
                         <dataNorth>
                             <layer>-5</layer>
@@ -83,7 +83,7 @@
                             <offset>(-0.25, 0, -0.2)</offset>
                         </dataWest>
                         <dataEast>
-                            <layer>75</layer>
+                            <layer>90</layer>
                             <offset>(0.25, 0, -0.2)</offset>
                         </dataEast>
                     </drawData>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="BenchBase">
-        <defName>BEWH_VulcansForge</defName>
-        <label>Vulcan's Forge</label>
-        <description>A master forge patterned on the great works of the Primarch Vulcan. Its fires and servo-arms are precise enough to shape auramite and the relic armor of the Imperium's greatest heroes.</description>
+        <defName>BEWH_VulkansForge</defName>
+        <label>Vulkan's Forge</label>
+        <description>A master forge patterned on the great works of the Primarch Vulkan. Its fires and servo-arms are precise enough to shape auramite and the relic armor of the Imperium's greatest heroes.</description>
         <thingClass>Building_WorkTable</thingClass>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Things/Buildings/VulcanForge/RotI_Forge</texPath>
+            <texPath>Things/Buildings/VulkanForge/RotI_Forge</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(6.5,6.5)</drawSize>
             <damageData>
@@ -17,7 +17,7 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <uiIconPath>Things/Buildings/VulcanForge/RotI_Forge_south</uiIconPath>
+        <uiIconPath>Things/Buildings/VulkanForge/RotI_Forge_south</uiIconPath>
         <castEdgeShadows>false</castEdgeShadows>
         <statBases>
             <WorkToBuild>35000</WorkToBuild>
@@ -71,7 +71,7 @@
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites Inherit="False">
-            <li>BEWH_ForgeOfVulcan</li>
+            <li>BEWH_ForgeOfVulkan</li>
         </researchPrerequisites>
         <costList>
             <Plasteel>400</Plasteel>
@@ -81,13 +81,13 @@
         </costList>
     </ThingDef>
     <WorkGiverDef>
-        <defName>BEWH_DoBillsVulcansForge</defName>
+        <defName>BEWH_DoBillsVulkansForge</defName>
         <label>forge relics</label>
         <giverClass>WorkGiver_DoBill</giverClass>
         <workType>Crafting</workType>
         <priorityInType>50</priorityInType>
         <fixedBillGiverDefs>
-            <li>BEWH_VulcansForge</li>
+            <li>BEWH_VulkansForge</li>
         </fixedBillGiverDefs>
         <verb>forge</verb>
         <gerund>forging at</gerund>
