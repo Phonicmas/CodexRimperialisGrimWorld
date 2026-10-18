@@ -431,4 +431,43 @@
         </appliesTo>
     </Core40k.AlternateBaseFormDef>
 
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_HellgunLuciusXIV</defName>
+        <label>Lucius hellgun type XIV</label>
+        <description>The standard hellgun issued to the Grenadiers of Krieg. The type XIV features a barrel fitted with a bulky cooling shroud, containing coils of heat-exchanging pipes through which pressurized refrigerant is pumped, and advanced optics for improved targeting.</description>
+        <iconPath>Things/Weapons/Guard/BEWH_HellgunLuciusXIV</iconPath>
+        <drawnTextureIconPath>Things/Weapons/Guard/BEWH_HellgunLuciusXIV</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>0</colorAmount>
+        <appliesTo>
+            <li>BEWH_HellgunCadian</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_LascarbineLuciusMkIIIa</defName>
+        <label>Lucius Mk IIIa lascarbine</label>
+        <description>A Lucius-pattern lascarbine of the Death Korps of Krieg. It derives from the same design as the standard Lucius lasgun, with several components replaced to make a shorter, handier weapon.</description>
+        <iconPath>Things/Weapons/Guard/BEWH_LascarbineLuciusMkIIIa</iconPath>
+        <drawnTextureIconPath>Things/Weapons/Guard/BEWH_LascarbineLuciusMkIIIa</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>0</colorAmount>
+        <appliesTo>
+            <li>BEWH_LasgunKantrael</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
+    <Core40k.AlternateBaseFormDef>
+        <defName>BEWH_ShotgunLuciusMk22c</defName>
+        <label>Lucius Mk 22c shotgun</label>
+        <description>A Lucius-pattern shotgun, distinguished by its eight-chambered revolver action. The Death Korps of Krieg favour it for its ability to fire a wide variety of high-gauge rounds.</description>
+        <iconPath>Things/Weapons/Guard/BEWH_ShotgunLuciusMk22c</iconPath>
+        <drawnTextureIconPath>Things/Weapons/Guard/BEWH_ShotgunLuciusMk22c</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <colorAmount>0</colorAmount>
+        <appliesTo>
+            <li>BEWH_MilitarumShotgun</li>
+        </appliesTo>
+    </Core40k.AlternateBaseFormDef>
+
 </Defs>

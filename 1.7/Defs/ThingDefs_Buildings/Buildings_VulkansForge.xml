@@ -79,6 +79,11 @@
             <Gold>150</Gold>
             <ComponentSpacer>12</ComponentSpacer>
         </costList>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_AllowColoringOfThings">
+                <allowColoringOfApparel>true</allowColoringOfApparel>
+            </li>
+        </modExtensions>
     </ThingDef>
     <WorkGiverDef>
         <defName>BEWH_DoBillsVulkansForge</defName>

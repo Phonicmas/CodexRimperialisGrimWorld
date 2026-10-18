@@ -37,7 +37,7 @@
             <texPath>Things/Weapons/Guard/BEWH_MilitarumShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
-            <drawSize>0.8</drawSize>
+            <drawSize>0.9</drawSize>
         </graphicData>
         <techLevel>Industrial</techLevel>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -106,6 +106,7 @@
         </tools>
         <comps>
             <li Class="Core40k.CompProperties_WeaponDecoration" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
         </comps>
     </ThingDef>
     <ThingDef ParentName="BEWH_MilitarumRangedBase">
@@ -271,6 +272,7 @@
             <texPath>Things/Weapons/Guard/BEWH_LasgunKantrael</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
+            <drawSize>1.1</drawSize>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
@@ -342,6 +344,7 @@
                 <defaultPrimaryColor>(0.26,0.36,0.26)</defaultPrimaryColor>
             </li>
             <li Class="Core40k.CompProperties_WeaponDecoration" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
         </comps>
     </ThingDef>
     <ThingDef ParentName="BEWH_MilitarumRangedBase">
@@ -509,6 +512,7 @@
                 <defaultPrimaryColor>(0.26,0.36,0.26)</defaultPrimaryColor>
             </li>
             <li Class="Core40k.CompProperties_WeaponDecoration" />
+            <li Class="Core40k.CompProperties_AlternateTexture" />
         </comps>
     </ThingDef>
     <ThingDef ParentName="BEWH_MilitarumRangedBase">
@@ -1073,6 +1077,160 @@
             <li Class="Core40k.CompProperties_WeaponDecoration" />
         </comps>
     </ThingDef>
+    <ThingDef ParentName="BEWH_MilitarumMeleeBase">
+        <defName>BEWH_PowerSabreLuciferBlack</defName>
+        <label>Lucifer Black power sabre</label>
+        <description>A well-designed power sword with a knuckle guard. The close-combat weapon of choice of the Lucifer Blacks, it cuts more viciously and penetrates armor better than standard-issue Astra Militarum power swords. \n\nThe Lucifer Blacks tend to see a different kind of action to regular Imperial Guardsmen - not that of the assaulting army, but the assassin in the crowd. Almost like the mortal version of Custodians, they must keep a watchful eye, lest a dagger slip between their principal's ribs.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Guard/BEWH_PowerSabreLuciferBlack</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <equippedAngleOffset>-75</equippedAngleOffset>
+        <statBases>
+            <WorkToMake>20000</WorkToMake>
+            <Mass>1.5</Mass>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumPowerWeapons</li>
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <costList>
+            <Plasteel>70</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Gold>10</Gold>
+        </costList>
+        <weaponTags>
+            <li>BEWH_LuciferBlackPowerSabre</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>1.1</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>21</power>
+                <cooldownTime>1.7</cooldownTime>
+                <armorPenetration>1.1</armorPenetration>
+            </li>
+        </tools>
+        <comps>
+            <li Class="Core40k.CompProperties_WeaponDecoration" />
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="BEWH_MilitarumMeleeBase">
+        <defName>BEWH_PowerGlaiveLuciferBlack</defName>
+        <label>Lucifer Black power glaive</label>
+        <description>A long polearm with a single-edged blade on the end, coated in a disruptive power field. Normally seen only in the hands of ceremonial Lucifer Black guards, it is still horribly effective against any attacker. \n\nA similar weapon is the Star Glaive, used in battle by Eldar Autarchs - commanders of Eldar war hosts.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Guard/BEWH_PowerGlaiveLuciferBlack</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <statBases>
+            <WorkToMake>24000</WorkToMake>
+            <Mass>3.5</Mass>
+            <MarketValue>1200</MarketValue>
+        </statBases>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumPowerWeapons</li>
+                <li>BEWH_MilitarumTempestus</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <costList>
+            <Plasteel>90</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Gold>15</Gold>
+        </costList>
+        <weaponTags>
+            <li>BEWH_LuciferBlackPowerGlaive</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>shaft</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>2.0</cooldownTime>
+                <armorPenetration>0.15</armorPenetration>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>24</power>
+                <cooldownTime>2.3</cooldownTime>
+                <armorPenetration>1.2</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>26</power>
+                <cooldownTime>2.4</cooldownTime>
+                <armorPenetration>1.0</armorPenetration>
+            </li>
+        </tools>
+        <comps>
+            <li Class="Core40k.CompProperties_WeaponDecoration" />
+        </comps>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.36)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>-122</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.40, 0, 0.47)</drawOffset>
+                        <angleOffset>-143</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.15, 0, 0.42)</drawOffset>
+                        <angleOffset>122</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>BEWH_PowerFistMilitarum</defName>
         <label>Militarum power fist</label>
@@ -1302,86 +1460,6 @@
         </comps>
     </ThingDef>
     <ThingDef ParentName="BEWH_MilitarumRangedBase">
-        <defName>BEWH_HellgunLuciusXIV</defName>
-        <label>Lucius hellgun type XIV</label>
-        <description>The standard hellgun issued to the Grenadiers of Krieg. The type XIV features a barrel fitted with a bulky cooling shroud, containing coils of heat-exchanging pipes through which pressurized refrigerant is pumped. Its advanced optics trade some speed up close for better accuracy at range.\n\nLike all hellguns, it feeds from a backpack power supply, unleashing bursts of potent lasbolts that give it a decent chance even against heavily armored opponents.</description>
-        <graphicData>
-            <texPath>Things/Weapons/Guard/BEWH_HellgunLuciusXIV</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>Cutout</shaderType>
-        </graphicData>
-        <soundInteract>Interact_ChargeRifle</soundInteract>
-        <statBases>
-            <WorkToMake>16000</WorkToMake>
-            <Mass>5.2</Mass>
-            <AccuracyTouch>0.5</AccuracyTouch>
-            <AccuracyShort>0.65</AccuracyShort>
-            <AccuracyMedium>0.55</AccuracyMedium>
-            <AccuracyLong>0.45</AccuracyLong>
-            <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
-            <MarketValue>700</MarketValue>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.1</MoveSpeed>
-        </equippedStatOffsets>
-        <recipeMaker>
-            <skillRequirements>
-                <Crafting>9</Crafting>
-            </skillRequirements>
-            <researchPrerequisites Inherit="False">
-                <li>BEWH_LasRefinement</li>
-            </researchPrerequisites>
-        </recipeMaker>
-        <costList>
-            <Steel>80</Steel>
-            <ComponentIndustrial>5</ComponentIndustrial>
-        </costList>
-        <weaponClasses>
-            <li>RangedHeavy</li>
-        </weaponClasses>
-        <weaponTags>
-            <li>BEWH_MilitarumHellgun</li>
-        </weaponTags>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>BEWH_HellgunBeam</defaultProjectile>
-                <warmupTime>1.2</warmupTime>
-                <range>30.0</range>
-                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
-                <soundCast>BEWH_HellgunSound</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>12</muzzleFlashScale>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.13</armorPenetration>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.13</armorPenetration>
-            </li>
-        </tools>
-        <comps>
-            <li Class="Core40k.CompProperties_WeaponDecoration" />
-        </comps>
-    </ThingDef>
-    <ThingDef ParentName="BEWH_MilitarumRangedBase">
         <defName>BEWH_GrenadeLauncherKrieg</defName>
         <label>Krieg grenade launcher</label>
         <description>A simple tubular weapon that launches fragmentation grenades using compressed gas. Each shell bursts in a spray of shrapnel, catching enemies hunkered down in trenches and behind cover - a favorite of the Death Korps when clearing enemy lines.</description>
@@ -1460,4 +1538,171 @@
         </comps>
     </ThingDef>
 
+    <ThingDef ParentName="BEWH_MilitarumRangedBase">
+        <defName>BEWH_BoltPistolCeres</defName>
+        <label>Ceres bolt pistol</label>
+        <description>A semi-automatic pistol firing smaller, but still powerful bolts. A common sidearm of Space Marines, but human-scaled versions can be found in use by the Imperial Guard.\n\nThese pistols are also infamous as the weapons of Imperial Commissars - when executing a cowardly Guardsman, a bolt pistol produces a much bigger (and thus more impactful on morale) spray of blood and gore than a mere laspistol.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Guard/BEWH_BoltPistolCeres</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+        </graphicData>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <statBases>
+            <WorkToMake>13000</WorkToMake>
+            <Mass>2.5</Mass>
+            <AccuracyTouch>0.8</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.3</AccuracyMedium>
+            <AccuracyLong>0.25</AccuracyLong>
+            <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+            <MarketValue>800</MarketValue>
+        </statBases>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumBoltWeapons</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <costList>
+            <Steel>50</Steel>
+            <Plasteel>10</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>RangedLight</li>
+            <li>ShortShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>BEWH_MilitarumBoltPistol</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_MilitarumBoltRound</defaultProjectile>
+                <warmupTime>0.4</warmupTime>
+                <range>21.9</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>BEWH_Heavy_Bolt_Gun_Sound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+        </tools>
+        <comps>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>1</colorMaskAmount>
+                <defaultPrimaryColor>(0.26,0.36,0.26)</defaultPrimaryColor>
+            </li>
+            <li Class="Core40k.CompProperties_WeaponDecoration" />
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="BEWH_MilitarumRangedBase">
+        <defName>BEWH_BolterLocke</defName>
+        <label>Locke bolter</label>
+        <description>A scaled-down bolter of the Locke pattern. The weapon's smaller size makes it suitable for use by baseline humans. While it is indeed powerful, its recoil and weight is high.\n\nThis pattern of bolter was common in the Koronus Expanse, seeing use by a wide variety of characters - rogue traders, pirates, chaos cultists, and more.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Guard/BEWH_BolterLocke</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <WorkToMake>20000</WorkToMake>
+            <Mass>6</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+            <MarketValue>1200</MarketValue>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumBoltWeapons</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <costList>
+            <Steel>80</Steel>
+            <Plasteel>20</Plasteel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>BEWH_MilitarumBolter</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>BEWH_MilitarumBoltRound</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>28</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>2</burstShotCount>
+                <soundCast>BEWH_Heavy_Bolt_Gun_Sound</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+        </tools>
+        <comps>
+            <li Class="Core40k.CompProperties_MultiColor">
+                <colorMaskAmount>1</colorMaskAmount>
+                <defaultPrimaryColor>(0.26,0.36,0.26)</defaultPrimaryColor>
+            </li>
+            <li Class="Core40k.CompProperties_WeaponDecoration" />
+        </comps>
+    </ThingDef>
 </Defs>

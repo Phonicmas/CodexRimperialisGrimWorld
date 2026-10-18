@@ -352,4 +352,20 @@
         </projectile>
     </ThingDef>
 
+    <ThingDef ParentName="BaseBullet">
+        <defName>BEWH_MilitarumBoltRound</defName>
+        <label>bolt round</label>
+        <graphicData>
+            <texPath>Things/Projectiles/Bolter_Projectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.6</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.45</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>80</speed>
+        </projectile>
+    </ThingDef>
 </Defs>

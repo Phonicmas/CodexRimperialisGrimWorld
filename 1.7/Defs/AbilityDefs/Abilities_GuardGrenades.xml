@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <VEF.Abilities.AbilityDef Name="BEWH_GuardThrowGrenadeBase" Abstract="True">
+        <abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass>
+        <castTime>30</castTime>
+        <range>12.9</range>
+        <targetMode>Location</targetMode>
+        <iconPath>Things/Item/Equipment/WeaponRanged/Grenades</iconPath>
+        <cooldownTime>15000</cooldownTime>
+        <targetingParameters>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>true</canTargetBuildings>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VEF.Abilities.AbilityExtension_Projectile">
+                <projectile>Proj_GrenadeFrag</projectile>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="BEWH_GuardThrowGrenadeBase">
+        <defName>BEWH_Ability_GuardThrowFragGrenade</defName>
+        <label>throw frag grenade</label>
+        <description>Pull the pin and throw the frag grenade clipped to the webbing. One grenade is carried at a time and replaced between engagements.</description>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="BEWH_GuardThrowGrenadeBase">
+        <defName>BEWH_Ability_GuardThrowFragGrenadePair</defName>
+        <label>throw frag grenade</label>
+        <description>Pull the pin and throw a frag grenade from the grenade pouch. The pouch holds a pair, replaced between engagements.</description>
+        <abilityClass>Core40k.Ability_ShootProjectileWithCharges</abilityClass>
+        <gizmoClass>Core40k.Command_AbilityWithCharges</gizmoClass>
+        <modExtensions Inherit="False">
+            <li Class="VEF.Abilities.AbilityExtension_Projectile">
+                <projectile>Proj_GrenadeFrag</projectile>
+            </li>
+            <li Class="Core40k.DefModExtension_AbilityCharges">
+                <maxCharges>2</maxCharges>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+</Defs>

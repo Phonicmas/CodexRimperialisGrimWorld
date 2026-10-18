@@ -256,6 +256,7 @@ Allarus Terminators are tasked with exterminating high-value targets in the fiel
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_AuramiteForging</li>
+                <li>BEWH_TacticalDreadnoughtArmor</li>
             </researchPrerequisites>
         </recipeMaker>
         <statBases>
@@ -384,6 +385,7 @@ The Custodians, unlike their Space Marine cousins, rarely remove their helmets, 
             </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_AuramiteForging</li>
+                <li>BEWH_TacticalDreadnoughtArmor</li>
             </researchPrerequisites>
         </recipeMaker>
         <statBases>

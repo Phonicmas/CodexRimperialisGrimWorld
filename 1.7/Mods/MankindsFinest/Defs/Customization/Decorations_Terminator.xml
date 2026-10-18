@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <Core40k.ExtraDecorationDef>
+        <defName>BEWH_Deco_TerminatorCape</defName>
+        <label>Terminator cape</label>
+        <description>A heavy cloak cut to hang from the broad pauldrons of Tactical Dreadnought armor.</description>
+        <iconPath>Things/Decorations/Terminator/BEWH_Deco_TerminatorCape_icon</iconPath>
+        <drawnTextureIconPath>Things/Decorations/Terminator/BEWH_Deco_TerminatorCape</drawnTextureIconPath>
+        <sortOrder>2.13</sortOrder>
+        <defaultShowRotation>
+            <li>North</li>
+            <li>South</li>
+            <li>West</li>
+            <li>East</li>
+        </defaultShowRotation>
+        <appliesTo>
+            <li>BEWH_TerminatorArmor</li>
+        </appliesTo>
+        <drawData>
+            <dataNorth>
+                <layer>94</layer>
+            </dataNorth>
+            <dataSouth>
+                <layer>32</layer>
+            </dataSouth>
+            <dataEast>
+                <layer>72</layer>
+                <offset>(0,0,-0.1)</offset>
+            </dataEast>
+            <dataWest>
+                <layer>72</layer>
+                <offset>(0,0,-0.1)</offset>
+            </dataWest>
+        </drawData>
+        <shaderType>Cutout</shaderType>
+        <availablePresets>
+            <li>BEWH_DecoPaletteFabricBeige</li>
+            <li>BEWH_DecoPaletteFabricRed</li>
+            <li>BEWH_DecoPaletteApothecaryRed</li>
+            <li>BEWH_DecoPaletteIFBlack</li>
+        </availablePresets>
+        <colourable>true</colourable>
+        <defaultColour>(104,24,33)</defaultColour>
+        <decorationType>BEWH_DecoCategory_Fabrics</decorationType>
+        <incompatibleDecorations>
+            <li>BEWH_Deco_Cape</li>
+        </incompatibleDecorations>
+    </Core40k.ExtraDecorationDef>
+
+    <Core40k.ExtraDecorationDef>
+        <defName>BEWH_Deco_TerminatorCrux</defName>
+        <label>Crux Terminatus</label>
+        <description>The Crux Terminatus, the badge of honour borne on the pauldron of every suit of Tactical Dreadnought armor. Legend holds that each one carries a fragment of the Emperor's own armour.</description>
+        <iconPath>Things/Decorations/Terminator/BEWH_Deco_TerminatorCrux_icon</iconPath>
+        <drawnTextureIconPath>Things/Decorations/Terminator/BEWH_Deco_TerminatorCrux</drawnTextureIconPath>
+        <sortOrder>1.3</sortOrder>
+        <defaultShowRotation>
+            <li>South</li>
+            <li>North</li>
+        </defaultShowRotation>
+        <appliesTo>
+            <li>BEWH_TerminatorArmor</li>
+        </appliesTo>
+        <drawData>
+            <dataSouth>
+                <layer>86</layer>
+            </dataSouth>
+        </drawData>
+        <shaderType>Cutout</shaderType>
+        <availablePresets>
+            <li>BEWH_DecoPaletteSilver</li>
+            <li>BEWH_DecoPaletteGold</li>
+            <li>BEWH_DecoPaletteBronze</li>
+            <li>BEWH_DecoPaletteIFBlack</li>
+        </availablePresets>
+        <hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+        <colourable>true</colourable>
+        <defaultColour>(0.82, 0.82, 0.82)</defaultColour>
+        <flipable>true</flipable>
+        <decorationType>BEWH_DecoCategory_Shoulder</decorationType>
+    </Core40k.ExtraDecorationDef>
+
+    <Core40k.ExtraDecorationDef>
+        <defName>BEWH_Deco_TerminatorAquila</defName>
+        <label>Terminator aquila</label>
+        <description>The Imperial Aquila, worked into the broad breastplate of Tactical Dreadnought armor.</description>
+        <iconPath>Things/Decorations/Terminator/BEWH_Deco_TerminatorAquila_icon</iconPath>
+        <drawnTextureIconPath>Things/Decorations/Terminator/BEWH_Deco_TerminatorAquila</drawnTextureIconPath>
+        <sortOrder>1</sortOrder>
+        <defaultShowRotation>
+            <li>South</li>
+            <li>East</li>
+            <li>West</li>
+        </defaultShowRotation>
+        <appliesTo>
+            <li>BEWH_TerminatorArmor</li>
+        </appliesTo>
+        <drawData>
+            <dataSouth>
+                <layer>30</layer>
+            </dataSouth>
+            <dataEast>
+                <layer>71</layer>
+                <offset>(0,0,-0.1)</offset>
+            </dataEast>
+            <dataWest>
+                <layer>71</layer>
+                <offset>(0,0,-0.1)</offset>
+            </dataWest>
+        </drawData>
+        <shaderType>Cutout</shaderType>
+        <colourable>true</colourable>
+        <defaultColour>(240,176,29)</defaultColour>
+        <availablePresets>
+            <li>BEWH_DecoPaletteGold</li>
+            <li>BEWH_DecoPaletteSilver</li>
+            <li>BEWH_DecoPaletteBronze</li>
+            <li>BEWH_DecoPaletteIFBlack</li>
+        </availablePresets>
+        <hasParentColourPaletteOption>true</hasParentColourPaletteOption>
+        <flipable>false</flipable>
+        <decorationType>BEWH_DecoCategory_Insignia</decorationType>
+    </Core40k.ExtraDecorationDef>
+
+</Defs>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Black Templars decorations on the terminator armour -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Deco_BT_LowerTabard"]/appliesTo</xpath>
+        <value>
+            <li>BEWH_TerminatorArmor</li>
+        </value>
+    </Operation>
+
+    <!-- Terminator-specific placement -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Deco_BT_LowerTabard"][not(apparelSpecificDrawData)]</xpath>
+        <value>
+            <apparelSpecificDrawData />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Deco_BT_LowerTabard"]/apparelSpecificDrawData</xpath>
+        <value>
+            <li>
+                <key>BEWH_TerminatorArmor</key>
+                <value>
+                    <dataSouth><offset>(0, 0, 0.038)</offset></dataSouth>
+                    <dataEast><offset>(0.05, 0, -0.1)</offset><layer>30</layer></dataEast>
+                    <dataWest><offset>(-0.05, 0, -0.1)</offset><layer>30</layer></dataWest>
+                </value>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

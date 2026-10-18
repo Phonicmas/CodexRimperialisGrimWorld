@@ -82,7 +82,7 @@
             <li>Gunsmithing</li>
         </prerequisites>
         <researchViewX>4</researchViewX>
-        <researchViewY>0</researchViewY>
+        <researchViewY>1</researchViewY>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -133,7 +133,7 @@
     <ResearchProjectDef>
         <defName>BEWH_MilitarumPowerWeapons</defName>
         <label>Militarum power weapons</label>
-        <description>Learn to forge disruption-field weapons for the officers of the Astra Militarum. Unlocks power swords and power fists.</description>
+        <description>Learn to forge disruption-field weapons for the officers of the Astra Militarum. Unlocks power swords and power fists, and the Lucifer Black power sabre and power glaive once Tempestus and drop troops is researched.</description>
         <techLevel>Spacer</techLevel>
         <tab>BEWH_CodexRimperialisTab</tab>
         <baseCost>3000</baseCost>
@@ -148,7 +148,7 @@
     <ResearchProjectDef>
         <defName>BEWH_MilitarumTempestus</defName>
         <label>Tempestus and drop troops</label>
-        <description>Equip the elite storm troopers and airborne regiments of the Imperium. Unlocks Tempestus Scion, Kasrkin, Lucifer Black and Elysian armor and helmets.</description>
+        <description>Equip the elite storm troopers and airborne regiments of the Imperium. Unlocks Tempestus Scion, Kasrkin, Lucifer Black and Elysian armor and helmets. Together with Militarum power weapons, also unlocks the Lucifer Black power sabre and power glaive.</description>
         <techLevel>Spacer</techLevel>
         <tab>BEWH_CodexRimperialisTab</tab>
         <baseCost>3000</baseCost>
@@ -164,7 +164,7 @@
     <ResearchProjectDef>
         <defName>BEWH_MilitarumFatigues</defName>
         <label>Militarum fatigues</label>
-        <description>Learn to tailor the uniforms of the Astra Militarum. Unlocks Guard fatigues, Mordian and Tanith uniforms, Tallarn headwraps and Valhallan ushankas.</description>
+        <description>Learn to tailor the uniforms of the Astra Militarum. Unlocks Guard fatigues, Guard webbing, Mordian and Tanith uniforms, Tallarn headwraps and Valhallan ushankas.</description>
         <techLevel>Industrial</techLevel>
         <tab>BEWH_CodexRimperialisTab</tab>
         <baseCost>600</baseCost>
@@ -279,7 +279,7 @@
             <li>BEWH_Cogitator</li>
         </requiredResearchFacilities>
         <researchViewX>9</researchViewX>
-        <researchViewY>0</researchViewY>
+        <researchViewY>1</researchViewY>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -298,7 +298,7 @@
             <li>BEWH_Cogitator</li>
         </requiredResearchFacilities>
         <researchViewX>9</researchViewX>
-        <researchViewY>1</researchViewY>
+        <researchViewY>0</researchViewY>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
@@ -396,4 +396,70 @@
         <researchViewY>0</researchViewY>
     </ResearchProjectDef>
 
+
+    <ResearchProjectDef>
+        <defName>BEWH_MilitarumArtillery</defName>
+        <label>Militarum artillery</label>
+        <description>Learn to build and supply the emplaced guns of the Astra Militarum's artillery companies. Unlocks the Earthshaker cannon and its high-explosive, smoke, incendiary and armor-piercing shells.</description>
+        <techLevel>Industrial</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>2500</baseCost>
+        <prerequisites>
+            <li>BEWH_MilitarumArmoury</li>
+            <li>Mortars</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_MilitarumBoltWeapons</defName>
+        <label>Militarum bolt weapons</label>
+        <description>Learn to build the human-scaled bolt weapons carried by Imperial officers and Commissars. Unlocks Ceres bolt pistols and Locke bolters.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>2500</baseCost>
+        <prerequisites>
+            <li>BEWH_MilitarumArmoury</li>
+            <li>Fabrication</li>
+        </prerequisites>
+        <researchViewX>4</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_AstartesEmplacements</defName>
+        <label>Astartes emplacements</label>
+        <description>Recover the patterns of the unmanned turret emplacements favored by the Adeptus Astartes, guided by their own machine spirits. Unlocks the Astartes bolter turret and the Astartes lascannon turret.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>4000</baseCost>
+        <prerequisites>
+            <li>BEWH_RitesOfMaintenance</li>
+            <li>HeavyTurrets</li>
+            <li>AdvancedFabrication</li>
+        </prerequisites>
+        <researchViewX>8</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_TacticalDreadnoughtArmor</defName>
+        <label>Tactical Dreadnought armor</label>
+        <description>Recover the STCs of Tactical Dreadnought armor, the heaviest battle plate issued to the Adeptus Astartes. Unlocks Indomitus Terminator armor and helmets.</description>
+        <techLevel>Spacer</techLevel>
+        <tab>BEWH_CodexRimperialisTab</tab>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>PoweredArmor</li>
+            <li>AdvancedFabrication</li>
+            <li MayRequire="Phonicmas.RimDark.MankindsFinest">BEWH_PowerArmorMkVII</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>BEWH_Cogitator</li>
+        </requiredResearchFacilities>
+        <researchViewX>9</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
 </Defs>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Terminator armor -->
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorArmorHalvedMask</defName>
+        <label>Halved</label>
+        <description>Halved armor paint pattern.</description>
+        <maskPath>Things/Armor/Terminator/Masks/Halved/BEWH_Terminator_HalvedBody</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorArmor</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>1</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorArmorCheckeredMask</defName>
+        <label>Checkered</label>
+        <description>Checkered armor paint pattern.</description>
+        <maskPath>Things/Armor/Terminator/Masks/Checkered/BEWH_Terminator_CheckeredBody</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorArmor</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>2</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorArmorPauldronsMask</defName>
+        <label>Pauldrons</label>
+        <description>Colorable pauldrons paint pattern.</description>
+        <maskPath>Things/Armor/Terminator/Masks/Pauldrons/BEWH_Terminator_PauldronsBody</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorArmor</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>3</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorArmorRightPauldronMask</defName>
+        <label>Right pauldron</label>
+        <description>Colorable right pauldron paint pattern.</description>
+        <maskPath>Things/Armor/Terminator/Masks/RightPauldron/BEWH_Terminator_RightPauldronBody</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorArmor</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>4</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorArmorKneepadsMask</defName>
+        <label>Kneepads</label>
+        <description>Colorable kneepads paint pattern.</description>
+        <maskPath>Things/Armor/Terminator/Masks/Kneepads/BEWH_Terminator_KneepadsBody</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorArmor</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>5</sortOrder>
+    </Core40k.MaskDef>
+
+    <!-- Terminator helmet -->
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorHelmetHalvedMask</defName>
+        <label>Halved</label>
+        <description>Halved helmet paint pattern.</description>
+        <maskPath>Things/Armor/Terminator/Helmet/Masks/Halved/BEWH_TerminatorHelmet_Halved</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorHelmet</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>1</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorHelmetFaceplateMask</defName>
+        <label>Faceplate</label>
+        <description>Colorable faceplate paint pattern.</description>
+        <maskPath>Things/Armor/Terminator/Helmet/Masks/Faceplate/BEWH_TerminatorHelmet_Faceplate</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorHelmet</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>2</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorHelmetBrowMask</defName>
+        <label>Brow</label>
+        <description>Colorable brow paint pattern.</description>
+        <maskPath>Things/Armor/Terminator/Helmet/Masks/Brow/BEWH_TerminatorHelmet_Brow</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorHelmet</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>3</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorHelmetCrestStripeMask</defName>
+        <label>Crest stripe</label>
+        <description>Colorable stripe across the crest of the helmet.</description>
+        <maskPath>Things/Armor/Terminator/Helmet/Masks/CrestStripe/BEWH_TerminatorHelmet_CrestStripe</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorHelmet</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>4</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorHelmetLongStripeMask</defName>
+        <label>Long stripe</label>
+        <description>Colorable stripe running from the crest down the faceplate.</description>
+        <maskPath>Things/Armor/Terminator/Helmet/Masks/LongStripe/BEWH_TerminatorHelmet_LongStripe</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorHelmet</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>5</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorHelmetThinStripeMask</defName>
+        <label>Thin stripe</label>
+        <description>Colorable thin stripe across the crest of the helmet.</description>
+        <maskPath>Things/Armor/Terminator/Helmet/Masks/ThinStripe/BEWH_TerminatorHelmet_ThinStripe</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorHelmet</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>6</sortOrder>
+    </Core40k.MaskDef>
+
+    <Core40k.MaskDef>
+        <defName>BEWH_TerminatorHelmetTrimmedStripeMask</defName>
+        <label>Trimmed stripe</label>
+        <description>Colorable stripe with bare metal trim across the crest of the helmet.</description>
+        <maskPath>Things/Armor/Terminator/Helmet/Masks/TrimmedStripe/BEWH_TerminatorHelmet_TrimmedStripe</maskPath>
+        <appliesToKind>Thing</appliesToKind>
+        <appliesTo>
+            <li>BEWH_TerminatorHelmet</li>
+        </appliesTo>
+        <shaderType>BEWH_CutoutThreeColor</shaderType>
+        <colorAmount>3</colorAmount>
+        <sortOrder>7</sortOrder>
+    </Core40k.MaskDef>
+
+</Defs>

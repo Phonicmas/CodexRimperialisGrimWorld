@@ -7,6 +7,8 @@
 		<li IfModNotActive="Ludeon.RimWorld.Ideology">1.7/Mods/NoIdeology</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty" IfModNotActive="Ludeon.RimWorld.Ideology">1.7/Mods/RoyaltyNoIdeology</li>
 		<li IfModActive="Phonicmas.RimDark.MankindsFinest">1.7/Mods/MankindsFinest</li>
+		<li IfModActive="Phonicmas.RimDark.SpaceMaids">1.7/Mods/SpaceMaids</li>
+		<li IfModActive="Phonicmas.RimDark.BlackTemplars">1.7/Mods/BlackTemplars</li>
 		<li IfModActive="REDACTED.Segmentum.Core">1.7/Mods/SegmentumCore</li>
 		<li IfModActive="REDACTED.Segmentum.ChildrenOfTheOmnissiah">1.7/Mods/SegmentumCOTO</li>
 		<li IfModActive="REDACTED.Segmentum.WarrantOfTheVoid">1.7/Mods/SegmentumWOTV</li>

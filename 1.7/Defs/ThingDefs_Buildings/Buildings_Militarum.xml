@@ -75,6 +75,11 @@
         <researchPrerequisites Inherit="False">
             <li>BEWH_MilitarumArmoury</li>
         </researchPrerequisites>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_AllowColoringOfThings">
+                <allowColoringOfApparel>true</allowColoringOfApparel>
+            </li>
+        </modExtensions>
     </ThingDef>
     <WorkGiverDef>
         <defName>BEWH_DoBillsMilitarumWorkbench</defName>

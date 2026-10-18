@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingCategoryDef>
+        <defName>BEWH_EarthshakerShells</defName>
+        <label>Earthshaker shells</label>
+        <parent>Manufactured</parent>
+        <iconPath>Things/Items/EarthshakerShells/HighExplosive/BEWH_EarthshakerShellHighExplosive_a</iconPath>
+    </ThingCategoryDef>
+</Defs>

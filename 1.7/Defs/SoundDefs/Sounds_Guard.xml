@@ -128,4 +128,36 @@
             </li>
         </subSounds>
     </SoundDef>
+    <SoundDef>
+        <defName>BEWH_EarthshakerSound</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>5</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/Earthshaker/GW_EarthshakerArtillery</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>65~65</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+    <SoundDef>
+        <defName>BEWH_LascannonSound</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>10</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Weapons/Lascannon</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>40~40</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 </Defs>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BEWH_PowerArmorBase_ChapterColour">
+        <defName>BEWH_TerminatorArmor</defName>
+        <tickerType>Normal</tickerType>
+        <label>Indomitus Terminator armor</label>
+        <description>A rare and powerful suit of Power Armor, also known as "Tactical Dreadnought Armor". Space Marine Terminators are greatly feared, for their thick ceramite-plasteel armor plates can shrug off a great deal of firepower while the Marines respond with heavy weaponry.\n\nThis particular suit is of the Indomitus pattern, the most common version across the Imperium.\n\nWhile it slows down the wearer, some situations call for firepower and durability over maneuverability. Woe betide the foe that faces a Terminator squad in a confined space, such as that of a Space Hulk.</description>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_TacticalDreadnoughtArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Armor/Terminator/BEWH_TerminatorArmor</texPath>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>6000</MaxHitPoints>
+            <EquipDelay>25</EquipDelay>
+            <WorkToMake>110000</WorkToMake>
+            <MarketValue>12000</MarketValue>
+            <Mass>20</Mass>
+
+            <ArmorRating_Sharp>1.88</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.82</ArmorRating_Blunt>
+            <ArmorRating_Heat>1.28</ArmorRating_Heat>
+
+            <Insulation_Cold>44</Insulation_Cold>
+            <Insulation_Heat>32</Insulation_Heat>
+
+            <BEWH_InternalUpgradeSlots>6</BEWH_InternalUpgradeSlots>
+            <EnergyShieldEnergyMax>0</EnergyShieldEnergyMax>
+            <EnergyShieldRechargeRate>0</EnergyShieldRechargeRate>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-4</MoveSpeed>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">20</TerrorSource>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.28</VacuumResistance>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>10</ComponentSpacer>
+            <Plasteel>250</Plasteel>
+            <Uranium>80</Uranium>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Terminator/BEWH_TerminatorArmor</wornGraphicPath>
+            <drawData>
+                <dataNorth>
+                    <layer>74</layer>
+                </dataNorth>
+                <dataEast>
+                    <layer>69</layer>
+                    <offset>(0,0,-0.1)</offset>
+                </dataEast>
+                <dataWest>
+                    <layer>69</layer>
+                    <offset>(0,0,-0.1)</offset>
+                </dataWest>
+            </drawData>
+            <tags>
+                <li>BEWH_TerminatorArmor</li>
+            </tags>
+            <renderNodeProperties>
+                <li>
+                    <workerClass>Core40k.PawnRenderNodeWorker_AttachmentShoulderPad</workerClass>
+                    <nodeClass>Core40k.PawnRenderNode_FlagEdit</nodeClass>
+                    <texPath>Things/Armor/Terminator/Shoulder/BEWH_TerminatorArmor_Shoulder</texPath>
+                    <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                    <parentTagDef>Body</parentTagDef>
+                    <drawData>
+                        <dataEast>
+                            <layer>75</layer>
+                            <offset>(0,0,-0.1)</offset>
+                        </dataEast>
+                        <dataWest>
+                            <layer>75</layer>
+                            <offset>(0,0,-0.1)</offset>
+                        </dataWest>
+                    </drawData>
+                    <texSeed>2</texSeed>
+                </li>
+            </renderNodeProperties>
+        </apparel>
+        <comps>
+            <li Class="Core40k.CompProperties_ConversionField" />
+            <li Class="Genes40k.CompProperties_ChapterColorWithShoulderDecoration" />
+            <li Class="Core40k.CompProperties_Decorative">
+                <drawRenderNodesOnGround>true</drawRenderNodesOnGround>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_ForcesBodyType">
+                <forcedBodyType>Hulk</forcedBodyType>
+                <hideBodyGraphic>true</hideBodyGraphic>
+            </li>
+            <li Class="Core40k.DefModExtension_TextureFlags">
+                <maskExpansions>
+                    <li>
+                        <identifier>2</identifier>
+                        <pathExpansionOnMask>_Shoulder</pathExpansionOnMask>
+                        <maskDefsWithExpansion>
+                            <li>BEWH_TerminatorArmorHalvedMask</li>
+                            <li>BEWH_TerminatorArmorCheckeredMask</li>
+                            <li>BEWH_TerminatorArmorPauldronsMask</li>
+                            <li>BEWH_TerminatorArmorRightPauldronMask</li>
+                        </maskDefsWithExpansion>
+                    </li>
+                </maskExpansions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BEWH_PowerArmorHelmetBase">
+        <defName>BEWH_TerminatorHelmet</defName>
+        <label>Indomitus Terminator helmet</label>
+        <description>A heavy and durable helmet, worn by Space Marine Terminators of the Adeptus Astartes.\n\nTerminator Armor dates back to the Great Crusade - its origins a mix of normal Power Armor, the armor of Dreadnoughts, and the hostile environment suits of engineers. While it was not as invincible as the Mechanicum designers hoped, and its costs of manufacture prevented widespread issue, it still found a suitable place in the Space Marine arsenal as a heavy infantry suit.</description>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_TacticalDreadnoughtArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Armor/Terminator/Helmet/BEWH_TerminatorHelmet</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>40000</WorkToMake>
+            <MarketValue>4500</MarketValue>
+
+            <ArmorRating_Sharp>1.38</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.84</ArmorRating_Blunt>
+            <ArmorRating_Heat>1.25</ArmorRating_Heat>
+
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
+
+            <BEWH_InternalUpgradeSlots>4</BEWH_InternalUpgradeSlots>
+        </statBases>
+        <equippedStatOffsets>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">8</TerrorSource>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+        </equippedStatOffsets>
+        <costList Inherit="False">
+            <ComponentSpacer>3</ComponentSpacer>
+            <Plasteel>80</Plasteel>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Terminator/Helmet/BEWH_TerminatorHelmet</wornGraphicPath>
+            <drawData>
+                <dataEast>
+                    <layer>62</layer>
+                    <offset>(-0.07,0,-0.04)</offset>
+                </dataEast>
+                <dataWest>
+                    <layer>62</layer>
+                    <offset>(0.07,0,-0.04)</offset>
+                </dataWest>
+            </drawData>
+            <tags>
+                <li>BEWH_TerminatorArmor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="Genes40k.CompProperties_ChapterColor" />
+            <li Class="Core40k.CompProperties_Decorative">
+                <decorativeType>Head</decorativeType>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

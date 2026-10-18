@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Space Maids decorations on the terminator armour -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Deco_BeltBow_Chaplain" or defName="BEWH_Deco_PauldronBows_1" or defName="BEWH_Deco_BackpackBow" or defName="BEWH_Deco_Apron" or defName="BEWH_Deco_ChestNeko"]/appliesTo</xpath>
+        <value>
+            <li>BEWH_TerminatorArmor</li>
+        </value>
+    </Operation>
+
+    <!-- Space Maids decorations on the terminator helmet -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_DecoCatEars"]/appliesTo</xpath>
+        <value>
+            <li>BEWH_TerminatorHelmet</li>
+        </value>
+    </Operation>
+
+    <!-- Terminator-specific placement -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_DecoCatEars" or defName="BEWH_Deco_BeltBow_Chaplain" or defName="BEWH_Deco_PauldronBows_1" or defName="BEWH_Deco_BackpackBow" or defName="BEWH_Deco_Apron" or defName="BEWH_Deco_ChestNeko"][not(apparelSpecificDrawData)]</xpath>
+        <value>
+            <apparelSpecificDrawData />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_DecoCatEars"]/apparelSpecificDrawData</xpath>
+        <value>
+            <li>
+                <key>BEWH_TerminatorHelmet</key>
+                <value>
+                    <dataNorth><offset>(0, 0, 0.038)</offset><layer>-10</layer></dataNorth>
+                    <dataSouth><offset>(0, 0, 0.038)</offset></dataSouth>
+                    <dataEast><offset>(-0.074, 0, -0.03)</offset><layer>-8</layer></dataEast>
+                    <dataWest><offset>(0.074, 0, 0.03)</offset><layer>-8</layer></dataWest>
+                </value>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Deco_BeltBow_Chaplain"]/apparelSpecificDrawData</xpath>
+        <value>
+            <li>
+                <key>BEWH_TerminatorArmor</key>
+                <value>
+                    <dataNorth><layer>40</layer></dataNorth>
+                    <dataSouth><offset>(0, 0, 0.072)</offset></dataSouth>
+                    <dataEast><offset>(0.05, 0, -0.13)</offset><layer>40</layer></dataEast>
+                    <dataWest><offset>(-0.05, 0, -0.13)</offset><layer>40</layer></dataWest>
+                </value>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Deco_PauldronBows_1"]/apparelSpecificDrawData</xpath>
+        <value>
+            <li>
+                <key>BEWH_TerminatorArmor</key>
+                <value>
+                    <dataNorth><scale>1.1</scale></dataNorth>
+                    <dataSouth><scale>1.1</scale></dataSouth>
+                    <dataEast><offset>(-0.2, 0, -0.06)</offset><scale>1.1</scale></dataEast>
+                    <dataWest><offset>(0.2, 0, -0.06)</offset><scale>1.1</scale></dataWest>
+                </value>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Deco_BackpackBow"]/apparelSpecificDrawData</xpath>
+        <value>
+            <li>
+                <key>BEWH_TerminatorArmor</key>
+                <value>
+                    <dataNorth><offset>(0, 0, 0.18)</offset></dataNorth>
+                </value>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Deco_Apron"]/apparelSpecificDrawData</xpath>
+        <value>
+            <li>
+                <key>BEWH_TerminatorArmor</key>
+                <value>
+                    <dataNorth><offset>(0, 0, 0.1)</offset><scale>1.15</scale></dataNorth>
+                    <dataSouth><offset>(0, 0, 0.1)</offset><scale>1.15</scale></dataSouth>
+                    <dataEast><offset>(0, 0, -0.14)</offset><layer>35</layer><scale>1.15</scale></dataEast>
+                    <dataWest><offset>(0, 0, -0.14)</offset><layer>35</layer><scale>1.2</scale></dataWest>
+                </value>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Deco_ChestNeko"]/apparelSpecificDrawData</xpath>
+        <value>
+            <li>
+                <key>BEWH_TerminatorArmor</key>
+                <value>
+                    <dataSouth><offset>(0, 0, -0.1)</offset><scale>1.1</scale></dataSouth>
+                    <dataEast><offset>(0.034, 0, -0.083)</offset><layer>41</layer><scale>1.1</scale></dataEast>
+                    <dataWest><offset>(-0.034, 0, -0.083)</offset><layer>41</layer><scale>1.1</scale></dataWest>
+                </value>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

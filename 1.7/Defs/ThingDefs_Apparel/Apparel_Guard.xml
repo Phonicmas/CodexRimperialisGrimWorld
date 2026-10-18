@@ -59,7 +59,6 @@
             </bodyPartGroups>
             <layers>
                 <li>Middle</li>
-                <li>Shell</li>
             </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -112,9 +111,9 @@
             <Flammability>0.6</Flammability>
             <EquipDelay>3</EquipDelay>
             <WorkToMake>14000</WorkToMake>
-            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
             <Insulation_Cold>8</Insulation_Cold>
             <Insulation_Heat>4</Insulation_Heat>
         </statBases>
@@ -136,8 +135,8 @@
                 <li>Shoulders</li>
             </bodyPartGroups>
             <layers>
-                <li>Shell</li>
                 <li>Middle</li>
+                <li>Shell</li>
             </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -260,9 +259,9 @@
             <Flammability>0.6</Flammability>
             <EquipDelay>3</EquipDelay>
             <WorkToMake>14000</WorkToMake>
-            <ArmorRating_Sharp>0.88</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
             <Insulation_Cold>10</Insulation_Cold>
             <Insulation_Heat>4</Insulation_Heat>
         </statBases>
@@ -736,7 +735,7 @@
                 <li>Shoulders</li>
             </bodyPartGroups>
             <layers>
-                <li>Shell</li>
+                <li>Middle</li>
             </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -1016,9 +1015,9 @@
             <Flammability>0.6</Flammability>
             <EquipDelay>3</EquipDelay>
             <WorkToMake>30000</WorkToMake>
-            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <ArmorRating_Sharp>1.02</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.51</ArmorRating_Heat>
             <Insulation_Cold>6</Insulation_Cold>
             <Insulation_Heat>3</Insulation_Heat>
         </statBases>
@@ -1173,9 +1172,9 @@
             <Flammability>0.6</Flammability>
             <EquipDelay>3</EquipDelay>
             <WorkToMake>14000</WorkToMake>
-            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
             <Insulation_Cold>45</Insulation_Cold>
             <Insulation_Heat>-4</Insulation_Heat>
         </statBases>
@@ -1525,6 +1524,78 @@
     </ThingDef>
 
     <ThingDef ParentName="ApparelMakeableBase">
+        <defName>BEWH_GuardWebbing</defName>
+        <label>Guard webbing</label>
+        <description>Load-bearing webbing worn over flak armor or fatigues: shoulder straps and a belt to hang a Guardsman's kit from. Pouches, packs, tanks and other kit can be fitted to it to suit each role.</description>
+        <techLevel>Industrial</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Armor/Guard/Body/GuardWebbing/GuardWebbing</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>BEWH_MilitarumWorkbench</li>
+            </recipeUsers>
+            <researchPrerequisites Inherit="False">
+                <li>BEWH_MilitarumFatigues</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.6</Flammability>
+            <EquipDelay>2</EquipDelay>
+            <WorkToMake>3000</WorkToMake>
+            <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+        </statBases>
+        <costList>
+            <Steel>25</Steel>
+            <Cloth>20</Cloth>
+        </costList>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Guard/Body/GuardWebbing/GuardWebbing</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>BEWH_GuardWebbing</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="Core40k.CompProperties_Decorative" />
+        </comps>
+    </ThingDef>
+
+
+    <ThingDef ParentName="ApparelMakeableBase">
         <defName>BEWH_CadianUniform</defName>
         <label>Cadian flak armor</label>
         <description>The iconic Cadian Flak Armor is a testament to both reliability and resilience. Crafted for the soldiers of Cadia, this battle-tested armor strikes a balance between durability and mobility. The distinctive design not only offers protection against small-arms fire, but also stands as a symbol of the regiment's unflinching resolve.</description>
@@ -1708,9 +1779,9 @@
             <Flammability>0.6</Flammability>
             <EquipDelay>3</EquipDelay>
             <WorkToMake>30000</WorkToMake>
-            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.45</ArmorRating_Heat>
+            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
             <Insulation_Cold>8</Insulation_Cold>
             <Insulation_Heat>4</Insulation_Heat>
         </statBases>
@@ -1738,6 +1809,7 @@
             </bodyPartGroups>
             <layers>
                 <li>Middle</li>
+                <li>Shell</li>
             </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -2011,14 +2083,15 @@
             <Flammability>0.6</Flammability>
             <EquipDelay>3</EquipDelay>
             <WorkToMake>14000</WorkToMake>
-            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.25</ArmorRating_Heat>
             <Insulation_Cold>18</Insulation_Cold>
             <Insulation_Heat>6</Insulation_Heat>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.1</SocialImpact>
+            <SocialImpact>0.15</SocialImpact>
+            <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.1</ConversionPower>
         </equippedStatOffsets>
         <costList>
             <Cloth>80</Cloth>
@@ -2039,8 +2112,8 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <layers>
-                <li>Shell</li>
                 <li>Middle</li>
+                <li>Shell</li>
             </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -2168,10 +2241,10 @@
             <Flammability>0.6</Flammability>
             <EquipDelay>3</EquipDelay>
             <WorkToMake>14000</WorkToMake>
-            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.2</ArmorRating_Heat>
-            <Insulation_Cold>6</Insulation_Cold>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.28</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
             <Insulation_Heat>2</Insulation_Heat>
         </statBases>
         <equippedStatOffsets>
@@ -2200,6 +2273,7 @@
             </bodyPartGroups>
             <layers>
                 <li>Middle</li>
+                <li>Shell</li>
             </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -2441,7 +2515,6 @@
             </bodyPartGroups>
             <layers>
                 <li>Middle</li>
-                <li>Shell</li>
             </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>

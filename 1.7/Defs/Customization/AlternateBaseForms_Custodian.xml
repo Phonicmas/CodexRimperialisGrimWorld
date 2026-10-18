@@ -95,6 +95,9 @@
         <appliesTo>
             <li>BEWH_CustodianHelmet</li>
         </appliesTo>
+        <renderSkipFlags>
+            <li>Beard</li>
+        </renderSkipFlags>
     </Core40k.AlternateBaseFormDef>
     <Core40k.AlternateBaseFormDef>
         <defName>BEWH_CustodianHelmetBladeChampion</defName>
