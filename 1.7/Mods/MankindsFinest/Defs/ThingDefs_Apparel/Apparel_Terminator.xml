@@ -161,6 +161,14 @@
                 <decorativeType>Head</decorativeType>
             </li>
         </comps>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_HidesHead">
+                <rotations>
+                    <li>East</li>
+                    <li>West</li>
+                </rotations>
+            </li>
+        </modExtensions>
     </ThingDef>
 
 </Defs>

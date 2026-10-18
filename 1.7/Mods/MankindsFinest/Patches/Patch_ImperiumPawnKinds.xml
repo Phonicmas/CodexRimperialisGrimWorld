@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/apparelRequired</xpath>
-        <value>
-            <apparelRequired Inherit="False">
-                <li>BEWH_GuardFatigues</li>
-                <li>BEWH_CadianUniform</li>
-                <li>BEWH_CadianHeadgear</li>
-            </apparelRequired>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/weaponTags</xpath>
-        <value>
-            <weaponTags>
-                <li>BEWH_MilitarumLasgun</li>
-            </weaponTags>
-        </value>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Seg_Apparel_FlakArmour"]</xpath>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/apparelRequired</xpath>
+                    <value>
+                        <apparelRequired Inherit="False">
+                            <li>BEWH_GuardFatigues</li>
+                            <li>BEWH_CadianUniform</li>
+                            <li>BEWH_CadianHeadgear</li>
+                        </apparelRequired>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/weaponTags</xpath>
+                    <value>
+                        <weaponTags>
+                            <li>BEWH_MilitarumLasgun</li>
+                        </weaponTags>
+                    </value>
+                </li>
+            </operations>
+        </nomatch>
     </Operation>
 
     <Operation Class="PatchOperationReplace">

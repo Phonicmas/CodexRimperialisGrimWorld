@@ -1,75 +1,318 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ThingDef[defName="Seg_Apparel_FlakHelmet" or defName="Seg_Apparel_FlakArmour" or defName="Seg_Gun_MarsLasgun"]</xpath>
-    </Operation>
-
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/Core40k.DecorationPresetDef[defName="Seg_FlakHelmetMilitarumPreset" or defName="Seg_FlakArmourMilitarumPreset"]</xpath>
-    </Operation>
-
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/Core40k.ExtraDecorationDef[defName="Seg_Deco_FlakHelmetSkull" or defName="Seg_Deco_FlakArmourBreastplateEagle"]</xpath>
-    </Operation>
-
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/Core40k.WeaponDecorationDef[defName="Seg_WeaponDecal_Aquila"]</xpath>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/Core40k.ColourPresetDef[@Name="Seg_ColorPreset_MarsLasgun"]/appliesTo</xpath>
-        <value>
-            <appliesTo>
-                <li>BEWH_LasgunKantrael</li>
-            </appliesTo>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/apparel/tags</xpath>
-        <value>
-            <li>Seg_FlakArmour</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/tradeTags</xpath>
-        <value>
-            <li>Seg_FlakArmour</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]/weaponTags</xpath>
-        <value>
-            <li>Seg_Las</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]/tradeTags</xpath>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]/tradeTags</xpath>
-            <value>
-                <li>Seg_Las</li>
-            </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]</xpath>
-            <value>
-                <tradeTags>
-                    <li>Seg_Las</li>
-                </tradeTags>
-            </value>
-        </nomatch>
-    </Operation>
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/modExtensions/li[@Class="Core40k.DefModExtension_PawnKindCustomization" and (extraDecorations/li/key="Seg_Apparel_FlakHelmet" or extraDecorations/li/key="Seg_Apparel_FlakArmour" or extraDecorationPreset/li/key="Seg_Apparel_FlakHelmet" or extraDecorationPreset/li/key="Seg_Apparel_FlakArmour")]</xpath>
-        <match Class="PatchOperationRemove">
-            <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/modExtensions/li[@Class="Core40k.DefModExtension_PawnKindCustomization" and (extraDecorations/li/key="Seg_Apparel_FlakHelmet" or extraDecorations/li/key="Seg_Apparel_FlakArmour" or extraDecorationPreset/li/key="Seg_Apparel_FlakHelmet" or extraDecorationPreset/li/key="Seg_Apparel_FlakArmour")]</xpath>
-        </match>
+    <Operation Class="ModSettingsFramework.PatchOperationRadioButtons">
+        <label>Imperial Guard lasgun and flak armour</label>
+        <tooltip>Which lasgun, flak armour and flak helmet are used when Segmentum is loaded. The other set can no longer be crafted, bought or found on generated pawns. Items already in a save are kept. Requires a restart.</tooltip>
+        <category>BEWH_SegmentumCompatibility</category>
+        <order>0</order>
+        <options>
+            <li Class="ModSettingsFramework.PatchOperationModOption">
+                <defaultValue>True</defaultValue>
+                <label>Codex Rimperialis: Kantrael lasgun, Cadian flak armour and helmet</label>
+                <tooltip>Segmentum's Mars pattern lasgun, flak armour and flak helmet are retired. Segmentum's factions, traders and structures use the Codex Rimperialis versions instead.</tooltip>
+                <id>BEWH_SegmentumGear_Codex</id>
+                <operations>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun" or defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]/recipeMaker/recipeUsers</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun" or defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]/recipeMaker/researchPrerequisites</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun" or defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]/recipeMaker/researchPrerequisite</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun" or defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]/recipeMaker</xpath>
+                        <value>
+                            <recipeUsers Inherit="False" />
+                            <researchPrerequisites Inherit="False" />
+                        </value>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun"]/weaponTags</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun"]</xpath>
+                        <value>
+                            <weaponTags Inherit="False" />
+                        </value>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]/apparel/tags</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]/apparel</xpath>
+                        <value>
+                            <tags Inherit="False" />
+                        </value>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun" or defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]/tradeTags</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun" or defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]/tradeability</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun" or defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]/generateCommonality</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="Seg_Gun_MarsLasgun" or defName="Seg_Apparel_FlakArmour" or defName="Seg_Apparel_FlakHelmet"]</xpath>
+                        <value>
+                            <tradeTags Inherit="False" />
+                            <tradeability>Sellable</tradeability>
+                            <generateCommonality>0</generateCommonality>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/Core40k.ColourPresetDef[@Name="Seg_ColorPreset_MarsLasgun"]/appliesTo</xpath>
+                        <value>
+                            <appliesTo>
+                                <li>BEWH_LasgunKantrael</li>
+                            </appliesTo>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/apparel/tags</xpath>
+                        <value>
+                            <li>Seg_FlakArmour</li>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/tradeTags</xpath>
+                        <value>
+                            <li>Seg_FlakArmour</li>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]/weaponTags</xpath>
+                        <value>
+                            <li>Seg_Las</li>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]/tradeTags</xpath>
+                        <match Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]/tradeTags</xpath>
+                            <value>
+                                <li>Seg_Las</li>
+                            </value>
+                        </match>
+                        <nomatch Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]</xpath>
+                            <value>
+                                <tradeTags>
+                                    <li>Seg_Las</li>
+                                </tradeTags>
+                            </value>
+                        </nomatch>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/modExtensions/li[@Class="Core40k.DefModExtension_PawnKindCustomization" and (extraDecorations/li/key="Seg_Apparel_FlakHelmet" or extraDecorations/li/key="Seg_Apparel_FlakArmour" or extraDecorationPreset/li/key="Seg_Apparel_FlakHelmet" or extraDecorationPreset/li/key="Seg_Apparel_FlakArmour")]</xpath>
+                        <match Class="PatchOperationRemove">
+                            <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/modExtensions/li[@Class="Core40k.DefModExtension_PawnKindCustomization" and (extraDecorations/li/key="Seg_Apparel_FlakHelmet" or extraDecorations/li/key="Seg_Apparel_FlakArmour" or extraDecorationPreset/li/key="Seg_Apparel_FlakHelmet" or extraDecorationPreset/li/key="Seg_Apparel_FlakArmour")]</xpath>
+                        </match>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]</xpath>
+                        <match Class="PatchOperationSequence">
+                            <operations>
+                                <li Class="PatchOperationReplace">
+                                    <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/apparelRequired</xpath>
+                                    <value>
+                                    <apparelRequired Inherit="False">
+                                        <li>BEWH_GuardFatigues</li>
+                                        <li>BEWH_CadianUniform</li>
+                                        <li>BEWH_CadianHeadgear</li>
+                                    </apparelRequired>
+                                    </value>
+                                </li>
+                                <li Class="PatchOperationReplace">
+                                    <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/weaponTags</xpath>
+                                    <value>
+                                    <weaponTags>
+                                        <li>BEWH_MilitarumLasgun</li>
+                                    </weaponTags>
+                                    </value>
+                                </li>
+                            </operations>
+                        </match>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/PawnKindDef[defName="Seg_COTO_TechMilitia"]/apparelRequired/li[.="Seg_Apparel_FlakArmour"]</xpath>
+                        <match Class="PatchOperationReplace">
+                            <xpath>Defs/PawnKindDef[defName="Seg_COTO_TechMilitia"]/apparelRequired/li[.="Seg_Apparel_FlakArmour"]</xpath>
+                            <value>
+                                <li>BEWH_CadianUniform</li>
+                            </value>
+                        </match>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/PawnKindDef[defName="Seg_WOTV_ScenarioPawnKind_Armsman"]/apparelRequired/li[.="Seg_Apparel_FlakHelmet"]</xpath>
+                        <match Class="PatchOperationReplace">
+                            <xpath>Defs/PawnKindDef[defName="Seg_WOTV_ScenarioPawnKind_Armsman"]/apparelRequired/li[.="Seg_Apparel_FlakHelmet"]</xpath>
+                            <value>
+                                <li>BEWH_CadianHeadgear</li>
+                            </value>
+                        </match>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/PawnKindDef[defName="Seg_WOTV_ScenarioPawnKind_Armsman"]/apparelRequired/li[.="Seg_Apparel_FlakArmour"]</xpath>
+                        <match Class="PatchOperationReplace">
+                            <xpath>Defs/PawnKindDef[defName="Seg_WOTV_ScenarioPawnKind_Armsman"]/apparelRequired/li[.="Seg_Apparel_FlakArmour"]</xpath>
+                            <value>
+                                <li>BEWH_CadianUniform</li>
+                            </value>
+                        </match>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/KCSG.SymbolDef[defName="Seg_Gun_MarsLasgun"]/thing</xpath>
+                        <match Class="PatchOperationReplace">
+                            <xpath>Defs/KCSG.SymbolDef[defName="Seg_Gun_MarsLasgun"]/thing</xpath>
+                            <value>
+                                <thing>BEWH_LasgunKantrael</thing>
+                            </value>
+                        </match>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/TraderKindDef/stockGenerators/li[thingDef="Seg_Gun_MarsLasgun"]/thingDef</xpath>
+                        <match Class="PatchOperationReplace">
+                            <xpath>Defs/TraderKindDef/stockGenerators/li[thingDef="Seg_Gun_MarsLasgun"]/thingDef</xpath>
+                            <value>
+                                <thingDef>BEWH_LasgunKantrael</thingDef>
+                            </value>
+                        </match>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/seg.ShipDefWithAI[defName="Seg_WOTV_SOS2AsltFreighter"]/symbolTable/li/value/shapeOrDef[.="Seg_Gun_MarsLasgun"]</xpath>
+                        <match Class="PatchOperationReplace">
+                            <xpath>Defs/seg.ShipDefWithAI[defName="Seg_WOTV_SOS2AsltFreighter"]/symbolTable/li/value/shapeOrDef[.="Seg_Gun_MarsLasgun"]</xpath>
+                            <value>
+                                <shapeOrDef>BEWH_LasgunKantrael</shapeOrDef>
+                            </value>
+                        </match>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/seg.ShipDefWithAI[defName="Seg_WOTV_SOS2AsltFreighter"]/symbolTable/li/value/shapeOrDef[.="Seg_Apparel_FlakArmour"]</xpath>
+                        <match Class="PatchOperationReplace">
+                            <xpath>Defs/seg.ShipDefWithAI[defName="Seg_WOTV_SOS2AsltFreighter"]/symbolTable/li/value/shapeOrDef[.="Seg_Apparel_FlakArmour"]</xpath>
+                            <value>
+                                <shapeOrDef>BEWH_CadianUniform</shapeOrDef>
+                            </value>
+                        </match>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/seg.ShipDefWithAI[defName="Seg_WOTV_SOS2AsltFreighter"]/symbolTable/li/value/shapeOrDef[.="Seg_Apparel_FlakHelmet"]</xpath>
+                        <match Class="PatchOperationReplace">
+                            <xpath>Defs/seg.ShipDefWithAI[defName="Seg_WOTV_SOS2AsltFreighter"]/symbolTable/li/value/shapeOrDef[.="Seg_Apparel_FlakHelmet"]</xpath>
+                            <value>
+                                <shapeOrDef>BEWH_CadianHeadgear</shapeOrDef>
+                            </value>
+                        </match>
+                    </li>
+                </operations>
+            </li>
+            <li Class="ModSettingsFramework.PatchOperationModOption">
+                <defaultValue>False</defaultValue>
+                <label>Segmentum: Mars pattern lasgun, flak armour and flak helmet</label>
+                <tooltip>The Kantrael lasgun, Cadian flak armour and Cadian helmet are retired. Imperial Guardsmen are equipped with Segmentum's versions.</tooltip>
+                <id>BEWH_SegmentumGear_Segmentum</id>
+                <operations>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael" or defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/recipeMaker/recipeUsers</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael" or defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/recipeMaker/researchPrerequisites</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael" or defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/recipeMaker/researchPrerequisite</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael" or defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/recipeMaker</xpath>
+                        <value>
+                            <recipeUsers Inherit="False" />
+                            <researchPrerequisites Inherit="False" />
+                        </value>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]/weaponTags</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael"]</xpath>
+                        <value>
+                            <weaponTags Inherit="False" />
+                        </value>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/apparel/tags</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/apparel</xpath>
+                        <value>
+                            <tags Inherit="False" />
+                        </value>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael" or defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/tradeTags</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael" or defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/tradeability</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael" or defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/generateCommonality</xpath>
+                        <success>Always</success>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="BEWH_LasgunKantrael" or defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]</xpath>
+                        <value>
+                            <tradeTags Inherit="False" />
+                            <tradeability>Sellable</tradeability>
+                            <generateCommonality>0</generateCommonality>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationConditional">
+                        <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]</xpath>
+                        <match Class="PatchOperationSequence">
+                            <operations>
+                                <li Class="PatchOperationReplace">
+                                    <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/apparelRequired</xpath>
+                                    <value>
+                                    <apparelRequired Inherit="False">
+                                        <li>BEWH_GuardFatigues</li>
+                                        <li>Seg_Apparel_FlakArmour</li>
+                                        <li>Seg_Apparel_FlakHelmet</li>
+                                    </apparelRequired>
+                                    </value>
+                                </li>
+                                <li Class="PatchOperationReplace">
+                                    <xpath>Defs/PawnKindDef[defName="BEWH_ImperiumGuardmanPawn"]/weaponTags</xpath>
+                                    <value>
+                                    <weaponTags>
+                                        <li>Seg_Las</li>
+                                    </weaponTags>
+                                    </value>
+                                </li>
+                            </operations>
+                        </match>
+                    </li>
+                </operations>
+            </li>
+        </options>
     </Operation>
 
 </Patch>

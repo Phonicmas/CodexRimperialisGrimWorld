@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ModSettingsFramework.ModOptionCategoryDef>
+        <defName>BEWH_SegmentumCompatibility</defName>
+        <label>Segmentum</label>
+        <order>0</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+
+</Defs>

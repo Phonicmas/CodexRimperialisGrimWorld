@@ -10,8 +10,6 @@
 		<li IfModActive="Phonicmas.RimDark.SpaceMaids">1.7/Mods/SpaceMaids</li>
 		<li IfModActive="Phonicmas.RimDark.BlackTemplars">1.7/Mods/BlackTemplars</li>
 		<li IfModActive="REDACTED.Segmentum.Core">1.7/Mods/SegmentumCore</li>
-		<li IfModActive="REDACTED.Segmentum.ChildrenOfTheOmnissiah">1.7/Mods/SegmentumCOTO</li>
-		<li IfModActive="REDACTED.Segmentum.WarrantOfTheVoid">1.7/Mods/SegmentumWOTV</li>
 		<li IfModActive="co.uk.epicguru.meleeanimation">1.7/Mods/MeleeAnimation</li>
 	</v1.7>
 </loadFolders>
