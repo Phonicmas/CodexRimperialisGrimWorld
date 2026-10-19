@@ -2,9 +2,8 @@
 <Patch>
 
     <Operation Class="ModSettingsFramework.PatchOperationRadioButtons">
-        <label>Imperial Guard lasgun and flak armour</label>
+        <label>Segmentum: Imperial Guard lasgun and flak armour</label>
         <tooltip>Which lasgun, flak armour and flak helmet are used when Segmentum is loaded. The other set can no longer be crafted, bought or found on generated pawns. Items already in a save are kept. Requires a restart.</tooltip>
-        <category>BEWH_SegmentumCompatibility</category>
         <order>0</order>
         <options>
             <li Class="ModSettingsFramework.PatchOperationModOption">
