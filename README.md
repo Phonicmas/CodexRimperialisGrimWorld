@@ -21,6 +21,8 @@ This mod contains textures, sounds and content adapted from the following GrimWo
   https://steamcommunity.com/sharedfiles/filedetails/?id=3550734583
 - Grimworld 40,000 - Angels of Death, by Clashgore, Odzmang, BlackMarket420, Tittymcswaggy, Alite, Abomination, Epsilon, Maxim, Samael, Con, Eridanus, HappyPurging, Skalfred and atxmatt2510
   https://steamcommunity.com/sharedfiles/filedetails/?id=3119816857
+- Graphic Chair Overhaul 2, by sicafe (chair back-layer textures cut from the GrimWorld chairs)
+  https://steamcommunity.com/sharedfiles/filedetails/?id=2982680251
 
 License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 This mod is likewise released under CC BY-NC-SA 4.0. It is not affiliated with or endorsed by the GrimWorld 40,000 team.
