@@ -33,11 +33,15 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
+    <!-- Only when it has its own appliesTo list (Mankind's Finest 1.7); on 1.6 it inherits the base's, patched above -->
+    <Operation Class="PatchOperationConditional">
         <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Upgrade_SusAnInjector"]/appliesTo</xpath>
-        <value>
-            <li>BEWH_TerminatorArmor</li>
-        </value>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/Core40k.ExtraDecorationDef[defName="BEWH_Upgrade_SusAnInjector"]/appliesTo</xpath>
+            <value>
+                <li>BEWH_TerminatorArmor</li>
+            </value>
+        </match>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
