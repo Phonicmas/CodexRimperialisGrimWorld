@@ -28,7 +28,8 @@
         </costList>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <designationCategory>BEWH_RimDarkCategory</designationCategory>
-        <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+        <!-- Siege raiders only get Construction 5 (vanilla mortar level); anything higher and they never build it. -->
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
         <comps>
             <li Class="CompProperties_Explosive">
                 <wickTicks>240</wickTicks>
