@@ -2,9 +2,6 @@
 <Defs>
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <techLevel>Spacer</techLevel>
-        <weaponClasses>
-            <li>Melee</li>
-        </weaponClasses>
         <graphicData>
             <shaderType>Cutout</shaderType>
             <texPath>Things/Weapons/SisterOfSilence/SisterOfSilence_Sword</texPath>
@@ -62,7 +59,7 @@
                 <li>BEWH_SilentSisterhood</li>
             </researchPrerequisites>
         </recipeMaker>
-        <weaponTags>
+        <weaponTags Inherit="False">
             <li>BEWH_CustodianWeapon</li>
         </weaponTags>
         <stuffCategories IsNull="True" />
@@ -160,7 +157,7 @@
                 <li>BEWH_SilentSisterhood</li>
             </researchPrerequisites>
         </recipeMaker>
-        <weaponTags>
+        <weaponTags Inherit="False">
             <li>BEWH_CustodianWeapon</li>
         </weaponTags>
         <stuffCategories IsNull="True" />

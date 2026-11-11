@@ -288,6 +288,9 @@
         </drawData>
         <shaderType>Cutout</shaderType>
         <decorationType>BEWH_DecoCategory_Misc</decorationType>
+        <incompatibleDecorations>
+            <li>BEWH_Deco_WebbingStrapPouch</li>
+        </incompatibleDecorations>
         <mustHaveResearch>
             <li>BEWH_MilitarumArmoury</li>
         </mustHaveResearch>
@@ -316,19 +319,11 @@
         </appliesToBodyTypes>
         <defaultShowRotation>
             <li>North</li>
-            <li>East</li>
-            <li>West</li>
         </defaultShowRotation>
         <drawData>
             <dataNorth>
                 <layer>89</layer>
             </dataNorth>
-            <dataEast>
-                <layer>34</layer>
-            </dataEast>
-            <dataWest>
-                <layer>34</layer>
-            </dataWest>
         </drawData>
         <shaderType>Cutout</shaderType>
         <decorationType>BEWH_DecoCategory_Misc</decorationType>
@@ -344,7 +339,7 @@
 
     <Core40k.ExtraDecorationDef>
         <defName>BEWH_Deco_WebbingBeltPouchRight</defName>
-        <label>belt pouch</label>
+        <label>belt pouch (right)</label>
         <description>A general-purpose pouch hung on the right side of the belt.</description>
         <iconPath>Things/Decorations/Guard/Webbing/BeltPouchRight/WebbingBeltPouchRight_icon</iconPath>
         <drawnTextureIconPath>Things/Decorations/Guard/Webbing/BeltPouchRight/WebbingBeltPouchRight</drawnTextureIconPath>
@@ -405,14 +400,27 @@
         </appliesToBodyTypes>
         <defaultShowRotation>
             <li>South</li>
+            <li>East</li>
+            <li>West</li>
         </defaultShowRotation>
         <drawData>
             <dataSouth>
                 <layer>36</layer>
             </dataSouth>
+            <dataEast>
+                <layer>36</layer>
+            </dataEast>
+            <dataWest>
+                <layer>36</layer>
+            </dataWest>
         </drawData>
         <shaderType>Cutout</shaderType>
         <decorationType>BEWH_DecoCategory_Misc</decorationType>
+        <incompatibleDecorations>
+            <li>BEWH_Deco_WebbingSmallPouch</li>
+            <li>BEWH_Deco_WebbingFragGrenade</li>
+            <li>BEWH_Deco_WebbingCanteen</li>
+        </incompatibleDecorations>
         <pawnStatOffsets>
             <CarryingCapacity>5</CarryingCapacity>
         </pawnStatOffsets>
@@ -446,6 +454,7 @@
         <shaderType>Cutout</shaderType>
         <decorationType>BEWH_DecoCategory_Misc</decorationType>
         <incompatibleDecorations>
+            <li>BEWH_Deco_WebbingBeltPouchLeft</li>
             <li>BEWH_Deco_WebbingCanteen</li>
             <li>BEWH_Deco_WebbingFragGrenade</li>
             <li>BEWH_Deco_WebbingKnife</li>
@@ -482,6 +491,9 @@
         </drawData>
         <shaderType>Cutout</shaderType>
         <decorationType>BEWH_DecoCategory_Misc</decorationType>
+        <incompatibleDecorations>
+            <li>BEWH_Deco_WebbingChestPouches</li>
+        </incompatibleDecorations>
         <pawnStatOffsets>
             <CarryingCapacity>3</CarryingCapacity>
         </pawnStatOffsets>
@@ -567,6 +579,7 @@
         <shaderType>Cutout</shaderType>
         <decorationType>BEWH_DecoCategory_Misc</decorationType>
         <incompatibleDecorations>
+            <li>BEWH_Deco_WebbingBeltPouchLeft</li>
             <li>BEWH_Deco_WebbingCanteen</li>
             <li>BEWH_Deco_WebbingSmallPouch</li>
             <li>BEWH_Deco_WebbingKnife</li>
@@ -666,6 +679,7 @@
         <shaderType>Cutout</shaderType>
         <decorationType>BEWH_DecoCategory_Misc</decorationType>
         <incompatibleDecorations>
+            <li>BEWH_Deco_WebbingBeltPouchLeft</li>
             <li>BEWH_Deco_WebbingSmallPouch</li>
             <li>BEWH_Deco_WebbingFragGrenade</li>
             <li>BEWH_Deco_WebbingKnife</li>

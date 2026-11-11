@@ -2,6 +2,9 @@
 <Defs>
     <ThingDef Abstract="True" Name="BEWH_MilitarumRangedBase" ParentName="BaseHumanMakeableGun">
         <techLevel>Spacer</techLevel>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <recipeMaker>
             <recipeUsers Inherit="False">
                 <li>BEWH_MilitarumWorkbench</li>
@@ -14,6 +17,9 @@
     </ThingDef>
     <ThingDef Abstract="True" Name="BEWH_MilitarumMeleeBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
         <techLevel>Industrial</techLevel>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <stuffCategories IsNull="True" Inherit="False" />
         <costStuffCount Inherit="False" />
@@ -25,7 +31,7 @@
             </recipeUsers>
             <displayPriority>410</displayPriority>
         </recipeMaker>
-        <weaponTags>
+        <weaponTags Inherit="False">
             <li>BEWH_MilitarumMelee</li>
         </weaponTags>
     </ThingDef>
@@ -35,7 +41,6 @@
         <description>A pump-action shotgun used by some regiments of the Astra Militarum and the Navis Imperialis. These weapons hit harder than the typical shotguns found on the rimworlds. While this is a fairly barebones model, better-equipped regiments possess unique and improved shotguns.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_MilitarumShotgun</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
             <drawSize>0.9</drawSize>
         </graphicData>
@@ -115,7 +120,6 @@
         <description>A semi-automatic Agripinaa-pattern autogun, similar to an assault rifle, that fires caseless solid-slug rounds. Compared to the assault rifles of modern rimworlds, these more advanced weapons boast greater damage, armor penetration and range.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_AutogunAgripinaa</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
         </graphicData>
         <techLevel>Industrial</techLevel>
@@ -187,7 +191,6 @@
         <description>A Kantrael MG Defender laspistol, used by NCOs and officers of the Astra Militarum, particularly the Cadian Shock Troops. While its smaller size results in a lasbolt of lower power, its compactness makes it a useful sidearm.\n\nLasguns are often derided as "flashlights" - sometimes even by their own users. However, a Chaos Space Marine once made a wise observation - he who scoffs at the power of a lasgun has not charged across a field of a hundred of them.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_LaspistolKantrael</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <uiIconScale>1.5</uiIconScale>
@@ -270,7 +273,6 @@
         <description>A Kantrael M36-pattern lasgun, the standard-issue weapon of the Cadian Shock Troops, widely copied by other Astra Militarum regiments. Lasguns fire a pulsed beam of laser light at the target, and are powered by rechargeable power packs.\n\nDuring one of the first deployments of Primaris Space Marines, one reckless Unnumbered Son decided to charge across open ground against a trench line of heretic Guardsmen. While their lasguns stood no chance of truly penetrating the Marine's ceramite at first, each lasbolt dug a small pit in his armor. The Primaris Marine was essentially eroded to death in front of the Imperial battleline - a sobering sight for his peers, who now knew that even an Angel of Death can be cut down by mere mortals.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_LasgunKantrael</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
             <drawSize>1.1</drawSize>
         </graphicData>
@@ -353,7 +355,6 @@
         <description>A variant of the lasgun built for long-range combat, formally known as the "Sniper Variant Lasgun". Long-las power packs are more expensive than a standard power pack, but the lasbolts they power are far more potent.\n\nRatlings, an abhuman subspecies, are generally not employed often by the Astra Militarum due to their lower strength and hedonistic attitude. However, their short stature makes them excellent snipers and infiltrators.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_LonglasCadian</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
             <drawSize>1.2</drawSize>
         </graphicData>
@@ -436,7 +437,6 @@
         <description>Hellguns are a special type of high-powered lasgun, also known as a "hot-shot lasgun". Instead of a standard power pack, hellguns feed from a backpack, allowing them to unleash a long burst of potent lasbolts.\n\nHellguns are generally seen only in the hands of elite Astra Militarum forces, such as the Tempestus Scions and the Cadian Kasrkin. Their superior penetration over normal lasguns gives hellguns a decent chance even against opponents wearing power armor.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_HellgunCadian</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -521,7 +521,6 @@
         <description>A Cadian-pattern flamer of the Astra Militarum. It projects a gout of burning promethium that clears trenches and bunkers with terrifying ease.\n\nFlamers are a favored tool of the Imperium for cleansing xenos, mutants and heretics alike - there are few problems that cannot be solved with sufficient fire.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_FlamerCadian</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -600,7 +599,6 @@
         <description>A smaller meltagun for use by the Imperial Guard. Even though it is scaled for a baseline human, it remains a potent anti-armor weapon in close quarters.\n\nMelta weapons are often considered an alternative to plasma weapons. While their range is significantly less than their plasma counterparts, no one has ever seen a meltagun overheat and explode like a plasma gun.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_MeltagunCadian</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
             <drawSize>1.1</drawSize>
         </graphicData>
@@ -690,7 +688,6 @@
         <description>A human-sized Magnacore-pattern plasma pistol, designed on the Forge World of Ryza. Its relatively tiny size cuts deeply into its firepower and range, but a plasma weapon is still a plasma weapon.\n\nThis particular pattern of plasma pistol was popular with Inquisitors and their retinue. Hunters of aliens, mutants and heretics across the galaxy, the Holy Orders of the Emperor's Inquisition acted as the secret police of the Imperium of Man.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_PlasmaPistolMagnacore</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -785,7 +782,6 @@
         <description>An M35 Magnacore-pattern plasma gun for use by the Imperial Guard. Even though it is scaled for a baseline human, the plasma it fires is still a big threat even to armored targets.\n\nBeing a squad's plasma gunner is a dubious honor. While a plasma gunner has the power of the sun in their hands, that same power could also blast them to pieces with one too many trigger pulls.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_PlasmaGunMagnacore</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
             <drawSize>1.2</drawSize>
         </graphicData>
@@ -881,7 +877,6 @@
         <description>A simple fighting knife of Imperial design, suitable for a baseline human. Slight improvements have given it an edge over the typical knives found on rimworlds.\n\nDespite the power of the horrifying monstrosities that the Astra Militarum has been pitted against, knives like these have saved an uncountable number of Guardsmen from a gruesome death.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_CombatKnife</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
         </graphicData>
         <statBases>
@@ -945,7 +940,6 @@
         <description>A Cadia Mk IV chainsword fit for use by a baseline human. While it is smaller and thus less deadly than an Astartes chainsword, it can still rip through enemy flesh with horrifying efficiency.\n\nChainswords are sometimes granted to officers of the Astra Militarum, including some Commissars.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_ChainswordCadian</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <statBases>
@@ -1020,7 +1014,6 @@
         <description>A Munitorum Mk III power sword, issued to officers after acts of valor. When activated, the blade becomes sheathed in a lethal haze of disruptive energy, allowing it to slice through armor and flesh alike.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_PowerSwordMunitorum</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
         </graphicData>
         <techLevel>Spacer</techLevel>
@@ -1083,7 +1076,6 @@
         <description>A well-designed power sword with a knuckle guard. The close-combat weapon of choice of the Lucifer Blacks, it cuts more viciously and penetrates armor better than standard-issue Astra Militarum power swords. \n\nThe Lucifer Blacks tend to see a different kind of action to regular Imperial Guardsmen - not that of the assaulting army, but the assassin in the crowd. Almost like the mortal version of Custodians, they must keep a watchful eye, lest a dagger slip between their principal's ribs.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_PowerSabreLuciferBlack</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
         </graphicData>
         <techLevel>Spacer</techLevel>
@@ -1149,7 +1141,6 @@
         <description>A long polearm with a single-edged blade on the end, coated in a disruptive power field. Normally seen only in the hands of ceremonial Lucifer Black guards, it is still horribly effective against any attacker. \n\nA similar weapon is the Star Glaive, used in battle by Eldar Autarchs - commanders of Eldar war hosts.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_PowerGlaiveLuciferBlack</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
         </graphicData>
         <techLevel>Spacer</techLevel>
@@ -1266,7 +1257,7 @@
         <stuffCategories IsNull="True" Inherit="False" />
         <costStuffCount Inherit="False" />
         <smeltable>false</smeltable>
-        <weaponTags>
+        <weaponTags Inherit="False">
             <li>BEWH_MilitarumMelee</li>
             <li>BEWH_MilitarumPowerFist</li>
         </weaponTags>
@@ -1305,7 +1296,6 @@
         <description>An Equinox Mk II force staff. Through its intricate psi-convectors, a psyker harnesses the pure energy of the Warp, unleashing it upon their enemies in ferocious psychic cavalcades.\n\nAs a true force weapon, it deals more damage the higher the wielder's psychic sensitivity.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_ForceStaffEquinox</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
         </graphicData>
         <techLevel>Spacer</techLevel>
@@ -1398,7 +1388,6 @@
         <description>An entrenching tool used by Imperial Guardsmen to dig in, and as a sturdy melee weapon. A solid strike to the head from one of these shovels can do considerable damage to an enemy heretic. \n\nThe Death Korps of Krieg, being specialists in trench warfare, are heavily associated with these shovels.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_EntrenchingToolKrieg</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
         </graphicData>
         <statBases>
@@ -1465,7 +1454,6 @@
         <description>A simple tubular weapon that launches fragmentation grenades using compressed gas. Each shell bursts in a spray of shrapnel, catching enemies hunkered down in trenches and behind cover - a favorite of the Death Korps when clearing enemy lines.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_GrenadeLauncherKrieg</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>Cutout</shaderType>
             <drawSize>1.1</drawSize>
         </graphicData>
@@ -1544,7 +1532,6 @@
         <description>A semi-automatic pistol firing smaller, but still powerful bolts. A common sidearm of Space Marines, but human-scaled versions can be found in use by the Imperial Guard.\n\nThese pistols are also infamous as the weapons of Imperial Commissars - when executing a cowardly Guardsman, a bolt pistol produces a much bigger (and thus more impactful on morale) spray of blood and gore than a mere laspistol.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_BoltPistolCeres</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <soundInteract>Interact_Autopistol</soundInteract>
@@ -1626,7 +1613,6 @@
         <description>A scaled-down bolter of the Locke pattern. The weapon's smaller size makes it suitable for use by baseline humans. While it is indeed powerful, its recoil and weight is high.\n\nThis pattern of bolter was common in the Koronus Expanse, seeing use by a wide variety of characters - rogue traders, pirates, chaos cultists, and more.</description>
         <graphicData>
             <texPath>Things/Weapons/Guard/BEWH_BolterLocke</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>

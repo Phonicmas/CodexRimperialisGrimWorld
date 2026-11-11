@@ -306,8 +306,6 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <designationCategory>BEWH_RimDarkCategory</designationCategory>
-        <uiIconScale>0.8</uiIconScale>
         <statBases>
             <MaxHitPoints>75</MaxHitPoints>
             <WorkToBuild>750</WorkToBuild>
@@ -333,8 +331,6 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <designationCategory>BEWH_RimDarkCategory</designationCategory>
-        <uiIconScale>0.8</uiIconScale>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToBuild>1500</WorkToBuild>
@@ -360,8 +356,6 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <designationCategory>BEWH_RimDarkCategory</designationCategory>
-        <uiIconScale>0.8</uiIconScale>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
             <WorkToBuild>3000</WorkToBuild>
@@ -386,8 +380,6 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <designationCategory>BEWH_RimDarkCategory</designationCategory>
-        <uiIconScale>0.8</uiIconScale>
         <statBases>
             <MaxHitPoints>175</MaxHitPoints>
             <WorkToBuild>3300</WorkToBuild>

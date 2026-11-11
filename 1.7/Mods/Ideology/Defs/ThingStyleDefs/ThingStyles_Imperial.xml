@@ -15,6 +15,7 @@
                 <rect>(0,0.05,1,1.95)</rect>
             </damageData>
         </graphicData>
+        <uiIconPath>Things/Buildings/Furniture/Bed/CommonBedSingle/Bed_CommonSingle_south</uiIconPath>
     </ThingStyleDef>
 
     <ThingStyleDef>
@@ -29,6 +30,7 @@
                 <rect>(0,0.05,2,1.95)</rect>
             </damageData>
         </graphicData>
+        <uiIconPath>Things/Buildings/Furniture/Bed/CommonBedDouble/Bed_CommonDouble_south</uiIconPath>
     </ThingStyleDef>
 
     <ThingStyleDef>
@@ -43,6 +45,7 @@
                 <rect>(0,0.05,2,1.95)</rect>
             </damageData>
         </graphicData>
+        <uiIconPath>Things/Buildings/Furniture/Bed/RoyalBedDouble/Bed_RoyalDouble_south</uiIconPath>
     </ThingStyleDef>
 
     <ThingStyleDef>
@@ -54,6 +57,7 @@
             <shaderType>CutoutComplex</shaderType>
             <drawSize>(2,2)</drawSize>
         </graphicData>
+        <uiIconPath>Things/Buildings/Furniture/Bed/Medicae/Bed_Medical_south</uiIconPath>
     </ThingStyleDef>
 
     <ThingStyleDef>
@@ -226,6 +230,7 @@
                 <rect>(0,0.05,2,1.95)</rect>
             </damageData>
         </graphicData>
+        <uiIconPath>Things/Buildings/Furniture/Bed/RoyalBedDouble/Bed_RoyalDouble_south</uiIconPath>
     </ThingStyleDef>
 
     <ThingStyleDef Name="BEWH_ImperialNobilityTableStyleBase" Abstract="True">

@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef ParentName="ArmorMachineableBase">
+    <ThingDef ParentName="BEWH_ImperialArmorBase">
         <defName>BEWH_SisterOfSilenceArmor</defName>
         <label>Sister of Silence armor</label>
         <description>A suit of Power Armor built for the Sisters of Silence, the left hand of the Talons of the Emperor. While it is of smaller stature than the Custodian equivalent, it is just as finely-crafted, and similarly protective. 
 
 The Sister of Silence are an ancient order of Blanks - a form of mutant that is utterly abhorrent to the Warp and to psykery. As such, the Sisterhood makes for excellent hunters of daemons and witches, as well as managing the psyker harvest of the Black Ships.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/SisterOfSilence/Body/SisterOfSilence/SisterOfSilence</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>12</Crafting>
             </skillRequirements>
@@ -56,26 +50,8 @@ The Sister of Silence are an ancient order of Blanks - a form of mutant that is 
             <Uranium>30</Uranium>
             <Gold>20</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/SisterOfSilence/Body/SisterOfSilence/SisterOfSilence</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-                <li>Hands</li>
-                <li>Feet</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Shell</li>
-                <li>Middle</li>
-            </layers>
             <drawData>
                 <dataNorth>
                     <layer>74</layer>
@@ -89,21 +65,11 @@ The Sister of Silence are an ancient order of Blanks - a form of mutant that is 
                 <scale>1.1</scale>
                 <childScale>1.1</childScale>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_SisterOfSilence</li>
                 <li>EVA</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -121,29 +87,18 @@ The Sister of Silence are an ancient order of Blanks - a form of mutant that is 
                 <compClass>SaveOurShip2.CompEVA</compClass>
             </li>
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_ForcesBodyType">
-                <forcedBodyType>Male</forcedBodyType>
-            </li>
-        </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="BEWH_ImperialHelmetBase">
         <defName>BEWH_SisterOfSilenceHelmet</defName>
         <label>Sister of Silence helmet</label>
         <description>The mask of a Silent Sister. Traditionally, the mouth of a Sister is always covered, representing their vow of silence. 
 
 Sisters of Silence primarily communicate in their own sign language, known as "Thoughtmark". Very few outside of the Sisters of Silence and the Adeptus Custodes can understand it - Sisters of a particularly sarcastic bent amuse themselves by signing to Space Marines and Imperial Guardsmen whom they know full well do not understand them.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/SisterOfSilence/Helmet/SisterOfSilenceA/SisterOfSilenceA</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>12</Crafting>
             </skillRequirements>
@@ -180,19 +135,8 @@ Sisters of Silence primarily communicate in their own sign language, known as "T
             <Plasteel>55</Plasteel>
             <Gold>8</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/SisterOfSilence/Helmet/SisterOfSilenceA/SisterOfSilenceA</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
             <drawData>
                 <scale>0.9</scale>
                 <dataSouth>
@@ -208,21 +152,11 @@ Sisters of Silence primarily communicate in their own sign language, known as "T
                     <offset>(0,0,0.17)</offset>
                 </dataWest>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_SisterOfSilence</li>
                 <li>EVA</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>

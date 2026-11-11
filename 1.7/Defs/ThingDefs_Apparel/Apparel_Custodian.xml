@@ -1,20 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ThingDef ParentName="ArmorMachineableBase">
-        <defName>BEWH_CustodianArmor</defName>
-        <label>Custodian armor</label>
-        <description>A suit of Power Armor built for the Adeptus Custodes, the right hand of the Talons of the Emperor. Built from the golden material known as Auramite, its strength greatly exceeds that of a Space Marine's equivalent armor.\n\nThe Adeptus Custodes are, among other names, also known as the Ten Thousand. For most of their history, stretching back to the Unification Wars on Terra, there have indeed been ten thousand of them. However, during the War Within the Webway, the fighting was so brutal that their number was reduced down to a mere thousand, though they eventually recovered.</description>
+    <ThingDef Abstract="True" Name="BEWH_ImperialArmorBase" ParentName="ArmorMachineableBase">
         <techLevel>Spacer</techLevel>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Things/Armor/Custodes/Body/ShieldHost/ShieldHost</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
             <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Hands</li>
+                <li>Feet</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags Inherit="False" />
+        </apparel>
+        <tradeTags>
+            <li>HiTechArmor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <tradeability>Sellable</tradeability>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_ForcesBodyType">
+                <forcedBodyType>Male</forcedBodyType>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef Abstract="True" Name="BEWH_ImperialHelmetBase" ParentName="ArmorHelmetMakeableBase">
+        <techLevel>Spacer</techLevel>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>BEWH_CutoutThreeColor</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags Inherit="False" />
+        </apparel>
+        <tradeTags>
+            <li>HiTechArmor</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+
+    <ThingDef ParentName="BEWH_ImperialArmorBase">
+        <defName>BEWH_CustodianArmor</defName>
+        <label>Custodian armor</label>
+        <description>A suit of Power Armor built for the Adeptus Custodes, the right hand of the Talons of the Emperor. Built from the golden material known as Auramite, its strength greatly exceeds that of a Space Marine's equivalent armor.\n\nThe Adeptus Custodes are, among other names, also known as the Ten Thousand. For most of their history, stretching back to the Unification Wars on Terra, there have indeed been ten thousand of them. However, during the War Within the Webway, the fighting was so brutal that their number was reduced down to a mere thousand, though they eventually recovered.</description>
+        <graphicData>
+            <texPath>Things/Armor/Custodes/Body/ShieldHost/ShieldHost</texPath>
+        </graphicData>
+        <recipeMaker>
             <skillRequirements>
                 <Crafting>14</Crafting>
             </skillRequirements>
@@ -55,26 +133,8 @@
             <Uranium>60</Uranium>
             <Gold>40</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Custodes/Body/ShieldHost/ShieldHost</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-                <li>Hands</li>
-                <li>Feet</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Shell</li>
-                <li>Middle</li>
-            </layers>
             <drawData>
                 <dataNorth>
                     <layer>74</layer>
@@ -88,21 +148,11 @@
                 <scale>1.1</scale>
                 <childScale>1.1</childScale>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_CustodianArmor</li>
                 <li>EVA</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -120,27 +170,16 @@
                 <compClass>SaveOurShip2.CompEVA</compClass>
             </li>
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_ForcesBodyType">
-                <forcedBodyType>Male</forcedBodyType>
-            </li>
-        </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="BEWH_ImperialHelmetBase">
         <defName>BEWH_CustodianHelmet</defName>
         <label>Custodian helmet</label>
         <description>A helmet worn by the battleline Custodian Guard, also known as the Hykanatoi. The red plume on top of the helmet inspires joy in their allies and fear in their enemies, for now they must face the might of the Adeptus Custodes. \n\nSome might be surprised to find women among the Ten Thousand - not that they would be able to tell from the faceless, statuesque golden giants. While the Space Marine creation process is indeed male-exclusive, the more tailored process for Custodians allows for the worthiest of women to join their ranks… though they too will face all of the same challenges.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Custodes/Helmet/ShieldHost/ShieldHost</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>14</Crafting>
             </skillRequirements>
@@ -175,19 +214,8 @@
             <Plasteel>70</Plasteel>
             <Gold>10</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Custodes/Helmet/ShieldHost/ShieldHost</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
             <drawData>
                 <scale>1.65</scale>
                 <dataSouth>
@@ -203,21 +231,11 @@
                     <offset>(0,0,0.05)</offset>
                 </dataWest>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_CustodianArmor</li>
                 <li>EVA</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -232,22 +250,16 @@
         </comps>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorMachineableBase">
+    <ThingDef ParentName="BEWH_ImperialArmorBase">
         <defName>BEWH_AllarusArmor</defName>
         <label>Allarus Terminator armor</label>
         <description>A suit of Terminator Power Armor, crafted from auramite for the Allarus Custodians of the Adeptus Custodes. Stronger even than their ceramite cousins, the protection provided by this armor exceeds that of some armored vehicles. 
 
 Allarus Terminators are tasked with exterminating high-value targets in the field. Such is their relentlessness that the Allarus Terminator armor contains short-range teleporters for pursuing their foes, along with wrist-mounted Balistus grenade launchers - though this replica carries neither.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Custodes/Body/Allarus/Allarus</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>15</Crafting>
             </skillRequirements>
@@ -289,26 +301,8 @@ Allarus Terminators are tasked with exterminating high-value targets in the fiel
             <Uranium>90</Uranium>
             <Gold>50</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Custodes/Body/Allarus/Allarus</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-                <li>Hands</li>
-                <li>Feet</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Shell</li>
-                <li>Middle</li>
-            </layers>
             <drawData>
                 <dataNorth>
                     <layer>74</layer>
@@ -322,21 +316,11 @@ Allarus Terminators are tasked with exterminating high-value targets in the fiel
                 <scale>1.1</scale>
                 <childScale>1.1</childScale>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_AllarusArmor</li>
                 <li>EVA</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -354,29 +338,18 @@ Allarus Terminators are tasked with exterminating high-value targets in the fiel
                 <compClass>SaveOurShip2.CompEVA</compClass>
             </li>
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_ForcesBodyType">
-                <forcedBodyType>Male</forcedBodyType>
-            </li>
-        </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="BEWH_ImperialHelmetBase">
         <defName>BEWH_AllarusHelmet</defName>
         <label>Allarus Terminator helmet</label>
         <description>A strong helmet, built for the Allarus Terminators. It is highly protective due to its auramite build, well-suited for deep striking towards the enemy's leaders. 
 
 The Custodians, unlike their Space Marine cousins, rarely remove their helmets, as they wish to remain a faceless and solid wall of auramite. Custodians of the Imperial Palace are sometimes mistaken for ornate golden statues or a mere ceremonial guard, but any threat that should foolishly present themselves will usually not live long enough to regret it.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Custodes/Helmet/Allarus/Allarus</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>15</Crafting>
             </skillRequirements>
@@ -413,19 +386,8 @@ The Custodians, unlike their Space Marine cousins, rarely remove their helmets, 
             <Plasteel>90</Plasteel>
             <Gold>15</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Custodes/Helmet/Allarus/Allarus</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
             <drawData>
                 <scale>1.3793</scale>
                 <dataSouth>
@@ -441,21 +403,11 @@ The Custodians, unlike their Space Marine cousins, rarely remove their helmets, 
                     <offset>(0,0,0.1)</offset>
                 </dataWest>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_AllarusArmor</li>
                 <li>EVA</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>

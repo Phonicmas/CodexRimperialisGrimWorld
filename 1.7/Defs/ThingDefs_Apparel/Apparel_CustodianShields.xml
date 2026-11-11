@@ -1,23 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef ParentName="ApparelMakeableBase">
-        <defName>BEWH_PraesidiumShield</defName>
-        <label>Praesidium shield</label>
-        <description>An ancient design of ballistic shield used by the Adeptus Custodes. Consisting of thick ceramite plated with auramite and backed by energy field generators, this shield can turn anyone into a solid bulwark against enemy attacks. \n\nThe design dates back to the Unification Wars, as does the Custodians themselves. They were the first gene-crafted warriors ever created by the God-Emperor of Mankind, followed soon by the Thunder Warriors, with whom He unified Terra.</description>
+    <ThingDef Abstract="True" Name="BEWH_ImperialShieldBase" ParentName="ApparelMakeableBase">
         <techLevel>Spacer</techLevel>
         <graphicData>
-            <texPath>Things/Shields/Custodes/Praesidium/Praesidium</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <thingSetMakerTags Inherit="False" />
+        <smeltable>false</smeltable>
+        <tradeability>Sellable</tradeability>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <bodyPartGroups>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>BEWH_Shield</li>
+            </layers>
+        </apparel>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_TextureFlags" />
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BEWH_ImperialShieldBase">
+        <defName>BEWH_PraesidiumShield</defName>
+        <label>Praesidium shield</label>
+        <description>An ancient design of ballistic shield used by the Adeptus Custodes. Consisting of thick ceramite plated with auramite and backed by energy field generators, this shield can turn anyone into a solid bulwark against enemy attacks. \n\nThe design dates back to the Unification Wars, as does the Custodians themselves. They were the first gene-crafted warriors ever created by the God-Emperor of Mankind, followed soon by the Thunder Warriors, with whom He unified Terra.</description>
+        <graphicData>
+            <texPath>Things/Shields/Custodes/Praesidium/Praesidium</texPath>
+        </graphicData>
+        <recipeMaker>
             <skillRequirements>
                 <Crafting>14</Crafting>
             </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>FabricationBench</li>
-            </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_AuramiteForging</li>
             </researchPrerequisites>
@@ -42,23 +69,8 @@
             <Gold>15</Gold>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
-        <thingSetMakerTags Inherit="False"/>
-        <smeltable>false</smeltable>
-        <tradeability>Sellable</tradeability>
         <apparel>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <careIfWornByCorpse>false</careIfWornByCorpse>
-            <useDeflectMetalEffect>true</useDeflectMetalEffect>
-            <bodyPartGroups>
-                <li>Arms</li>
-            </bodyPartGroups>
-            <layers>
-                <li>BEWH_Shield</li>
-            </layers>
-            <tags>
+            <tags Inherit="False">
                 <li>BEWH_CustodianArmor</li>
             </tags>
             <renderNodeProperties>
@@ -104,28 +116,18 @@
                 <shieldArmorRating>0.7</shieldArmorRating>
             </li>
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_TextureFlags"/>
-        </modExtensions>
     </ThingDef>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="BEWH_ImperialShieldBase">
         <defName>BEWH_ShieldCaptainShield</defName>
         <label>Shield Captain shield</label>
         <description>An ancient design of ballistic shield used by the Adeptus Custodes. Consisting of thick ceramite plated with auramite and backed by energy field generators, this shield can turn anyone into a solid bulwark against enemy attacks. \n\nThe design dates back to the Unification Wars, as does the Custodians themselves. They were the first gene-crafted warriors ever created by the God-Emperor of Mankind, followed soon by the Thunder Warriors, with whom He unified Terra.</description>
-        <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/Shields/Custodes/ShieldCaptain/ShieldCaptain</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>14</Crafting>
             </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>FabricationBench</li>
-            </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_AuramiteForging</li>
             </researchPrerequisites>
@@ -150,23 +152,8 @@
             <Gold>20</Gold>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
-        <thingSetMakerTags Inherit="False"/>
-        <smeltable>false</smeltable>
-        <tradeability>Sellable</tradeability>
         <apparel>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <careIfWornByCorpse>false</careIfWornByCorpse>
-            <useDeflectMetalEffect>true</useDeflectMetalEffect>
-            <bodyPartGroups>
-                <li>Arms</li>
-            </bodyPartGroups>
-            <layers>
-                <li>BEWH_Shield</li>
-            </layers>
-            <tags>
+            <tags Inherit="False">
                 <li>BEWH_CustodianArmor</li>
             </tags>
             <renderNodeProperties>
@@ -212,8 +199,5 @@
                 <shieldArmorRating>0.75</shieldArmorRating>
             </li>
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_TextureFlags"/>
-        </modExtensions>
     </ThingDef>
 </Defs>

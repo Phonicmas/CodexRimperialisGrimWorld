@@ -47,8 +47,6 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <designationCategory>BEWH_RimDarkCategory</designationCategory>
-        <uiIconScale>0.8</uiIconScale>
         <statBases>
             <MaxHitPoints>75</MaxHitPoints>
             <WorkToBuild>750</WorkToBuild>

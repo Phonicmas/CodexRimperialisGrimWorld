@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="BEWH_ImperialShieldBase">
         <defName>BEWH_ImperialWardenShield</defName>
         <label>Imperial Warden shield</label>
         <description>A massive shield in the style of the Lion's own. Heavier and plainer than the shield the true Lion found in Mirror-Caliban, it is built to hold a line on its own, turning aside blades and bolts alike.</description>
-        <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/Shields/Relics/WardenShield/WardenShield</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>18</Crafting>
             </skillRequirements>
@@ -43,23 +39,8 @@
             <Gold>10</Gold>
             <ComponentSpacer>3</ComponentSpacer>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
-        <thingSetMakerTags Inherit="False"/>
-        <smeltable>false</smeltable>
-        <tradeability>Sellable</tradeability>
         <apparel>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <careIfWornByCorpse>false</careIfWornByCorpse>
-            <useDeflectMetalEffect>true</useDeflectMetalEffect>
-            <bodyPartGroups>
-                <li>Arms</li>
-            </bodyPartGroups>
-            <layers>
-                <li>BEWH_Shield</li>
-            </layers>
-            <tags>
+            <tags Inherit="False">
                 <li>BEWH_LionRelic</li>
             </tags>
             <renderNodeProperties>
@@ -106,8 +87,5 @@
                 <shieldArmorRating>0.85</shieldArmorRating>
             </li>
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_TextureFlags"/>
-        </modExtensions>
     </ThingDef>
 </Defs>

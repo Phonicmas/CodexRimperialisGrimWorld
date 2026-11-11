@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ThingDef ParentName="ArmorMachineableBase">
-        <defName>BEWH_EmperorArmor</defName>
-        <label>One True Armor</label>
-        <description>A truly majestic suit of auramite Power Armor, patterned after the legendary suit worn by the God-Emperor of Mankind. Its protection is unrivalled, and it greatly amplifies the psychic potential of its wearer. \n\nThe Emperor has guided mankind from time immemorial, adopting various guises throughout history. It was only during the Age of Strife that He emerged in His full majesty, founded the Imperium of Mankind, and sallied forth across the galaxy to build His empire.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Things/Armor/Relics/Body/Emperor/EmperorMasked/Emperor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
-        </graphicData>
+    <ThingDef Abstract="True" Name="BEWH_RelicArmorBase" ParentName="BEWH_ImperialArmorBase">
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>18</Crafting>
             </skillRequirements>
-            <recipeUsers Inherit="false">
+            <recipeUsers Inherit="False">
                 <li>BEWH_VulkansForge</li>
             </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Abstract="True" Name="BEWH_RelicHelmetBase" ParentName="BEWH_ImperialHelmetBase">
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>18</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>BEWH_VulkansForge</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BEWH_RelicArmorBase">
+        <defName>BEWH_EmperorArmor</defName>
+        <label>One True Armor</label>
+        <description>A truly majestic suit of auramite Power Armor, patterned after the legendary suit worn by the God-Emperor of Mankind. Its protection is unrivalled, and it greatly amplifies the psychic potential of its wearer. \n\nThe Emperor has guided mankind from time immemorial, adopting various guises throughout history. It was only during the Age of Strife that He emerged in His full majesty, founded the Imperium of Mankind, and sallied forth across the galaxy to build His empire.</description>
+        <graphicData>
+            <texPath>Things/Armor/Relics/Body/Emperor/EmperorMasked/Emperor</texPath>
+        </graphicData>
+        <recipeMaker>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RegaliaOfTheEmperor</li>
             </researchPrerequisites>
@@ -56,26 +66,8 @@
             <Uranium>100</Uranium>
             <Gold>80</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Body/Emperor/EmperorMasked/Emperor</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-                <li>Hands</li>
-                <li>Feet</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Shell</li>
-                <li>Middle</li>
-            </layers>
             <drawData>
                 <dataNorth>
                     <layer>74</layer>
@@ -89,20 +81,10 @@
                 <scale>1.2</scale>
                 <childScale>1.2</childScale>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_EmperorRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -116,33 +98,16 @@
             </li>
             <li Class="Core40k.CompProperties_AlternateTexture" />
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_ForcesBodyType">
-                <forcedBodyType>Male</forcedBodyType>
-            </li>
-        </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="BEWH_RelicHelmetBase">
         <defName>BEWH_EmperorHelmet</defName>
         <label>Emperor's laurels</label>
         <description>A magnificent golden wreath like that worn by the Emperor of Mankind. Surely it is no ordinary wreath, for it is radiant with glory. \n\nCrippled by His final duel with Horus, the Emperor was ferried to the Imperial Palace and placed upon the Golden Throne. There he has sat for ten thousand years, shining a great Warp beacon - the Astronomican - so that ships travelling through the Warp may find their path through the Immaterium. \n\nThousands of psykers are sacrificed to Him every day, their strength consumed to prolong the dying Emperor's life.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Relics/Helmet/Emperor/Emperor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <skillRequirements>
-                <Crafting>18</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>BEWH_VulkansForge</li>
-            </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RegaliaOfTheEmperor</li>
             </researchPrerequisites>
@@ -175,19 +140,8 @@
             <Plasteel>90</Plasteel>
             <Gold>30</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Helmet/Emperor/Emperor</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
             <renderSkipFlags>
                 <li>None</li>
             </renderSkipFlags>
@@ -206,20 +160,10 @@
                 </dataWest>
                 <scale>1.1</scale>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_EmperorRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -231,26 +175,14 @@
         </comps>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorMachineableBase">
+    <ThingDef ParentName="BEWH_RelicArmorBase">
         <defName>BEWH_ValdorArmor</defName>
         <label>Corinthine warplate</label>
         <description>The Power Armor of Constantin Valdor, the first Captain-General of the Legio Custodes. This armor is the stuff of legend, turning the user into a stalwart, auramite juggernaut. \n\nValdor was the first Custodian successfully produced by the Emperor's gene-craft, and has always been held as the greatest of them all. At the dawn of the Horus Heresy, he had earned nearly two thousand names, and a full transcription of them was enough to fill an entire book.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Relics/Body/Valdor/ValdorMasked/Valdor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <skillRequirements>
-                <Crafting>18</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>BEWH_VulkansForge</li>
-            </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
             </researchPrerequisites>
@@ -285,26 +217,8 @@
             <Uranium>100</Uranium>
             <Gold>80</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Body/Valdor/ValdorMasked/Valdor</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-                <li>Hands</li>
-                <li>Feet</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Shell</li>
-                <li>Middle</li>
-            </layers>
             <drawData>
                 <dataNorth>
                     <layer>74</layer>
@@ -318,20 +232,10 @@
                 <scale>1.4</scale>
                 <childScale>1.4</childScale>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_ValdorRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -353,33 +257,16 @@
                 <blocksRangedWeapons>false</blocksRangedWeapons>
             </li>
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_ForcesBodyType">
-                <forcedBodyType>Male</forcedBodyType>
-            </li>
-        </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="BEWH_RelicHelmetBase">
         <defName>BEWH_ValdorHelmet</defName>
         <label>Corinthine helmet</label>
         <description>A masterfully-crafted helmet, built to match the Corinthine Warplate. \n\nSome time after the end of the Horus Heresy, Constantin Valdor slipped away from the Imperial Palace and disappeared into the night, never to be seen again. His last known words were "Only in Death".</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Relics/Helmet/Valdor/Valdor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <skillRequirements>
-                <Crafting>18</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>BEWH_VulkansForge</li>
-            </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
             </researchPrerequisites>
@@ -412,19 +299,8 @@
             <Plasteel>90</Plasteel>
             <Gold>30</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Helmet/Valdor/Valdor</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
             <drawData>
                 <dataNorth>
                     <offset>(0,0,0.2)</offset>
@@ -440,20 +316,10 @@
                 </dataWest>
                 <scale>0.8</scale>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_ValdorRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -465,26 +331,14 @@
         </comps>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorMachineableBase">
+    <ThingDef ParentName="BEWH_RelicArmorBase">
         <defName>BEWH_GuillimanArmor</defName>
         <label>Armor of Fate</label>
         <description>A carefully-crafted replica of the Armor of Fate, the Power Armor worn by the Imperial Regent Roboute Guilliman. It would be safe to consider this design to be the pinnacle of Power Armor technology - an opponent would need a large volume of anti-armor fire to even faze the wearer. \n\nThe original Armor of Fate was even further enhanced by the power of Ynnead, the nascent Eldar god of the dead. Combined with the advanced life-preserving technology built into the armor by the Adeptus Mechanicus, the Armor of Fate healed the grievously-wounded Primarch and restored him to full strength.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Relics/Body/Guilliman/GuillimanMasked/Guilliman</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <skillRequirements>
-                <Crafting>18</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>BEWH_VulkansForge</li>
-            </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
             </researchPrerequisites>
@@ -520,26 +374,8 @@
             <Uranium>100</Uranium>
             <Gold>80</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Body/Guilliman/GuillimanMasked/Guilliman</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-                <li>Hands</li>
-                <li>Feet</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Shell</li>
-                <li>Middle</li>
-            </layers>
             <drawData>
                 <dataNorth>
                     <layer>74</layer>
@@ -551,20 +387,10 @@
                     <offset>(0,0,-0.1)</offset>
                 </dataWest>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_GuillimanRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -579,33 +405,16 @@
             </li>
             <li Class="Core40k.CompProperties_AlternateTexture" />
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_ForcesBodyType">
-                <forcedBodyType>Male</forcedBodyType>
-            </li>
-        </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="BEWH_RelicHelmetBase">
         <defName>BEWH_GuillimanHelmet</defName>
         <label>Helm of Fate</label>
         <description>A helmet built for the Armor of Fate. While not commonly worn, as the Lord Commander of the Imperium generally wished to show his face to spur on his armies, it is just as protective as the armor itself is.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Relics/Helmet/Guilliman/Guilliman</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <skillRequirements>
-                <Crafting>18</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>BEWH_VulkansForge</li>
-            </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
             </researchPrerequisites>
@@ -639,36 +448,15 @@
             <Plasteel>90</Plasteel>
             <Gold>30</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Helmet/Guilliman/Guilliman</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
             <drawData>
                 <scale>1</scale>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_GuillimanRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -680,26 +468,14 @@
         </comps>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorMachineableBase">
+    <ThingDef ParentName="BEWH_RelicArmorBase">
         <defName>BEWH_LionArmor</defName>
         <label>Imperial Warden armor</label>
         <description>A replica of the mysterious armor worn by Lion El’Jonson upon his return in the 41st Millennium. It is able to turn away both blade and bullet, and its prodigious size inspires great fear in the enemys hearts. \n\nLion El’Jonson, also known simply as The Lion, is the Primarch of the Dark Angels, a chapter of Space Marines. The Dark Angels were originally a Space Marine Legion, founded on Terra during the Unification Wars - indeed, they were the 1st Legion.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Relics/Body/Lion/LionMasked/Lion</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <skillRequirements>
-                <Crafting>18</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>BEWH_VulkansForge</li>
-            </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
             </researchPrerequisites>
@@ -733,26 +509,8 @@
             <Uranium>100</Uranium>
             <Gold>80</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Body/Lion/LionMasked/Lion</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-                <li>Hands</li>
-                <li>Feet</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Shell</li>
-                <li>Middle</li>
-            </layers>
             <drawData>
                 <dataNorth>
                     <layer>74</layer>
@@ -764,20 +522,10 @@
                     <offset>(0,0,-0.1)</offset>
                 </dataWest>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_LionRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -792,33 +540,16 @@
             </li>
             <li Class="Core40k.CompProperties_AlternateTexture" />
         </comps>
-        <modExtensions>
-            <li Class="Core40k.DefModExtension_ForcesBodyType">
-                <forcedBodyType>Male</forcedBodyType>
-            </li>
-        </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="BEWH_RelicHelmetBase">
         <defName>BEWH_LionHelmet</defName>
         <label>Imperial Warden helmet</label>
         <description>A magnificent, winged helmet worn with the Lion’s armor. The great wings only add to the Primarch’s towering stature, inspiring awe and terror in enemy ranks.\n\nAfter a Horus Heresy-era civil war within the Dark Angels and the defeat of Luther, the Arch-Betrayer, the Lion was rendered comatose and Caliban destroyed. It was only ten thousand years later that the Lion awoke to a much-decayed Imperium, and set out trying to save it.</description>
-        <techLevel>Spacer</techLevel>
-        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Armor/Relics/Helmet/Lion/Lion</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>BEWH_CutoutThreeColor</shaderType>
-            <drawSize>1</drawSize>
         </graphicData>
         <recipeMaker>
-            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <skillRequirements>
-                <Crafting>18</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>BEWH_VulkansForge</li>
-            </recipeUsers>
             <researchPrerequisites Inherit="False">
                 <li>BEWH_RelicsOfTheGreatCrusade</li>
             </researchPrerequisites>
@@ -852,19 +583,8 @@
             <Plasteel>90</Plasteel>
             <Gold>30</Gold>
         </costList>
-        <thingCategories>
-            <li>ApparelArmor</li>
-        </thingCategories>
         <apparel>
             <wornGraphicPath>Things/Armor/Relics/Helmet/Lion/Lion</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
             <drawData>
                 <dataNorth>
                     <offset>(0,0,0.25)</offset>
@@ -880,20 +600,10 @@
                 </dataWest>
                 <scale>1.35</scale>
             </drawData>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <tags>
                 <li>BEWH_LionRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>HiTechArmor</li>
-        </tradeTags>
-        <thingSetMakerTags Inherit="False" />
-        <smeltable>false</smeltable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <tradeability>Sellable</tradeability>
         <comps>
             <li Class="Core40k.CompProperties_MultiColor">
                 <colorMaskAmount>3</colorMaskAmount>
@@ -983,13 +693,10 @@
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
-            <tags>
+            <tags Inherit="False">
                 <li>BEWH_MalcadorRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>Clothing</li>
-        </tradeTags>
         <thingSetMakerTags Inherit="False" />
         <smeltable>false</smeltable>
         <burnableByRecipe>true</burnableByRecipe>
@@ -1074,13 +781,10 @@
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
-            <tags>
+            <tags Inherit="False">
                 <li>BEWH_MalcadorRelic</li>
             </tags>
         </apparel>
-        <tradeTags>
-            <li>Clothing</li>
-        </tradeTags>
         <thingSetMakerTags Inherit="False" />
         <smeltable>false</smeltable>
         <burnableByRecipe>true</burnableByRecipe>

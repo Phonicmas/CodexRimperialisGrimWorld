@@ -55,8 +55,9 @@
                     <offset>(0,0,-0.1)</offset>
                 </dataWest>
             </drawData>
-            <tags>
+            <tags Inherit="False">
                 <li>BEWH_TerminatorArmor</li>
+                <li>EVA</li>
             </tags>
             <renderNodeProperties>
                 <li>
@@ -151,7 +152,7 @@
                     <offset>(0.07,0,-0.04)</offset>
                 </dataWest>
             </drawData>
-            <tags>
+            <tags Inherit="False">
                 <li>BEWH_TerminatorArmor</li>
             </tags>
         </apparel>

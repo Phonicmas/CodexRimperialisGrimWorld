@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef Name="BEWH_EarthshakerShellBase" ParentName="ResourceBase" Abstract="True">
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Standard_Drop</soundDrop>
         <tickerType>Normal</tickerType>
@@ -39,6 +42,10 @@
         </recipeMaker>
     </ThingDef>
     <ThingDef Name="BEWH_EarthshakerProjectileBase" ParentName="BaseBullet" Abstract="True">
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
             <flyOverhead>true</flyOverhead>
@@ -54,7 +61,6 @@
         <description>A 132mm high-explosive shell for the Earthshaker cannon, complete with a time fuze and fragmentation case. The most common round used in the Earthshaker by the Astra Militarum, suitable for blasting apart infantry, vehicles, and fortifications alike.</description>
         <graphicData>
             <texPath>Things/Items/EarthshakerShells/HighExplosive</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <comps>
             <li Class="CompProperties_Explosive">
@@ -76,8 +82,6 @@
         <label>high-explosive shell</label>
         <graphicData>
             <texPath>Things/Projectile/ShellHighExplosive</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
         </graphicData>
         <projectile>
             <damageDef>Bomb</damageDef>
@@ -92,7 +96,6 @@
         <description>A 132mm smoke shell for the Earthshaker cannon. For the subtler commander, this can be very useful for concealing troop movements - including an imminent ground assault.</description>
         <graphicData>
             <texPath>Things/Items/EarthshakerShells/Smoke</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <comps>
             <li Class="CompProperties_Explosive">
@@ -113,8 +116,6 @@
         <label>smoke shell</label>
         <graphicData>
             <texPath>Things/Projectile/ShellSmoke</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
         </graphicData>
         <projectile>
             <damageDef>Smoke</damageDef>
@@ -130,7 +131,6 @@
         <description>A 132mm incendiary shell for the Earthshaker cannon. These ones contain an oxy-phosphor gel core, allowing batteries of Earthshaker cannons to set whole grid squares ablaze.</description>
         <graphicData>
             <texPath>Things/Items/EarthshakerShells/Incendiary</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <comps>
             <li Class="CompProperties_Explosive">
@@ -152,8 +152,6 @@
         <label>incendiary shell</label>
         <graphicData>
             <texPath>Things/Projectile/ShellIncendiary</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
         </graphicData>
         <projectile>
             <damageDef>Flame</damageDef>
@@ -171,7 +169,6 @@
         <description>A 132mm armor-piercing shell for the Earthshaker cannon, with a diamantine tip. It trades some of its blast radius for an increased ability to penetrate armor, making the gun able to damage and destroy even heavily-armored vehicles with a solid hit.</description>
         <graphicData>
             <texPath>Things/Items/EarthshakerShells/ArmorPiercing</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <comps>
             <li Class="CompProperties_Explosive">
@@ -193,8 +190,6 @@
         <label>armor-piercing shell</label>
         <graphicData>
             <texPath>Things/Projectile/ShellHighExplosive</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
         </graphicData>
         <projectile>
             <damageDef>Bomb</damageDef>

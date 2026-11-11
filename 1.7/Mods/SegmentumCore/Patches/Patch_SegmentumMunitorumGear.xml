@@ -3,7 +3,7 @@
 
     <Operation Class="ModSettingsFramework.PatchOperationRadioButtons">
         <label>Segmentum: Imperial Guard lasgun and flak armour</label>
-        <tooltip>Which lasgun, flak armour and flak helmet are used when Segmentum is loaded. The other set can no longer be crafted, bought or found on generated pawns. Items already in a save are kept. Requires a restart.</tooltip>
+        <tooltip>Which lasgun, flak armour and flak helmet are used when Segmentum is loaded. The other set can no longer be crafted, bought or found on generated pawns, unless both are kept. Items already in a save are kept. Requires a restart.</tooltip>
         <order>0</order>
         <options>
             <li Class="ModSettingsFramework.PatchOperationModOption">
@@ -86,9 +86,11 @@
                         </value>
                     </li>
                     <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]/tradeTags</xpath>
+                        <xpath>Defs/ThingDef[defName="BEWH_CadianUniform" or defName="BEWH_CadianHeadgear"]</xpath>
                         <value>
-                            <li>Seg_FlakArmour</li>
+                            <tradeTags>
+                                <li>Seg_FlakArmour</li>
+                            </tradeTags>
                         </value>
                     </li>
                     <li Class="PatchOperationAdd">
@@ -310,6 +312,12 @@
                         </match>
                     </li>
                 </operations>
+            </li>
+            <li Class="ModSettingsFramework.PatchOperationModOption">
+                <defaultValue>False</defaultValue>
+                <label>Keep both: no items are merged</label>
+                <tooltip>Nothing is retired. Both lasguns, flak armours and flak helmets can be crafted, bought and found, and each mod's factions keep their own gear.</tooltip>
+                <id>BEWH_SegmentumGear_Both</id>
             </li>
         </options>
     </Operation>

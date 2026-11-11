@@ -2,73 +2,93 @@
 <Patch>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_GuardianSpear"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_GuardianSpear"]</xpath>
         <value>
-            <li>BEWH_CustodesSpear</li>
+            <weaponTags>
+                <li>BEWH_CustodesSpear</li>
+            </weaponTags>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_AdrathicSpear"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_AdrathicSpear"]</xpath>
         <value>
-            <li>BEWH_CustodesSpear</li>
+            <weaponTags>
+                <li>BEWH_CustodesSpear</li>
+            </weaponTags>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_PyrithiteSpear"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_PyrithiteSpear"]</xpath>
         <value>
-            <li>BEWH_CustodesSpear</li>
+            <weaponTags>
+                <li>BEWH_CustodesSpear</li>
+            </weaponTags>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_CustodianSentinelBlade"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_CustodianSentinelBlade"]</xpath>
         <value>
-            <li>BEWH_CustodesBlade</li>
+            <weaponTags>
+                <li>BEWH_CustodesBlade</li>
+            </weaponTags>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_CustodianVaultsword"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_CustodianVaultsword"]</xpath>
         <value>
-            <li>BEWH_CustodesCommand</li>
+            <weaponTags>
+                <li>BEWH_CustodesCommand</li>
+            </weaponTags>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_CastellanAxe"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_CastellanAxe"]</xpath>
         <value>
-            <li>BEWH_CustodesCommand</li>
-            <li>BEWH_CustodesAxe</li>
+            <weaponTags>
+                <li>BEWH_CustodesCommand</li>
+                <li>BEWH_CustodesAxe</li>
+            </weaponTags>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_AdrathicDestructor"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_AdrathicDestructor"]</xpath>
         <value>
-            <li>BEWH_CustodesRanged</li>
+            <weaponTags>
+                <li>BEWH_CustodesRanged</li>
+            </weaponTags>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_BoltCaliver"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_BoltCaliver"]</xpath>
         <value>
-            <li>BEWH_CustodesRanged</li>
+            <weaponTags>
+                <li>BEWH_CustodesRanged</li>
+            </weaponTags>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_KineticDestroyer"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_KineticDestroyer"]</xpath>
         <value>
-            <li>BEWH_CustodesRanged</li>
+            <weaponTags>
+                <li>BEWH_CustodesRanged</li>
+            </weaponTags>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="BEWH_IncendiumFirepike"]/weaponTags</xpath>
+        <xpath>/Defs/ThingDef[defName="BEWH_IncendiumFirepike"]</xpath>
         <value>
-            <li>BEWH_CustodesRanged</li>
+            <weaponTags>
+                <li>BEWH_CustodesRanged</li>
+            </weaponTags>
         </value>
     </Operation>
 

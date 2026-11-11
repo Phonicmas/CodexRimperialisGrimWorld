@@ -3,7 +3,7 @@
     <ThingDef ParentName="BenchBase">
         <defName>BEWH_MilitarumWorkbench</defName>
         <label>Militarum workbench</label>
-        <description>A workbench for assembling the weapons of the Astra Militarum, from the humble lasgun to plasma guns and power fists.\n\nWhile the lasgun remains the typical armament of Imperial Guardsmen, the conditions of the rimworld have let other weapons flourish as well, such as autoguns.</description>
+        <description>A workbench for assembling the weapons and armor of the Astra Militarum, from the humble lasgun and flak armor to plasma guns, power fists and carapace armor.\n\nWhile the lasgun remains the typical armament of Imperial Guardsmen, the conditions of the rimworld have let other weapons flourish as well, such as autoguns.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>Things/Buildings/MilitarumWorkbench/BEWH_MilitarumWorkbench</texPath>
