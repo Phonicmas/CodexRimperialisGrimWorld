@@ -55,7 +55,11 @@
             <drawSize>(2, 2)</drawSize>
         </graphicData>
         <passability>Standable</passability>
-        <altitudeLayer>Item</altitudeLayer>
+        <altitudeLayer>ItemImportant</altitudeLayer>
+        <!-- Own altitude slot, like rugs: without blocksAltitudes, tables and other furniture block the candle's construction -->
+        <blocksAltitudes>
+            <li>ItemImportant</li>
+        </blocksAltitudes>
         <designationCategory>BEWH_RimDarkCategory</designationCategory>
         <size>(1,1)</size>
         <statBases>
